@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Dest as Dest;
-class HomeController extends Controller
+class DashboardController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -21,10 +21,8 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function dash()
     {
-        
-        $destinations = Dest::all();
-        return view('home',['dests' =>$destinations]);
+        return view('dashboard');
     }
 }
