@@ -60,6 +60,21 @@
                             </div>
                         </div>
 
+
+                        <div class="form-group{{ $errors->has('hometown') ? ' has-error' : '' }}">
+                            <label for="hometown" class="col-md-4 control-label">HomeTown</label>
+
+                            <div class="col-md-6">
+                                <input id="hometown" type="text" class="form-control" name="hometown" value="{{ old('hometown') }}" required>
+
+                                @if ($errors->has('hometown'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('hometown') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
                                 <button type="submit" class="btn btn-primary">
