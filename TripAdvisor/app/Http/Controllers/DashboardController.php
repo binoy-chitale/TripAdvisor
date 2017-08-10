@@ -21,8 +21,11 @@ class DashboardController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function dash()
+    public function dash($name)
     {
-        return view('dashboard');
+        //$destination = Dest::where('name',$name)->first();
+        $destination = Dest::where('name',$name)->first();
+        $directory = $destination->directory;
+        return view('dashboard',['dest' =>$destination]);
     }
 }

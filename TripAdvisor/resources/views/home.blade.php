@@ -8,7 +8,7 @@
                 <div class="panel-body">
                     @foreach($dests as $dest)
                     <div class="list-group">
-                          <a href="#" class="list-group-item">
+                          <a href="/dest/{{$dest->name}}" class="list-group-item">
                             {{$dest->name}}
                           </a>
                         </div>
