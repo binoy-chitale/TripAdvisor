@@ -1,0 +1,2259 @@
+{
+   "attractions":[
+      {
+         "overall rating":"4.54.5",
+         "ratings":{
+            "Excellent":"7678",
+            "Very good":"2912",
+            "Average":"601",
+            "Poor":"88",
+            "Terrible":"50"
+         },
+         "overall_calculated_rating":4.595904316356254,
+         "review_count":"23,690 reviews",
+         "name":"Reichstag Building",
+         "all_timings":{
+            "Wed":"8:00 am - 10:00 pm",
+            "Sun":"8:00 am - 10:00 pm",
+            "Fri":"8:00 am - 10:00 pm",
+            "Tue":"8:00 am - 10:00 pm",
+            "Mon":"8:00 am - 10:00 pm",
+            "Thu":"8:00 am - 10:00 pm",
+            "Sat":"8:00 am - 10:00 pm"
+         },
+         "official_description":"LocationGermany >Berlin >Mitte ",
+         "highlights":"",
+         "latlon":{
+            "lat":52.5186202,
+            "lon":13.3761872
+         },
+         "rank":"#2 of 828 things to do in Berlin",
+         "content":"Situated just north of the Brandenburg Gate, this building houses the German Parliament and was the seat of the Weimar Republic government until it was seized by the Nazis in 1933.",
+         "phone":[
+            "+49 30 22732152"
+         ],
+         "amenities":{
+
+         },
+         "suggested_hours":"3",
+         "address":{
+            "country":"Germany",
+            "zipcode":"10557",
+            "street_address":"Platz der Republik",
+            "locality":"10557 Berlin,"
+         },
+         "images":[
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/31/82/f0/view-from-the-river.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/33/4c/80/45.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/33/4c/86/58.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/33/4c/90/caption.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/33/4c/97/caption.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/07/b9/28/a1/photo0jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/07/b9/28/a4/photo3jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/07/b9/28/a6/photo4jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/07/b9/28/a2/photo1jpg.jpg"
+         ],
+         "category":[
+            "Architectural Buildings",
+            "Government Buildings",
+            "Points of Interest & Landmarks",
+            "Sights & Landmarks",
+            "More"
+         ],
+         "additional_info":null
+      },
+      {
+         "overall rating":"4.54.5",
+         "ratings":{
+            "Excellent":"7709",
+            "Very good":"4657",
+            "Average":"1306",
+            "Poor":"103",
+            "Terrible":"25"
+         },
+         "overall_calculated_rating":4.443623188405797,
+         "review_count":"31,849 reviews",
+         "name":"Brandenburg Gate",
+         "all_timings":null,
+         "official_description":"LocationGermany >Berlin >Mitte ",
+         "highlights":"",
+         "latlon":{
+            "lat":52.5162746,
+            "lon":13.3777041
+         },
+         "rank":"#3 of 828 things to do in Berlin",
+         "content":"Located in no-man's land between East and West Germany during the Cold War, this famous monument, built during the 18th-century reign of Friedrich Wilhelm II, has long been a defining symbol of Berlin and both the city's division and unification.",
+         "phone":[
+            "100200"
+         ],
+         "amenities":{
+
+         },
+         "suggested_hours":"2",
+         "address":{
+            "country":"Germany",
+            "zipcode":"10117",
+            "street_address":"Pariser Platz",
+            "locality":"10117 Berlin,"
+         },
+         "images":[
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/32/14/4a/embajada-americana.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/32/14/5a/embajada-francia.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-o/10/33/37/8c/top-view.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-o/10/33/37/92/the-gate-at-night.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/33/3a/09/nite-view.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/34/00/f1/photo0jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/34/00/f2/photo1jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-p/10/34/00/f3/photo2jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-o/10/34/c0/82/photo0jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/05/dd/05/30/suggestiva-e-meravigliosa.jpg"
+         ],
+         "category":[
+            "Monuments & Statues",
+            "Points of Interest & Landmarks",
+            "Sights & Landmarks"
+         ],
+         "additional_info":null
+      },
+      {
+         "overall rating":"4.54.5",
+         "ratings":{
+            "Excellent":"4043",
+            "Very good":"1866",
+            "Average":"373",
+            "Poor":"47",
+            "Terrible":"20"
+         },
+         "overall_calculated_rating":4.5537879981099385,
+         "review_count":"13,361 reviews",
+         "name":"Memorial of the Berlin Wall",
+         "all_timings":null,
+         "official_description":"LocationGermany >Berlin >Mitte ",
+         "highlights":"",
+         "latlon":{
+            "lat":52.53505209999999,
+            "lon":13.3901898
+         },
+         "rank":"#5 of 828 things to do in Berlin",
+         "content":"The Berlin Wall Memorial is the central memorial site of German division, located in the middle of the capital. Situated at the historic site on Bernauer Strasse, it extends along 1.4 kilometers of the former border strip. The memorial contains the last piece of Berlin Wall with the preserved grounds behind it and is thus able to convey an impression of how the border fortifications developed until the end of the 1980s. The events that took place here together with the preserved historical remnants and traces of border obstacles on display help to make the history of Germany's division comprehensible to visitors. The memorial is part of the Berlin Wall Foundation, which also includes the Marienfelde Refugee Center Museum, the central site dedicated to the history of flight and emigration in divided Germany. MOBILE TOURGUIDE Visitors to the Berlin Wall Memorial who have a smartphone or a tablet computer with internet access at their disposal have the opportunity to select an individual tour of the memorial grounds for themselves on the memorial's mobile website berliner-mauer.mobi.",
+         "phone":[
+            "+49 30 467986666"
+         ],
+         "amenities":{
+
+         },
+         "suggested_hours":"1",
+         "address":{
+            "country":"Germany",
+            "zipcode":"13355",
+            "street_address":"Bernauer Strasse 111/119",
+            "locality":"13355 Berlin,"
+         },
+         "images":[
+            "https://media-cdn.tripadvisor.com/media/photo-w/07/b6/3c/75/gedenkstatte-berliner.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/07/b6/4c/28/gedenkstatte-berliner.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/07/b6/4c/80/gedenkstatte-berliner.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/07/b6/4c/d8/gedenkstatte-berliner.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/07/b6/4d/30/gedenkstatte-berliner.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/07/b6/4d/87/gedenkstatte-berliner.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/07/b6/4d/cb/gedenkstatte-berliner.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/07/b6/4e/21/gedenkstatte-berliner.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/07/ba/3b/01/photo0jpg.jpg"
+         ],
+         "category":[
+            "Historic Sites",
+            "Monuments & Statues",
+            "Sights & Landmarks"
+         ],
+         "additional_info":null
+      },
+      {
+         "overall rating":"55",
+         "ratings":{
+            "Excellent":"1038",
+            "Very good":"159",
+            "Average":"34",
+            "Poor":"9",
+            "Terrible":"6"
+         },
+         "overall_calculated_rating":4.776886035313002,
+         "review_count":"2,728 reviews",
+         "name":"Berlin Philharmonic",
+         "all_timings":null,
+         "official_description":"LocationGermany >Berlin >Charlottenburg ",
+         "highlights":"",
+         "latlon":{
+            "lat":52.51003189999999,
+            "lon":13.369693
+         },
+         "rank":"#6 of 828 things to do in Berlin",
+         "content":"Often a tough ticket, the Berlin Philharmonic features some of the best classical music to be had in Germany.",
+         "phone":[
+            "+49 30 254880"
+         ],
+         "amenities":{
+
+         },
+         "suggested_hours":null,
+         "address":{
+            "country":"Germany",
+            "zipcode":"10785",
+            "street_address":"Herbert-von-Karajan-Str. 1",
+            "locality":"10785 Berlin,"
+         },
+         "images":[
+            "https://media-cdn.tripadvisor.com/media/photo-s/03/c8/d9/cc/berlin-philharmonic.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/02/87/f8/67/filename-berlin-082-jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/02/87/f8/7a/filename-berlin-305-jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/04/16/0f/a5/berlin-philharmonic.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/02/87/f8/94/filename-berlin-339-jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/0f/fa/75/0d/philarmonie-berlin.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/0f/fa/75/31/philarmonie-berlin.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/0f/fa/75/3e/philarmonie-berlin.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/22/83/af/free-lunch-concert-in.jpg"
+         ],
+         "category":[
+            "Architectural Buildings",
+            "Symphonies",
+            "Sights & Landmarks",
+            "Concerts & Shows"
+         ],
+         "additional_info":null
+      },
+      {
+         "overall rating":"3.53.5",
+         "ratings":{
+            "Excellent":"783",
+            "Very good":"1068",
+            "Average":"1444",
+            "Poor":"661",
+            "Terrible":"317"
+         },
+         "overall_calculated_rating":3.3133629768312662,
+         "review_count":"8,555 reviews",
+         "name":"Mauermuseum - Museum Haus am Checkpoint Charlie",
+         "all_timings":{
+            "Wed":"9:00 am - 10:00 pm",
+            "Sun":"9:00 am - 10:00 pm",
+            "Fri":"9:00 am - 10:00 pm",
+            "Tue":"9:00 am - 10:00 pm",
+            "Mon":"9:00 am - 10:00 pm",
+            "Thu":"9:00 am - 10:00 pm",
+            "Sat":"9:00 am - 10:00 pm"
+         },
+         "official_description":"",
+         "highlights":"",
+         "latlon":{
+            "lat":52.507161,
+            "lon":13.39073
+         },
+         "rank":"#88 of 828 things to do in Berlin",
+         "content":"8,555 reviews",
+         "phone":[
+            "+49 4930 2537250"
+         ],
+         "amenities":{
+
+         },
+         "suggested_hours":"3",
+         "address":{
+            "country":"Germany",
+            "zipcode":"10969",
+            "street_address":"Friedrichstr. 43-45",
+            "locality":"10969 Berlin,"
+         },
+         "images":[
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/1b/64/b2/caption.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/1b/64/ba/caption.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/1b/64/ca/caption.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/1d/50/f8/charlie.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/1d/51/21/charlie.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/1d/51/41/trabant-se-pedian-por.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/1d/51/4f/museo.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/1d/51/73/foto-famosa-del-soldado.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/1d/51/99/foto-museo.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/1e/47/20/photo0jpg.jpg"
+         ],
+         "category":[
+            "History Museums",
+            "Points of Interest & Landmarks",
+            "Museums",
+            "Sights & Landmarks"
+         ],
+         "additional_info":null
+      },
+      {
+         "overall rating":"4.54.5",
+         "ratings":{
+            "Excellent":"579",
+            "Very good":"496",
+            "Average":"124",
+            "Poor":"9",
+            "Terrible":"5"
+         },
+         "overall_calculated_rating":4.347897774113767,
+         "review_count":"2,803 reviews",
+         "name":"Victory Column (Siegessaule)",
+         "all_timings":{
+            "Wed":"9:30 am - 6:30 pm",
+            "Sun":"null",
+            "Fri":"9:30 am - 6:30 pm",
+            "Tue":"9:30 am - 6:30 pm",
+            "Mon":"9:30 am - 6:30 pm",
+            "Thu":"9:30 am - 6:30 pm",
+            "Sat":"null"
+         },
+         "official_description":"LocationGermany >Berlin >Charlottenburg ",
+         "highlights":"",
+         "latlon":{
+            "lat":52.5145434,
+            "lon":13.3501189
+         },
+         "rank":"#37 of 828 things to do in Berlin",
+         "content":"The victory column was built in 1873 to celebrate Prussia's victory in the Franco-German War. It was moved to its present location in the Tiergarten in 1938. You can go to the top via 270 steps to see great views of Berlin.",
+         "phone":[
+            "030-333-9509"
+         ],
+         "amenities":{
+
+         },
+         "suggested_hours":null,
+         "address":{
+            "country":"Germany",
+            "zipcode":"10557",
+            "street_address":"Grosser Stern 15",
+            "locality":"10557 Berlin,"
+         },
+         "images":[
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/24/50/7f/photo1jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/24/50/80/photo2jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/24/50/81/photo3jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/33/ed/91/statue-dominant-le-monument.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/33/ed/9e/vue-d-ensemble.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/33/ed/af/pour-donner-une-direction.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/33/ed/bd/au-couche-du-soleil.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/33/ed/d1/vue-de-dessous-de-la.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/33/ed/e6/vue-illuminee-de-nuit.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/33/ed/f8/de-nuit.jpg"
+         ],
+         "category":[
+            "Monuments & Statues",
+            "Sights & Landmarks"
+         ],
+         "additional_info":null
+      },
+      {
+         "overall rating":"4.54.5",
+         "ratings":{
+            "Excellent":"7726",
+            "Very good":"3074",
+            "Average":"895",
+            "Poor":"212",
+            "Terrible":"113"
+         },
+         "overall_calculated_rating":4.504825291181365,
+         "review_count":"24,416 reviews",
+         "name":"The Holocaust Memorial - Memorial to the Murdered Jews of Europe",
+         "all_timings":{
+            "Wed":"10:00 am - 8:00 pm",
+            "Sun":"10:00 am - 8:00 pm",
+            "Fri":"10:00 am - 8:00 pm",
+            "Tue":"10:00 am - 8:00 pm",
+            "Mon":"null",
+            "Thu":"10:00 am - 8:00 pm",
+            "Sat":"10:00 am - 8:00 pm"
+         },
+         "official_description":"",
+         "highlights":"",
+         "latlon":{
+            "lat":52.5139474,
+            "lon":13.3787127
+         },
+         "rank":"#8 of 828 things to do in Berlin",
+         "content":"24,416 reviews",
+         "phone":[
+            "+49 4930 26394336"
+         ],
+         "amenities":{
+
+         },
+         "suggested_hours":"2",
+         "address":{
+            "country":"Germany",
+            "zipcode":"10117",
+            "street_address":"Near the Brandenburg Gate",
+            "locality":"10117 Berlin,"
+         },
+         "images":[
+            "https://media-cdn.tripadvisor.com/media/photo-o/10/2e/3e/59/photo0jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-o/10/2e/3e/5a/photo1jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-o/10/2e/3e/5b/photo2jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/30/ac/13/memorial-del-holocausto.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/33/37/be/photo2jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/33/8f/05/photo0jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/33/8f/07/photo1jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/33/8f/09/photo2jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/34/a1/66/photo0jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/34/a1/67/photo1jpg.jpg"
+         ],
+         "category":[
+            "Educational sites",
+            "Monuments & Statues",
+            "Sights & Landmarks"
+         ],
+         "additional_info":null
+      },
+      {
+         "overall rating":"4.54.5",
+         "ratings":{
+            "Excellent":"2230",
+            "Very good":"1483",
+            "Average":"584",
+            "Poor":"136",
+            "Terrible":"30"
+         },
+         "overall_calculated_rating":4.287698857270894,
+         "review_count":"10,407 reviews",
+         "name":"East Side Gallery",
+         "all_timings":null,
+         "official_description":"LocationGermany >Berlin ",
+         "highlights":"",
+         "latlon":{
+            "lat":52.50502239999999,
+            "lon":13.4396952
+         },
+         "rank":"#26 of 828 things to do in Berlin",
+         "content":"This mile-long stretch of the Berlin Wall is one of the largest remaining portions of the former divide between East and West Germany.",
+         "phone":[
+            "+49 4930 2517159"
+         ],
+         "amenities":{
+
+         },
+         "suggested_hours":"3",
+         "address":{
+            "country":"Germany",
+            "zipcode":"14059",
+            "street_address":"Muehlenstrasse",
+            "locality":"14059 Berlin,"
+         },
+         "images":[
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/2c/9c/34/photo2jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/2c/9c/35/photo3jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/2c/9c/36/photo4jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/2c/9c/37/photo5jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/2c/9c/38/photo6jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-o/10/2e/55/e3/photo0jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/2e/55/e5/photo1jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/31/8d/af/berlin-wall.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/35/0e/62/east-side-gallery.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/35/63/41/photo0jpg.jpg"
+         ],
+         "category":[
+            "Historic Sites",
+            "Points of Interest & Landmarks",
+            "Sights & Landmarks"
+         ],
+         "additional_info":null
+      },
+      {
+         "overall rating":"4.54.5",
+         "ratings":{
+            "Excellent":"5004",
+            "Very good":"2190",
+            "Average":"425",
+            "Poor":"72",
+            "Terrible":"20"
+         },
+         "overall_calculated_rating":4.567371287770717,
+         "review_count":"13,525 reviews",
+         "name":"Topography of Terror",
+         "all_timings":{
+            "Wed":"10:00 am - 8:00 pm",
+            "Sun":"10:00 am - 8:00 pm",
+            "Fri":"10:00 am - 8:00 pm",
+            "Tue":"10:00 am - 8:00 pm",
+            "Mon":"10:00 am - 8:00 pm",
+            "Thu":"10:00 am - 8:00 pm",
+            "Sat":"10:00 am - 8:00 pm"
+         },
+         "official_description":"LocationGermany >Berlin >Kreuzberg ",
+         "highlights":"",
+         "latlon":{
+            "lat":52.5066836,
+            "lon":13.3837024
+         },
+         "rank":"#7 of 828 things to do in Berlin",
+         "content":"Since 1987 a permanent exhibition at the site where the headquarters of the Secret State Police, the SS and the Reich Security Main Office were located during the \u201cThird Reich\u201d has been providing information to the public about the most important institutions of National Socialist persecution and terror. The documentary exhibition conveys the European dimensions of the Nazi reign of terror.",
+         "phone":[
+            "+49 4930 25450950"
+         ],
+         "amenities":{
+
+         },
+         "suggested_hours":"2",
+         "address":{
+            "country":"Germany",
+            "zipcode":"10963",
+            "street_address":"Niederkirchnerstrasse 8",
+            "locality":"10963 Berlin,"
+         },
+         "images":[
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/2c/d9/3e/photo0jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/2d/a6/3b/photo0jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/2d/a6/3c/photo1jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/2d/a6/3d/photo2jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/2d/a6/3f/photo3jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/2f/95/ef/photo0jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/31/bf/e5/topografia-del-terror.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-o/10/31/c0/61/topografia-del-terror.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/01/c5/e5/82/stefan-josef-muller-stiftung.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/01/c5/e5/84/stefan-josef-muller-stiftung.jpg"
+         ],
+         "category":[
+            "Specialty Museums",
+            "Museums"
+         ],
+         "additional_info":null
+      },
+      {
+         "overall rating":"4.54.5",
+         "ratings":{
+            "Excellent":"2012",
+            "Very good":"954",
+            "Average":"185",
+            "Poor":"32",
+            "Terrible":"12"
+         },
+         "overall_calculated_rating":4.540532081377152,
+         "review_count":"6,949 reviews",
+         "name":"Museum Island",
+         "all_timings":{
+            "Wed":"10:00 am - 6:00 pm",
+            "Sun":"null",
+            "Fri":"null",
+            "Tue":"10:00 am - 6:00 pm",
+            "Mon":"null",
+            "Thu":"null",
+            "Sat":"null"
+         },
+         "official_description":"LocationGermany >Berlin >Mitte ",
+         "highlights":"",
+         "latlon":{
+            "lat":52.5169328,
+            "lon":13.4018997
+         },
+         "rank":"#9 of 828 things to do in Berlin",
+         "content":"Home to three famous museums - the Pergamon, the Altes and the Bode.",
+         "phone":[
+            "+49 30 266424242"
+         ],
+         "amenities":{
+
+         },
+         "suggested_hours":"3",
+         "address":{
+            "country":"Germany",
+            "zipcode":"13089",
+            "street_address":null,
+            "locality":"13089 Berlin,"
+         },
+         "images":[
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/16/85/d9/caption.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/16/85/e7/caption.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/1f/24/01/photo0jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/26/93/64/photo0jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/26/93/66/photo1jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/26/93/67/photo2jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/34/e9/62/museumsinsel.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/34/e9/86/museumsinsel.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/34/e9/a3/museumsinsel.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/35/bb/37/bonito.jpg"
+         ],
+         "category":[
+            "Specialty Museums",
+            "Points of Interest & Landmarks",
+            "Museums",
+            "Sights & Landmarks"
+         ],
+         "additional_info":null
+      },
+      {
+         "overall rating":"4.54.5",
+         "ratings":{
+            "Excellent":"3828",
+            "Very good":"1483",
+            "Average":"533",
+            "Poor":"146",
+            "Terrible":"76"
+         },
+         "overall_calculated_rating":4.457467853610287,
+         "review_count":"15,803 reviews",
+         "name":"Pergamon Museum",
+         "all_timings":"null",
+         "official_description":"LocationGermany >Berlin >Mitte ",
+         "highlights":"",
+         "latlon":{
+            "lat":52.521183,
+            "lon":13.3969
+         },
+         "rank":"#10 of 828 things to do in Berlin",
+         "content":"This internationally renowned ancient history museum contains several fantastic artifacts, including the huge Altar of Zeus and the famous Ishtar Gate from Babylon.",
+         "phone":[
+            "+49 30 20905577"
+         ],
+         "amenities":{
+
+         },
+         "suggested_hours":"3",
+         "address":{
+            "country":"Germany",
+            "zipcode":"10178",
+            "street_address":"Bodestrasse 1-3",
+            "locality":"10178 Berlin,"
+         },
+         "images":[
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/31/ec/8e/20170808-101139-largejpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/31/ec/8f/20170808-102454-largejpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/31/ec/90/20170808-145423-largejpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/33/df/7d/entrance-to-the-museum.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/33/df/bb/islamic-art.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/33/df/d5/the-view-from-he-balcony.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/35/ce/e8/museo-de-pergamo.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/35/ce/ea/museo-de-pergamo.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/35/ce/ec/museo-de-pergamo.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/35/ce/ed/museo-de-pergamo.jpg"
+         ],
+         "category":[
+            "Specialty Museums",
+            "Museums"
+         ],
+         "additional_info":null
+      },
+      {
+         "overall rating":"4.54.5",
+         "ratings":{
+            "Excellent":"1307",
+            "Very good":"460",
+            "Average":"84",
+            "Poor":"15",
+            "Terrible":"4"
+         },
+         "overall_calculated_rating":4.631550802139038,
+         "review_count":"3,217 reviews",
+         "name":"German Historical Museum",
+         "all_timings":{
+            "Wed":"10:00 am - 6:00 pm",
+            "Sun":"10:00 am - 6:00 pm",
+            "Fri":"10:00 am - 6:00 pm",
+            "Tue":"10:00 am - 6:00 pm",
+            "Mon":"10:00 am - 6:00 pm",
+            "Thu":"10:00 am - 6:00 pm",
+            "Sat":"10:00 am - 6:00 pm"
+         },
+         "official_description":"LocationGermany >Berlin >Mitte ",
+         "highlights":"",
+         "latlon":{
+            "lat":52.5188334,
+            "lon":13.396869
+         },
+         "rank":"#15 of 828 things to do in Berlin",
+         "content":"The German Historical Museum presents itself in two buildings: In the unique Baroque Zeughaus and the neighbouring modern exhibition hall designed by the Chinese-American architect Ioeh Minh Pei. The 300-year old Zeughaus is one of the most important buildings of the Baroque period in Berlin and the oldest buildings at the boulevard Unter den Linden. In 2006 the Permanent Exhibition \u201cGerman History in Images and Artefacts\u201d was inaugurated here; it showcases 2000 years of eventful and enthralling German history as seen within its European context. 8000 selected objects from the extensive collections of the German Historical Museum furnish valuable evidence of history and reveal, on a surface area of 8000 square meters, a fascinating and vivid picture of the past. Supplementing the Permanent Exhibition are specialized temporary exhibitions displayed in the fascinating exhibition building designed by I.M. Pei. The spacious new structure with its glass and steel entrance lobby and distinctive winding staircase was opened in 2003. Definitive events and facets of German history are presented in a variety of special exhibitions on the four floors of the new building.",
+         "phone":[
+            "+49 30 203040"
+         ],
+         "amenities":{
+
+         },
+         "suggested_hours":"3",
+         "address":{
+            "country":"Germany",
+            "zipcode":"10117",
+            "street_address":"Unter den Linden 2",
+            "locality":"10117 Berlin,"
+         },
+         "images":[
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/1c/2b/26/east-germany-artifact.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/1c/2b/3f/world-war-2-headline.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/1c/2b/51/artifacts.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/1c/2b/7a/nazi-era-building-model.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/1c/2b/8b/sculpture.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/1c/2b/a5/sculpture-in-foyer.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/0f/14/de/3f/deutsches-historisches.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/0f/14/de/47/in-der-dauerausstellung.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/0f/14/de/4e/kinderprogramm-in-der.jpg"
+         ],
+         "category":[
+            "Architectural Buildings",
+            "Points of Interest & Landmarks",
+            "Specialty Museums",
+            "Sights & Landmarks",
+            "Museums",
+            "More"
+         ],
+         "additional_info":null
+      },
+      {
+         "overall rating":"4.54.5",
+         "ratings":{
+            "Excellent":"7709",
+            "Very good":"4657",
+            "Average":"1306",
+            "Poor":"103",
+            "Terrible":"25"
+         },
+         "overall_calculated_rating":4.443623188405797,
+         "review_count":"31,849 reviews",
+         "name":"Brandenburg Gate",
+         "all_timings":null,
+         "official_description":"LocationGermany >Berlin >Mitte ",
+         "highlights":"",
+         "latlon":{
+            "lat":52.5162746,
+            "lon":13.3777041
+         },
+         "rank":"#3 of 828 things to do in Berlin",
+         "content":"Located in no-man's land between East and West Germany during the Cold War, this famous monument, built during the 18th-century reign of Friedrich Wilhelm II, has long been a defining symbol of Berlin and both the city's division and unification.",
+         "phone":[
+            "100200"
+         ],
+         "amenities":{
+
+         },
+         "suggested_hours":"2",
+         "address":{
+            "country":"Germany",
+            "zipcode":"10117",
+            "street_address":"Pariser Platz",
+            "locality":"10117 Berlin,"
+         },
+         "images":[
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/32/14/5a/embajada-francia.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-o/10/33/37/8c/top-view.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-o/10/33/37/92/the-gate-at-night.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/33/3a/09/nite-view.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-o/10/33/cb/5d/photo0jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/34/00/f1/photo0jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/34/00/f2/photo1jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-p/10/34/00/f3/photo2jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-o/10/34/c0/82/photo0jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/05/dd/05/30/suggestiva-e-meravigliosa.jpg"
+         ],
+         "category":[
+            "Monuments & Statues",
+            "Points of Interest & Landmarks",
+            "Sights & Landmarks"
+         ],
+         "additional_info":null
+      },
+      {
+         "overall rating":"4.54.5",
+         "ratings":{
+            "Excellent":"4043",
+            "Very good":"1866",
+            "Average":"373",
+            "Poor":"47",
+            "Terrible":"20"
+         },
+         "overall_calculated_rating":4.5537879981099385,
+         "review_count":"13,361 reviews",
+         "name":"Memorial of the Berlin Wall",
+         "all_timings":null,
+         "official_description":"LocationGermany >Berlin >Mitte ",
+         "highlights":"",
+         "latlon":{
+            "lat":52.53505209999999,
+            "lon":13.3901898
+         },
+         "rank":"#5 of 828 things to do in Berlin",
+         "content":"The Berlin Wall Memorial is the central memorial site of German division, located in the middle of the capital. Situated at the historic site on Bernauer Strasse, it extends along 1.4 kilometers of the former border strip. The memorial contains the last piece of Berlin Wall with the preserved grounds behind it and is thus able to convey an impression of how the border fortifications developed until the end of the 1980s. The events that took place here together with the preserved historical remnants and traces of border obstacles on display help to make the history of Germany's division comprehensible to visitors. The memorial is part of the Berlin Wall Foundation, which also includes the Marienfelde Refugee Center Museum, the central site dedicated to the history of flight and emigration in divided Germany. MOBILE TOURGUIDE Visitors to the Berlin Wall Memorial who have a smartphone or a tablet computer with internet access at their disposal have the opportunity to select an individual tour of the memorial grounds for themselves on the memorial's mobile website berliner-mauer.mobi.",
+         "phone":[
+            "+49 30 467986666"
+         ],
+         "amenities":{
+
+         },
+         "suggested_hours":"1",
+         "address":{
+            "country":"Germany",
+            "zipcode":"13355",
+            "street_address":"Bernauer Strasse 111/119",
+            "locality":"13355 Berlin,"
+         },
+         "images":[
+            "https://media-cdn.tripadvisor.com/media/photo-w/07/b6/3c/75/gedenkstatte-berliner.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/07/b6/4c/28/gedenkstatte-berliner.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/07/b6/4c/80/gedenkstatte-berliner.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/07/b6/4c/d8/gedenkstatte-berliner.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/07/b6/4d/30/gedenkstatte-berliner.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/07/b6/4d/87/gedenkstatte-berliner.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/07/b6/4d/cb/gedenkstatte-berliner.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/07/b6/4e/21/gedenkstatte-berliner.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/07/ba/3b/01/photo0jpg.jpg"
+         ],
+         "category":[
+            "Historic Sites",
+            "Monuments & Statues",
+            "Sights & Landmarks"
+         ],
+         "additional_info":null
+      },
+      {
+         "overall rating":"4.54.5",
+         "ratings":{
+            "Excellent":"7726",
+            "Very good":"3074",
+            "Average":"895",
+            "Poor":"212",
+            "Terrible":"113"
+         },
+         "overall_calculated_rating":4.504825291181365,
+         "review_count":"24,416 reviews",
+         "name":"The Holocaust Memorial - Memorial to the Murdered Jews of Europe",
+         "all_timings":{
+            "Wed":"10:00 am - 8:00 pm",
+            "Sun":"10:00 am - 8:00 pm",
+            "Fri":"10:00 am - 8:00 pm",
+            "Tue":"10:00 am - 8:00 pm",
+            "Mon":"null",
+            "Thu":"10:00 am - 8:00 pm",
+            "Sat":"10:00 am - 8:00 pm"
+         },
+         "official_description":"",
+         "highlights":"",
+         "latlon":{
+            "lat":52.5139474,
+            "lon":13.3787127
+         },
+         "rank":"#8 of 828 things to do in Berlin",
+         "content":"24,416 reviews",
+         "phone":[
+            "+49 4930 26394336"
+         ],
+         "amenities":{
+
+         },
+         "suggested_hours":"2",
+         "address":{
+            "country":"Germany",
+            "zipcode":"10117",
+            "street_address":"Near the Brandenburg Gate",
+            "locality":"10117 Berlin,"
+         },
+         "images":[
+            "https://media-cdn.tripadvisor.com/media/photo-o/10/2e/3e/59/photo0jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-o/10/2e/3e/5a/photo1jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-o/10/2e/3e/5b/photo2jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/30/ac/13/memorial-del-holocausto.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/33/37/be/photo2jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/33/8f/05/photo0jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/33/8f/07/photo1jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/33/8f/09/photo2jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/34/a1/66/photo0jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/34/a1/67/photo1jpg.jpg"
+         ],
+         "category":[
+            "Educational sites",
+            "Monuments & Statues",
+            "Sights & Landmarks"
+         ],
+         "additional_info":null
+      },
+      {
+         "overall rating":"4.54.5",
+         "ratings":{
+            "Excellent":"579",
+            "Very good":"496",
+            "Average":"124",
+            "Poor":"9",
+            "Terrible":"5"
+         },
+         "overall_calculated_rating":4.347897774113767,
+         "review_count":"2,803 reviews",
+         "name":"Victory Column (Siegessaule)",
+         "all_timings":{
+            "Wed":"9:30 am - 6:30 pm",
+            "Sun":"null",
+            "Fri":"9:30 am - 6:30 pm",
+            "Tue":"9:30 am - 6:30 pm",
+            "Mon":"9:30 am - 6:30 pm",
+            "Thu":"9:30 am - 6:30 pm",
+            "Sat":"null"
+         },
+         "official_description":"LocationGermany >Berlin >Charlottenburg ",
+         "highlights":"",
+         "latlon":{
+            "lat":52.5145434,
+            "lon":13.3501189
+         },
+         "rank":"#37 of 828 things to do in Berlin",
+         "content":"The victory column was built in 1873 to celebrate Prussia's victory in the Franco-German War. It was moved to its present location in the Tiergarten in 1938. You can go to the top via 270 steps to see great views of Berlin.",
+         "phone":[
+            "030-333-9509"
+         ],
+         "amenities":{
+
+         },
+         "suggested_hours":null,
+         "address":{
+            "country":"Germany",
+            "zipcode":"10557",
+            "street_address":"Grosser Stern 15",
+            "locality":"10557 Berlin,"
+         },
+         "images":[
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/24/50/7f/photo1jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/24/50/80/photo2jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/24/50/81/photo3jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/33/ed/91/statue-dominant-le-monument.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/33/ed/9e/vue-d-ensemble.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/33/ed/af/pour-donner-une-direction.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/33/ed/bd/au-couche-du-soleil.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/33/ed/d1/vue-de-dessous-de-la.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/33/ed/e6/vue-illuminee-de-nuit.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/33/ed/f8/de-nuit.jpg"
+         ],
+         "category":[
+            "Monuments & Statues",
+            "Sights & Landmarks"
+         ],
+         "additional_info":null
+      },
+      {
+         "overall rating":"55",
+         "ratings":{
+            "Excellent":"1038",
+            "Very good":"159",
+            "Average":"34",
+            "Poor":"9",
+            "Terrible":"6"
+         },
+         "overall_calculated_rating":4.776886035313002,
+         "review_count":"2,728 reviews",
+         "name":"Berlin Philharmonic",
+         "all_timings":null,
+         "official_description":"LocationGermany >Berlin >Charlottenburg ",
+         "highlights":"",
+         "latlon":{
+            "lat":52.51003189999999,
+            "lon":13.369693
+         },
+         "rank":"#6 of 828 things to do in Berlin",
+         "content":"Often a tough ticket, the Berlin Philharmonic features some of the best classical music to be had in Germany.",
+         "phone":[
+            "+49 30 254880"
+         ],
+         "amenities":{
+
+         },
+         "suggested_hours":null,
+         "address":{
+            "country":"Germany",
+            "zipcode":"10785",
+            "street_address":"Herbert-von-Karajan-Str. 1",
+            "locality":"10785 Berlin,"
+         },
+         "images":[
+            "https://media-cdn.tripadvisor.com/media/photo-s/03/c8/d9/cc/berlin-philharmonic.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/02/87/f8/67/filename-berlin-082-jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/02/87/f8/7a/filename-berlin-305-jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/04/16/0f/a5/berlin-philharmonic.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/02/87/f8/94/filename-berlin-339-jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/0f/fa/75/0d/philarmonie-berlin.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/0f/fa/75/31/philarmonie-berlin.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/0f/fa/75/3e/philarmonie-berlin.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/22/83/af/free-lunch-concert-in.jpg"
+         ],
+         "category":[
+            "Architectural Buildings",
+            "Symphonies",
+            "Concerts & Shows",
+            "Sights & Landmarks"
+         ],
+         "additional_info":null
+      },
+      {
+         "overall rating":"4.54.5",
+         "ratings":{
+            "Excellent":"492",
+            "Very good":"127",
+            "Average":"49",
+            "Poor":"34",
+            "Terrible":"20"
+         },
+         "overall_calculated_rating":4.43628808864266,
+         "review_count":"3,353 reviews",
+         "name":"Friedrichstadt-Palast",
+         "all_timings":{
+            "Wed":"9:00 am - 10:00 pm",
+            "Sun":"9:00 am - 10:00 pm",
+            "Fri":"9:00 am - 10:00 pm",
+            "Tue":"9:00 am - 10:00 pm",
+            "Mon":"9:00 am - 10:00 pm",
+            "Thu":"9:00 am - 10:00 pm",
+            "Sat":"9:00 am - 10:00 pm"
+         },
+         "official_description":"LocationGermany >Berlin >Mitte ",
+         "highlights":"",
+         "latlon":{
+            "lat":52.52393,
+            "lon":13.388821
+         },
+         "rank":"#22 of 828 things to do in Berlin",
+         "content":"More than one hundred artists on the biggest theatre stage in the world. With half a million guests every year, the Palast is the #1 theatre in Berlin.The Palast in Berlin is the first choice for those wishing to experience something utterly unique and thoroughly fascinating - perfectly including international visitors who do not speak German. Welcome to Berlin, welcome to Europe's Show Palace.",
+         "phone":[
+            "+49 30 23262327"
+         ],
+         "amenities":{
+
+         },
+         "suggested_hours":"3",
+         "address":{
+            "country":"Germany",
+            "zipcode":"10117",
+            "street_address":"Friedrichstr. 107",
+            "locality":"10117 Berlin,"
+         },
+         "images":[
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/0a/b1/c8/6.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/0a/b1/d8/7.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/06/be/18/14/friedrichstadt-palast.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/06/be/18/2f/friedrichstadt-palast.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/08/12/db/35/friedrichstadt-palast.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/08/12/db/48/friedrichstadt-palast.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/08/12/db/58/friedrichstadt-palast.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/09/25/bb/ce/friedrichstadt-palast.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-o/0d/67/d1/49/friedrichstadt-palast.jpg"
+         ],
+         "category":[
+            "Architectural Buildings",
+            "Theaters",
+            "Points of Interest & Landmarks",
+            "Sights & Landmarks",
+            "Concerts & Shows",
+            "More"
+         ],
+         "additional_info":null
+      },
+      {
+         "overall rating":"4.54.5",
+         "ratings":{
+            "Excellent":"58",
+            "Very good":"38",
+            "Average":"4",
+            "Poor":"0",
+            "Terrible":"3"
+         },
+         "overall_calculated_rating":4.436893203883495,
+         "review_count":"262 reviews",
+         "name":"Konzerthaus",
+         "all_timings":null,
+         "official_description":"LocationGermany >Berlin >Mitte ",
+         "highlights":"",
+         "latlon":{
+            "lat":52.5136439,
+            "lon":13.3917895
+         },
+         "rank":"#71 of 828 things to do in Berlin",
+         "content":"This renowned performance center re-opened in 1984 decades after being damaged by air attacks during World War II and now hosts a variety of concerts.",
+         "phone":[
+            "+49 4930 203090"
+         ],
+         "amenities":{
+
+         },
+         "suggested_hours":null,
+         "address":{
+            "country":"Germany",
+            "zipcode":"10117",
+            "street_address":"Gendarmenmarkt",
+            "locality":"10117 Berlin,"
+         },
+         "images":[
+            "https://media-cdn.tripadvisor.com/media/photo-w/0f/42/ec/dd/apollo-w-rydwanie-z-gryfami.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/0f/42/ec/f9/konzerthaus.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/0f/42/ed/16/wejscie-do-konzerthaus.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/0f/42/ed/25/konzerthaus.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/0f/a5/07/fa/photo0jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/0f/a5/07/fb/photo1jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/0f/a5/07/fc/photo2jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/02/3d/c3/f1/maja-fluri.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/0f/f9/c7/9b/konzerthaus.jpg"
+         ],
+         "category":[
+            "Theaters",
+            "Points of Interest & Landmarks",
+            "Sights & Landmarks",
+            "Concerts & Shows"
+         ],
+         "additional_info":null
+      },
+      {
+         "overall rating":"4.54.5",
+         "ratings":{
+            "Excellent":"72",
+            "Very good":"35",
+            "Average":"5",
+            "Poor":"4",
+            "Terrible":"4"
+         },
+         "overall_calculated_rating":4.391666666666667,
+         "review_count":"Read all 243 reviews 243 reviews",
+         "name":"Deutsche Oper Berlin",
+         "all_timings":null,
+         "official_description":"LocationGermany >Berlin >Charlottenburg ",
+         "highlights":"",
+         "latlon":{
+            "lat":52.5122363,
+            "lon":13.3083219
+         },
+         "rank":"#84 of 828 things to do in Berlin",
+         "content":"This performance center is the primary place to view opera and ballet in West Berlin.",
+         "phone":[
+            "+49 30 20354555"
+         ],
+         "amenities":{
+
+         },
+         "suggested_hours":null,
+         "address":{
+            "country":"Germany",
+            "zipcode":"",
+            "street_address":"Bismarckstrasse 35",
+            "locality":"Berlin,"
+         },
+         "images":[
+            "https://media-cdn.tripadvisor.com/media/photo-o/0f/6a/8a/0f/stage.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-o/0f/6a/8a/10/night.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/05/4f/cb/f1/deutsche-oper.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/05/4f/c8/33/deutsche-oper.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/00/79/d0/deutsche-oper.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/00/7a/02/deutsche-oper.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/00/7a/28/deutsche-oper.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/00/7a/8e/deutsche-oper.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/00/7b/2b/deutsche-oper.jpg"
+         ],
+         "category":[
+            "Theaters",
+            "Concerts & Shows"
+         ],
+         "additional_info":null
+      },
+      {
+         "overall rating":"4.54.5",
+         "ratings":{
+            "Excellent":"7678",
+            "Very good":"2912",
+            "Average":"601",
+            "Poor":"88",
+            "Terrible":"50"
+         },
+         "overall_calculated_rating":4.595904316356254,
+         "review_count":"23,690 reviews",
+         "name":"Reichstag Building",
+         "all_timings":{
+            "Wed":"8:00 am - 10:00 pm",
+            "Sun":"8:00 am - 10:00 pm",
+            "Fri":"8:00 am - 10:00 pm",
+            "Tue":"8:00 am - 10:00 pm",
+            "Mon":"8:00 am - 10:00 pm",
+            "Thu":"8:00 am - 10:00 pm",
+            "Sat":"8:00 am - 10:00 pm"
+         },
+         "official_description":"LocationGermany >Berlin >Mitte ",
+         "highlights":"",
+         "latlon":{
+            "lat":52.5186202,
+            "lon":13.3761872
+         },
+         "rank":"#2 of 828 things to do in Berlin",
+         "content":"Situated just north of the Brandenburg Gate, this building houses the German Parliament and was the seat of the Weimar Republic government until it was seized by the Nazis in 1933.",
+         "phone":[
+            "+49 30 22732152"
+         ],
+         "amenities":{
+
+         },
+         "suggested_hours":"3",
+         "address":{
+            "country":"Germany",
+            "zipcode":"10557",
+            "street_address":"Platz der Republik",
+            "locality":"10557 Berlin,"
+         },
+         "images":[
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/31/82/f0/view-from-the-river.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/33/4c/80/45.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/33/4c/86/58.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/33/4c/90/caption.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/33/4c/97/caption.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/07/b9/28/a1/photo0jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/07/b9/28/a4/photo3jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/07/b9/28/a6/photo4jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/07/b9/28/a2/photo1jpg.jpg"
+         ],
+         "category":[
+            "Architectural Buildings",
+            "Government Buildings",
+            "Points of Interest & Landmarks",
+            "Sights & Landmarks",
+            "More"
+         ],
+         "additional_info":null
+      },
+      {
+         "overall rating":"4.54.5",
+         "ratings":{
+            "Excellent":"7709",
+            "Very good":"4657",
+            "Average":"1306",
+            "Poor":"103",
+            "Terrible":"25"
+         },
+         "overall_calculated_rating":4.443623188405797,
+         "review_count":"31,849 reviews",
+         "name":"Brandenburg Gate",
+         "all_timings":null,
+         "official_description":"LocationGermany >Berlin >Mitte ",
+         "highlights":"",
+         "latlon":{
+            "lat":52.5162746,
+            "lon":13.3777041
+         },
+         "rank":"#3 of 828 things to do in Berlin",
+         "content":"Located in no-man's land between East and West Germany during the Cold War, this famous monument, built during the 18th-century reign of Friedrich Wilhelm II, has long been a defining symbol of Berlin and both the city's division and unification.",
+         "phone":[
+            "100200"
+         ],
+         "amenities":{
+
+         },
+         "suggested_hours":"2",
+         "address":{
+            "country":"Germany",
+            "zipcode":"10117",
+            "street_address":"Pariser Platz",
+            "locality":"10117 Berlin,"
+         },
+         "images":[
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/32/14/4a/embajada-americana.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/32/14/5a/embajada-francia.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-o/10/33/37/8c/top-view.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-o/10/33/37/92/the-gate-at-night.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/33/3a/09/nite-view.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/34/00/f1/photo0jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/34/00/f2/photo1jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-p/10/34/00/f3/photo2jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-o/10/34/c0/82/photo0jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/05/dd/05/30/suggestiva-e-meravigliosa.jpg"
+         ],
+         "category":[
+            "Monuments & Statues",
+            "Points of Interest & Landmarks",
+            "Sights & Landmarks"
+         ],
+         "additional_info":null
+      },
+      {
+         "overall rating":"4.54.5",
+         "ratings":{
+            "Excellent":"2012",
+            "Very good":"954",
+            "Average":"185",
+            "Poor":"32",
+            "Terrible":"12"
+         },
+         "overall_calculated_rating":4.540532081377152,
+         "review_count":"6,949 reviews",
+         "name":"Museum Island",
+         "all_timings":{
+            "Wed":"10:00 am - 6:00 pm",
+            "Sun":"null",
+            "Fri":"null",
+            "Tue":"10:00 am - 6:00 pm",
+            "Mon":"null",
+            "Thu":"null",
+            "Sat":"null"
+         },
+         "official_description":"LocationGermany >Berlin >Mitte ",
+         "highlights":"",
+         "latlon":{
+            "lat":52.5169328,
+            "lon":13.4018997
+         },
+         "rank":"#9 of 828 things to do in Berlin",
+         "content":"Home to three famous museums - the Pergamon, the Altes and the Bode.",
+         "phone":[
+            "+49 30 266424242"
+         ],
+         "amenities":{
+
+         },
+         "suggested_hours":"3",
+         "address":{
+            "country":"Germany",
+            "zipcode":"13089",
+            "street_address":null,
+            "locality":"13089 Berlin,"
+         },
+         "images":[
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/16/85/d9/caption.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/16/85/e7/caption.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/1f/24/01/photo0jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/26/93/64/photo0jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/26/93/66/photo1jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/26/93/67/photo2jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/34/e9/62/museumsinsel.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/34/e9/86/museumsinsel.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/34/e9/a3/museumsinsel.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/35/bb/37/bonito.jpg"
+         ],
+         "category":[
+            "Specialty Museums",
+            "Points of Interest & Landmarks",
+            "Museums",
+            "Sights & Landmarks"
+         ],
+         "additional_info":null
+      },
+      {
+         "overall rating":"4.54.5",
+         "ratings":{
+            "Excellent":"1359",
+            "Very good":"790",
+            "Average":"161",
+            "Poor":"25",
+            "Terrible":"7"
+         },
+         "overall_calculated_rating":4.481212638770282,
+         "review_count":"5,637 reviews",
+         "name":"Gendarmenmarkt",
+         "all_timings":null,
+         "official_description":"LocationGermany >Berlin >Mitte ",
+         "highlights":"",
+         "latlon":{
+            "lat":52.5137224,
+            "lon":13.3926698
+         },
+         "rank":"#14 of 828 things to do in Berlin",
+         "content":"This picturesque town square is surrounded by several historic structures.",
+         "phone":[
+            "+49 30 22730431"
+         ],
+         "amenities":{
+
+         },
+         "suggested_hours":"3",
+         "address":{
+            "country":"Germany",
+            "zipcode":"10117",
+            "street_address":"Mitte",
+            "locality":"10117 Berlin,"
+         },
+         "images":[
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/1d/2b/5f/new-way-of-exploring.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/21/92/36/20170801-171824-largejpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/21/92/37/20170801-171643-largejpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/2e/70/70/photo0jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/2e/70/71/photo1jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/2e/70/72/photo2jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/2e/70/73/photo3jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/2e/70/74/photo4jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/2e/70/75/photo5jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/2e/70/76/photo6jpg.jpg"
+         ],
+         "category":[
+            "Points of Interest & Landmarks",
+            "Sights & Landmarks"
+         ],
+         "additional_info":null
+      },
+      {
+         "overall rating":"4.54.5",
+         "ratings":{
+            "Excellent":"1825",
+            "Very good":"988",
+            "Average":"195",
+            "Poor":"19",
+            "Terrible":"4"
+         },
+         "overall_calculated_rating":4.521280105575718,
+         "review_count":"6,615 reviews",
+         "name":"Tiergarten",
+         "all_timings":null,
+         "official_description":"LocationGermany >Berlin >Charlottenburg ",
+         "highlights":"",
+         "latlon":{
+            "lat":52.5137245,
+            "lon":13.3376264
+         },
+         "rank":"#13 of 828 things to do in Berlin",
+         "content":"This huge lush park stretches through central Berlin and provides a relaxing contrast to the bustle of the rest of the city.",
+         "phone":[
+
+         ],
+         "amenities":{
+
+         },
+         "suggested_hours":"2",
+         "address":{
+            "country":"Germany",
+            "zipcode":"10557",
+            "street_address":"Strasse des 17. Juni 100",
+            "locality":"10557 Berlin,"
+         },
+         "images":[
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/1c/ec/65/caption.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/1c/ec/8a/caption.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/1c/ec/c8/caption.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/1f/52/60/tiergarten.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/1f/52/6f/tiergarten.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/23/93/4e/tiergarten.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/29/12/80/photo0jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/2e/46/68/photo0jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/30/18/8f/img-20170128-144018-largejpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/30/18/90/img-20170128-wa0020-largejpg.jpg"
+         ],
+         "category":[
+            "Gardens",
+            "Nature & Parks"
+         ],
+         "additional_info":null
+      },
+      {
+         "overall rating":"4.54.5",
+         "ratings":{
+            "Excellent":"410",
+            "Very good":"212",
+            "Average":"34",
+            "Poor":"1",
+            "Terrible":"1"
+         },
+         "overall_calculated_rating":4.5638297872340425,
+         "review_count":"1,604 reviews",
+         "name":"Treptower Park",
+         "all_timings":null,
+         "official_description":"",
+         "highlights":"",
+         "latlon":{
+            "lat":52.48613940000001,
+            "lon":13.4719576
+         },
+         "rank":"#25 of 828 things to do in Berlin",
+         "content":"1,604 reviews",
+         "phone":[
+            "+49 4930 25002333"
+         ],
+         "amenities":{
+
+         },
+         "suggested_hours":null,
+         "address":{
+            "country":"Germany",
+            "zipcode":"",
+            "street_address":"Puschkinallee",
+            "locality":"Berlin,"
+         },
+         "images":[
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/1f/d6/73/photo0jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/25/cf/42/treptower-park.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/25/ec/bd/9-pushkinallee.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/2e/6a/96/photo0jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-o/10/2e/6a/97/photo1jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/2e/6a/98/photo2jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/2e/6a/9a/photo3jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-o/10/2e/6a/9b/photo4jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-o/10/2e/6a/9d/photo5jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/2e/6a/9e/photo6jpg.jpg"
+         ],
+         "category":[
+            "Nature & Parks"
+         ],
+         "additional_info":null
+      },
+      {
+         "overall rating":"4.54.5",
+         "ratings":{
+            "Excellent":"139",
+            "Very good":"58",
+            "Average":"21",
+            "Poor":"6",
+            "Terrible":"1"
+         },
+         "overall_calculated_rating":4.457777777777777,
+         "review_count":"649 reviews",
+         "name":"Botanischer Garten Berlin",
+         "all_timings":null,
+         "official_description":"",
+         "highlights":"",
+         "latlon":{
+            "lat":52.4560729,
+            "lon":13.3063504
+         },
+         "rank":"#38 of 828 things to do in Berlin",
+         "content":"649 reviews",
+         "phone":[
+            "+49 30 83850100"
+         ],
+         "amenities":{
+
+         },
+         "suggested_hours":null,
+         "address":{
+            "country":"Germany",
+            "zipcode":"14195",
+            "street_address":"Koenigin-Luise-Str. 6-8",
+            "locality":"14195 Berlin,"
+         },
+         "images":[
+            "https://media-cdn.tripadvisor.com/media/photo-s/05/eb/64/4c/botanischer-garten-berlin.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/05/eb/64/5e/botanischer-garten-berlin.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/05/eb/64/68/botanischer-garten-berlin.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/06/a3/e1/a7/botanischer-garten-berlin.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/0f/e9/94/fc/den-mexikanska-delen.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/0f/ec/78/8e/photo0jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/0f/ec/78/8f/photo1jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/0f/ec/78/90/photo2jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/35/cd/f4/20170809-184035-largejpg.jpg"
+         ],
+         "category":[
+            "Nature & Parks"
+         ],
+         "additional_info":null
+      },
+      {
+         "overall rating":"4.54.5",
+         "ratings":{
+            "Excellent":"173",
+            "Very good":"85",
+            "Average":"30",
+            "Poor":"10",
+            "Terrible":"3"
+         },
+         "overall_calculated_rating":4.378737541528239,
+         "review_count":"831 reviews",
+         "name":"Mauerpark",
+         "all_timings":{
+            "Wed":"12:00 am - 11:59 pm",
+            "Sun":"12:00 am - 11:59 pm",
+            "Fri":"12:00 am - 11:59 pm",
+            "Tue":"12:00 am - 11:59 pm",
+            "Mon":"12:00 am - 11:59 pm",
+            "Thu":"12:00 am - 11:59 pm",
+            "Sat":"12:00 am - 11:59 pm"
+         },
+         "official_description":"LocationGermany >Berlin >Prenzlauer Berg ",
+         "highlights":"",
+         "latlon":{
+            "lat":52.5424,
+            "lon":13.403352
+         },
+         "rank":"#46 of 828 things to do in Berlin",
+         "content":"Situated in what was once the militarized \u201cdeath strip\u201d of the Berlin Wall (or Mauer) that divided East and West, Mauerpark is now a social, cultural, and artistic center of the city.\nToday\u2019s Mauerpark is on land that ran between the two parallel walls separating East and West Berlin. With its observation towers, attack dogs, trip wires and armed guards primed to shoot anyone trying to escape to the West, it was known as the \u201cdeath strip.\u201d\nThe park dates back to the early 1990s when local residents, noticing the rapid spread of self-seeded vegetation on the sandy strip of land, began planting trees and calling for the creation of a park. As a result, the city\u2019s politicians included Mauerpark in the city\u2019s bid to host the 2000 Olympics. Although Berlin\u2019s bid for the Olympics was not successful, the plea to build Mauerpark was.\nIn Mauerpark you can take a stroll, lie around, read, play on the swings, play boules and basketball, picnic in the birch grove, get involved in community gardening, go to the Rainbow Playground with the kids, watch musicians and performers in the amphitheatre, have a drink and a bite to eat in the outdoor cafes or hunt for bargains at the Sunday flea market.",
+         "phone":[
+            "+49 30 60980018"
+         ],
+         "amenities":{
+
+         },
+         "suggested_hours":"2",
+         "address":{
+            "country":"Germany",
+            "zipcode":"10437",
+            "street_address":"Gleimstr. 55",
+            "locality":"10437 Berlin,"
+         },
+         "images":[
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/26/af/d0/grafitti-wall.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/26/b2/37/park.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/26/b5/78/park.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/26/b6/70/park.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/26/b7/a6/wall-mural-near-park.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/26/b8/98/wall-reminder-near-park.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/27/97/bc/mauerpark.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/27/97/bd/mauerpark.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/2c/13/be/mauerpark.jpg"
+         ],
+         "category":[
+            "Nature & Parks"
+         ],
+         "additional_info":null
+      },
+      {
+         "overall rating":"4.54.5",
+         "ratings":{
+            "Excellent":"7678",
+            "Very good":"2912",
+            "Average":"601",
+            "Poor":"88",
+            "Terrible":"50"
+         },
+         "overall_calculated_rating":4.595904316356254,
+         "review_count":"23,690 reviews",
+         "name":"Reichstag Building",
+         "all_timings":{
+            "Wed":"8:00 am - 10:00 pm",
+            "Sun":"8:00 am - 10:00 pm",
+            "Fri":"8:00 am - 10:00 pm",
+            "Tue":"8:00 am - 10:00 pm",
+            "Mon":"8:00 am - 10:00 pm",
+            "Thu":"8:00 am - 10:00 pm",
+            "Sat":"8:00 am - 10:00 pm"
+         },
+         "official_description":"LocationGermany >Berlin >Mitte ",
+         "highlights":"",
+         "latlon":{
+            "lat":52.5186202,
+            "lon":13.3761872
+         },
+         "rank":"#2 of 828 things to do in Berlin",
+         "content":"Situated just north of the Brandenburg Gate, this building houses the German Parliament and was the seat of the Weimar Republic government until it was seized by the Nazis in 1933.",
+         "phone":[
+            "+49 30 22732152"
+         ],
+         "amenities":{
+
+         },
+         "suggested_hours":"3",
+         "address":{
+            "country":"Germany",
+            "zipcode":"10557",
+            "street_address":"Platz der Republik",
+            "locality":"10557 Berlin,"
+         },
+         "images":[
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/31/82/f0/view-from-the-river.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/33/4c/80/45.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/33/4c/86/58.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/33/4c/90/caption.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/33/4c/97/caption.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/07/b9/28/a1/photo0jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/07/b9/28/a4/photo3jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/07/b9/28/a6/photo4jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/07/b9/28/a2/photo1jpg.jpg"
+         ],
+         "category":[
+            "Architectural Buildings",
+            "Government Buildings",
+            "Points of Interest & Landmarks",
+            "Sights & Landmarks",
+            "More"
+         ],
+         "additional_info":null
+      },
+      {
+         "overall rating":"55",
+         "ratings":{
+            "Excellent":"1038",
+            "Very good":"159",
+            "Average":"34",
+            "Poor":"9",
+            "Terrible":"6"
+         },
+         "overall_calculated_rating":4.776886035313002,
+         "review_count":"2,728 reviews",
+         "name":"Berlin Philharmonic",
+         "all_timings":null,
+         "official_description":"LocationGermany >Berlin >Charlottenburg ",
+         "highlights":"",
+         "latlon":{
+            "lat":52.51003189999999,
+            "lon":13.369693
+         },
+         "rank":"#6 of 828 things to do in Berlin",
+         "content":"Often a tough ticket, the Berlin Philharmonic features some of the best classical music to be had in Germany.",
+         "phone":[
+            "+49 30 254880"
+         ],
+         "amenities":{
+
+         },
+         "suggested_hours":null,
+         "address":{
+            "country":"Germany",
+            "zipcode":"10785",
+            "street_address":"Herbert-von-Karajan-Str. 1",
+            "locality":"10785 Berlin,"
+         },
+         "images":[
+            "https://media-cdn.tripadvisor.com/media/photo-s/03/c8/d9/cc/berlin-philharmonic.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/02/87/f8/67/filename-berlin-082-jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/02/87/f8/7a/filename-berlin-305-jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/04/16/0f/a5/berlin-philharmonic.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/02/87/f8/94/filename-berlin-339-jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/0f/fa/75/0d/philarmonie-berlin.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/0f/fa/75/31/philarmonie-berlin.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/0f/fa/75/3e/philarmonie-berlin.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/22/83/af/free-lunch-concert-in.jpg"
+         ],
+         "category":[
+            "Architectural Buildings",
+            "Symphonies",
+            "Concerts & Shows",
+            "Sights & Landmarks"
+         ],
+         "additional_info":null
+      },
+      {
+         "overall rating":"4.54.5",
+         "ratings":{
+            "Excellent":"1307",
+            "Very good":"460",
+            "Average":"84",
+            "Poor":"15",
+            "Terrible":"4"
+         },
+         "overall_calculated_rating":4.631550802139038,
+         "review_count":"3,217 reviews",
+         "name":"German Historical Museum",
+         "all_timings":{
+            "Wed":"10:00 am - 6:00 pm",
+            "Sun":"10:00 am - 6:00 pm",
+            "Fri":"10:00 am - 6:00 pm",
+            "Tue":"10:00 am - 6:00 pm",
+            "Mon":"10:00 am - 6:00 pm",
+            "Thu":"10:00 am - 6:00 pm",
+            "Sat":"10:00 am - 6:00 pm"
+         },
+         "official_description":"LocationGermany >Berlin >Mitte ",
+         "highlights":"",
+         "latlon":{
+            "lat":52.5188334,
+            "lon":13.396869
+         },
+         "rank":"#15 of 828 things to do in Berlin",
+         "content":"The German Historical Museum presents itself in two buildings: In the unique Baroque Zeughaus and the neighbouring modern exhibition hall designed by the Chinese-American architect Ioeh Minh Pei. The 300-year old Zeughaus is one of the most important buildings of the Baroque period in Berlin and the oldest buildings at the boulevard Unter den Linden. In 2006 the Permanent Exhibition \u201cGerman History in Images and Artefacts\u201d was inaugurated here; it showcases 2000 years of eventful and enthralling German history as seen within its European context. 8000 selected objects from the extensive collections of the German Historical Museum furnish valuable evidence of history and reveal, on a surface area of 8000 square meters, a fascinating and vivid picture of the past. Supplementing the Permanent Exhibition are specialized temporary exhibitions displayed in the fascinating exhibition building designed by I.M. Pei. The spacious new structure with its glass and steel entrance lobby and distinctive winding staircase was opened in 2003. Definitive events and facets of German history are presented in a variety of special exhibitions on the four floors of the new building.",
+         "phone":[
+            "+49 30 203040"
+         ],
+         "amenities":{
+
+         },
+         "suggested_hours":"3",
+         "address":{
+            "country":"Germany",
+            "zipcode":"10117",
+            "street_address":"Unter den Linden 2",
+            "locality":"10117 Berlin,"
+         },
+         "images":[
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/1c/2b/26/east-germany-artifact.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/1c/2b/3f/world-war-2-headline.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/1c/2b/51/artifacts.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/1c/2b/7a/nazi-era-building-model.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/1c/2b/8b/sculpture.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/1c/2b/a5/sculpture-in-foyer.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/0f/14/de/3f/deutsches-historisches.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/0f/14/de/47/in-der-dauerausstellung.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/0f/14/de/4e/kinderprogramm-in-der.jpg"
+         ],
+         "category":[
+            "Architectural Buildings",
+            "Points of Interest & Landmarks",
+            "Specialty Museums",
+            "Museums",
+            "Sights & Landmarks",
+            "More"
+         ],
+         "additional_info":null
+      },
+      {
+         "overall rating":"4.54.5",
+         "ratings":{
+            "Excellent":"1610",
+            "Very good":"857",
+            "Average":"189",
+            "Poor":"30",
+            "Terrible":"22"
+         },
+         "overall_calculated_rating":4.47821270310192,
+         "review_count":"6,895 reviews",
+         "name":"Berlin Cathedral",
+         "all_timings":{
+            "Wed":"9:00 am - 8:00 pm",
+            "Sun":"9:00 am - 8:00 pm",
+            "Fri":"9:00 am - 8:00 pm",
+            "Tue":"9:00 am - 8:00 pm",
+            "Mon":"9:00 am - 8:00 pm",
+            "Thu":"9:00 am - 8:00 pm",
+            "Sat":"9:00 am - 8:00 pm"
+         },
+         "official_description":"LocationGermany >Berlin >Mitte ",
+         "highlights":"",
+         "latlon":{
+            "lat":52.5190608,
+            "lon":13.401078
+         },
+         "rank":"#17 of 828 things to do in Berlin",
+         "content":"This ornate Protestant cathedral is one of Berlin's best known landmarks.",
+         "phone":[
+            "+49 30 20269128"
+         ],
+         "amenities":{
+
+         },
+         "suggested_hours":"2",
+         "address":{
+            "country":"Germany",
+            "zipcode":"10178",
+            "street_address":"Am Lustgarten",
+            "locality":"10178 Berlin,"
+         },
+         "images":[
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/2c/9e/15/photo4jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/2c/9e/16/photo5jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/31/69/6d/view-from-the-top.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/31/69/b6/view-from-the-top.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/31/69/c6/view-from-the-top.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/31/69/de/view-from-the-top.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/31/69/f6/view-of-the-lawn-from.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/31/6a/0e/from-the-bottom.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/31/6a/49/fountain-in-front-of.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/31/6a/6c/from-the-bottom.jpg"
+         ],
+         "category":[
+            "Architectural Buildings",
+            "Sacred & Religious Sites",
+            "Points of Interest & Landmarks",
+            "Sights & Landmarks",
+            "More"
+         ],
+         "additional_info":null
+      },
+      {
+         "overall rating":"44",
+         "ratings":{
+            "Excellent":"17",
+            "Very good":"27",
+            "Average":"7",
+            "Poor":"0",
+            "Terrible":"0"
+         },
+         "overall_calculated_rating":4.196078431372549,
+         "review_count":"165 reviews",
+         "name":"St. Mary's Church",
+         "all_timings":null,
+         "official_description":"",
+         "highlights":"",
+         "latlon":"null",
+         "rank":"#113 of 828 things to do in Berlin",
+         "content":"165 reviews",
+         "phone":[
+            "+49 30 24759510"
+         ],
+         "amenities":{
+
+         },
+         "suggested_hours":"1",
+         "address":{
+            "country":"Germany",
+            "zipcode":"10178",
+            "street_address":"Karl-Liebknecht-Str. 8",
+            "locality":"10178 Berlin,"
+         },
+         "images":[
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/15/be/44/st-mary-s-church.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/15/be/4e/st-mary-s-church.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/15/be/55/st-mary-s-church.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/15/be/6a/st-mary-s-church.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/15/be/7e/st-mary-s-church.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/15/be/85/st-mary-s-church.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/2c/98/d5/photo0jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/2c/98/d6/photo1jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/2c/98/d7/photo2jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/2c/98/d9/photo3jpg.jpg"
+         ],
+         "category":[
+            "Churches & Cathedrals",
+            "Sights & Landmarks"
+         ],
+         "additional_info":null
+      },
+      {
+         "overall rating":"44",
+         "ratings":{
+            "Excellent":"23",
+            "Very good":"33",
+            "Average":"5",
+            "Poor":"0",
+            "Terrible":"1"
+         },
+         "overall_calculated_rating":4.241935483870968,
+         "review_count":"Read all 138 reviews 138 reviews",
+         "name":"Cathedral of St. Hedwig - Domgemeinde St. Hedwig",
+         "all_timings":{
+            "Wed":"8:00 am - 2:00 pm",
+            "Sun":"null",
+            "Fri":"null",
+            "Tue":"8:00 am - 2:00 pm",
+            "Mon":"8:00 am - 2:00 pm",
+            "Thu":"null",
+            "Sat":"null"
+         },
+         "official_description":"",
+         "highlights":"",
+         "latlon":{
+            "lat":52.5157702,
+            "lon":13.3948097
+         },
+         "rank":"#126 of 828 things to do in Berlin",
+         "content":"138 reviews",
+         "phone":[
+            "+49 30 2034810"
+         ],
+         "amenities":{
+
+         },
+         "suggested_hours":null,
+         "address":{
+            "country":"Germany",
+            "zipcode":"10117",
+            "street_address":"Hinter der Katholischen Kirche 3",
+            "locality":"10117 Berlin,"
+         },
+         "images":[
+            "https://media-cdn.tripadvisor.com/media/photo-o/0d/a5/4c/fb/cathedral-of-st-hedwig.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/0d/a5/4c/ff/cathedral-of-st-hedwig.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-o/0d/a5/4d/01/cathedral-of-st-hedwig.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-o/0d/a5/4d/03/cathedral-of-st-hedwig.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/0f/31/48/73/cathedral-of-st-hedwig.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/0f/b9/04/61/photo0jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/0f/b9/04/62/photo1jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/0f/b9/04/64/photo2jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/0f/b9/04/65/photo3jpg.jpg"
+         ],
+         "category":[
+            "Churches & Cathedrals",
+            "Sights & Landmarks"
+         ],
+         "additional_info":null
+      },
+      {
+         "overall rating":"44",
+         "ratings":{
+            "Excellent":"7",
+            "Very good":"12",
+            "Average":"5",
+            "Poor":"1",
+            "Terrible":"1"
+         },
+         "overall_calculated_rating":3.8846153846153846,
+         "review_count":"Read all 113 reviews 113 reviews",
+         "name":"Franzoesischer Dom",
+         "all_timings":null,
+         "official_description":"",
+         "highlights":"",
+         "latlon":{
+            "lat":52.5143953,
+            "lon":13.3923636
+         },
+         "rank":"#141 of 828 things to do in Berlin",
+         "content":"113 reviews",
+         "phone":[
+            "+49 30 2291760"
+         ],
+         "amenities":{
+
+         },
+         "suggested_hours":null,
+         "address":{
+            "country":"Germany",
+            "zipcode":"",
+            "street_address":"Gedarmenmarkt, Mitte",
+            "locality":"Berlin,"
+         },
+         "images":[
+            "https://media-cdn.tripadvisor.com/media/photo-s/0f/b9/0a/9d/photo0jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/0f/b9/0a/9e/photo1jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/0f/b9/0a/9f/photo2jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/03/a1/67/1e/franzoesischer-dom.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/0f/e8/b4/9e/photo0jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/0f/e8/b4/9f/photo1jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/0f/f9/c7/b1/franzoesischer-dom.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/0f/f9/c7/c3/franzoesischer-dom.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/0f/f9/c7/d2/franzoesischer-dom.jpg"
+         ],
+         "category":[
+            "Churches & Cathedrals",
+            "Sights & Landmarks"
+         ],
+         "additional_info":null
+      },
+      {
+         "overall rating":"44",
+         "ratings":{
+            "Excellent":"2",
+            "Very good":"3",
+            "Average":"7",
+            "Poor":"1",
+            "Terrible":"0"
+         },
+         "overall_calculated_rating":3.4615384615384617,
+         "review_count":"Read all 58 reviews 58 reviews",
+         "name":"Franzosische Friedrichstadtkirche",
+         "all_timings":{
+            "Wed":"12:00 pm - 5:00 pm",
+            "Sun":"12:00 pm - 5:00 pm",
+            "Fri":"12:00 pm - 5:00 pm",
+            "Tue":"12:00 pm - 5:00 pm",
+            "Mon":"null",
+            "Thu":"12:00 pm - 5:00 pm",
+            "Sat":"12:00 pm - 5:00 pm"
+         },
+         "official_description":"",
+         "highlights":"",
+         "latlon":{
+            "lat":52.5143953,
+            "lon":13.3923636
+         },
+         "rank":"#231 of 828 things to do in Berlin",
+         "content":"58 reviews",
+         "phone":[
+            "+493052680210"
+         ],
+         "amenities":{
+
+         },
+         "suggested_hours":null,
+         "address":{
+            "country":"Germany",
+            "zipcode":"10117",
+            "street_address":"Gendarmenmarkt 5",
+            "locality":"10117 Berlin,"
+         },
+         "images":[
+            "https://media-cdn.tripadvisor.com/media/photo-s/0e/32/02/7c/franzosischer-dom-facade.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/0e/32/02/bc/franzosischer-dom-up.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/0e/32/02/db/franzosischer-dom-berlin.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/0e/32/02/f2/franzosischer-dom-information.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/0e/32/03/08/franzosischer-dom-french.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/0e/a3/e3/2f/a-noite.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/0e/a3/e3/30/a-noite.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/0f/00/89/47/franzosische-friedrichstadtkir.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/0f/42/c9/ca/franzosische-friedrichstadtkir.jpg"
+         ],
+         "category":[
+            "Churches & Cathedrals",
+            "Sights & Landmarks"
+         ],
+         "additional_info":null
+      },
+      {
+         "overall rating":"4.54.5",
+         "ratings":{
+            "Excellent":"7678",
+            "Very good":"2912",
+            "Average":"601",
+            "Poor":"88",
+            "Terrible":"50"
+         },
+         "overall_calculated_rating":4.595904316356254,
+         "review_count":"23,690 reviews",
+         "name":"Reichstag Building",
+         "all_timings":{
+            "Wed":"8:00 am - 10:00 pm",
+            "Sun":"8:00 am - 10:00 pm",
+            "Fri":"8:00 am - 10:00 pm",
+            "Tue":"8:00 am - 10:00 pm",
+            "Mon":"8:00 am - 10:00 pm",
+            "Thu":"8:00 am - 10:00 pm",
+            "Sat":"8:00 am - 10:00 pm"
+         },
+         "official_description":"LocationGermany >Berlin >Mitte ",
+         "highlights":"",
+         "latlon":{
+            "lat":52.5186202,
+            "lon":13.3761872
+         },
+         "rank":"#2 of 828 things to do in Berlin",
+         "content":"Situated just north of the Brandenburg Gate, this building houses the German Parliament and was the seat of the Weimar Republic government until it was seized by the Nazis in 1933.",
+         "phone":[
+            "+49 30 22732152"
+         ],
+         "amenities":{
+
+         },
+         "suggested_hours":"3",
+         "address":{
+            "country":"Germany",
+            "zipcode":"10557",
+            "street_address":"Platz der Republik",
+            "locality":"10557 Berlin,"
+         },
+         "images":[
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/31/82/f0/view-from-the-river.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/33/4c/80/45.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/33/4c/86/58.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/33/4c/90/caption.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/33/4c/97/caption.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/07/b9/28/a1/photo0jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/07/b9/28/a4/photo3jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/07/b9/28/a6/photo4jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/07/b9/28/a2/photo1jpg.jpg"
+         ],
+         "category":[
+            "Architectural Buildings",
+            "Government Buildings",
+            "Points of Interest & Landmarks",
+            "Sights & Landmarks",
+            "More"
+         ],
+         "additional_info":null
+      },
+      {
+         "overall rating":"4.54.5",
+         "ratings":{
+            "Excellent":"29",
+            "Very good":"6",
+            "Average":"1",
+            "Poor":"0",
+            "Terrible":"0"
+         },
+         "overall_calculated_rating":4.777777777777778,
+         "review_count":"Read all 74 reviews 74 reviews",
+         "name":"Deutscher Bundestag",
+         "all_timings":null,
+         "official_description":"",
+         "highlights":"",
+         "latlon":"null",
+         "rank":"#91 of 828 things to do in Berlin",
+         "content":"74 reviews",
+         "phone":[
+            "+49-0-30-227-0"
+         ],
+         "amenities":{
+
+         },
+         "suggested_hours":"1",
+         "address":{
+            "country":"Germany",
+            "zipcode":"",
+            "street_address":"Reichstagufer",
+            "locality":"Berlin,"
+         },
+         "images":[
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/1e/cf/5c/photo5jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/1e/cf/5d/photo6jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/1e/cf/5e/photo7jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/1e/cf/5f/photo8jpg.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/2e/21/c4/deutscher-bundestag.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/2e/21/d0/deutscher-bundestag.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/2e/21/ea/deutscher-bundestag.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/2e/21/ff/deutscher-bundestag.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/2e/22/15/deutscher-bundestag.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/2e/22/1d/deutscher-bundestag.jpg"
+         ],
+         "category":[
+            "Civic Centers",
+            "Government Buildings",
+            "Points of Interest & Landmarks",
+            "Sights & Landmarks",
+            "More"
+         ],
+         "additional_info":null
+      },
+      {
+         "overall rating":"44",
+         "ratings":{
+            "Excellent":"2",
+            "Very good":"1",
+            "Average":"2",
+            "Poor":"0",
+            "Terrible":"0"
+         },
+         "overall_calculated_rating":4.0,
+         "review_count":"48 reviews",
+         "name":"Bundeskanzleramt",
+         "all_timings":null,
+         "official_description":"",
+         "highlights":"",
+         "latlon":{
+            "lat":52.52016279999999,
+            "lon":13.3692701
+         },
+         "rank":"#187 of 828 things to do in Berlin",
+         "content":"48 reviews",
+         "phone":[
+            "+49 30 182722720"
+         ],
+         "amenities":{
+
+         },
+         "suggested_hours":"1",
+         "address":{
+            "country":"Germany",
+            "zipcode":"10557",
+            "street_address":"Willy-Brandt-Str. 1",
+            "locality":"10557 Berlin,"
+         },
+         "images":[
+            "https://media-cdn.tripadvisor.com/media/photo-s/0d/c9/b7/ce/bundeskanzleramt.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/0e/35/3c/78/bundeskanzleramt.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/0f/61/e4/b4/bundeskanzleramt.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/0f/61/e4/b9/angela-entrance.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/0f/61/e4/c1/batman-merkel.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/2d/0f/cb/bundeskanzleramt.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/10/2d/0f/db/bundeskanzleramt.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/2d/0f/e8/bundeskanzleramt.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/10/34/b6/bd/i-heard-that-prime-minister.jpg"
+         ],
+         "category":[
+            "Government Buildings",
+            "Points of Interest & Landmarks",
+            "Sights & Landmarks"
+         ],
+         "additional_info":null
+      },
+      {
+         "overall rating":"44",
+         "ratings":{
+            "Excellent":"2",
+            "Very good":"4",
+            "Average":"5",
+            "Poor":"1",
+            "Terrible":"0"
+         },
+         "overall_calculated_rating":3.5833333333333335,
+         "review_count":"30 reviews",
+         "name":"Bundesministerium der Finanzen Berlin",
+         "all_timings":null,
+         "official_description":"",
+         "highlights":"",
+         "latlon":{
+            "lat":52.5086627,
+            "lon":13.3839682
+         },
+         "rank":"#267 of 828 things to do in Berlin",
+         "content":"30 reviews",
+         "phone":[
+            "+49 30 186820"
+         ],
+         "amenities":{
+
+         },
+         "suggested_hours":null,
+         "address":{
+            "country":"Germany",
+            "zipcode":"11016",
+            "street_address":"Wilhelmstrasse 97",
+            "locality":"11016 Berlin,"
+         },
+         "images":[
+            "https://media-cdn.tripadvisor.com/media/photo-w/0c/e1/f7/f9/ministry-of-finance-a.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/0c/e1/f8/18/ministry-of-finance-a.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/0c/e1/f8/35/ministry-of-finance-a.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/0c/e1/f8/59/ministry-of-finance-a.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/0c/e1/f8/7e/ministry-of-finance-a.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/0c/e1/f8/aa/ministry-of-finance-a.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-w/0c/e1/f8/f6/ministry-of-finance-a.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/0e/57/ef/5a/the-building.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/0e/57/ef/86/the-building.jpg"
+         ],
+         "category":[
+            "Government Buildings",
+            "Sights & Landmarks"
+         ],
+         "additional_info":null
+      }
+   ]
+}
