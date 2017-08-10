@@ -27,7 +27,7 @@ class DashboardController extends Controller
         //$destination = Dest::where('name',$name)->first();
         $destination = Dest::where('name',$name)->first();
         $directory = $destination->directory;
-        $attractions = Attraction::where('dest_id',$destination->id);
+        $attractions = Attraction::where('dest_id',$destination->id)->get();
         // return view('dashboard',['dest' =>$destination,'attractions' =>$attractions]);
         return view('dashboard',['attractions' =>$attractions]);
     }

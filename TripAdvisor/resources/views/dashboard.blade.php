@@ -5,11 +5,13 @@
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
                 <div class="panel-heading">Paris</div>
-                <!-- @foreach ($attractions as $att) -->
-                <div class="panel-body">
-                    {{$attractions}}
-                </div>
-                <!-- @endforeach -->
+                @foreach($attractions as $attr)
+                    <div class="list-group">
+                          <a href="#" class="list-group-item">
+                            {{$attr->name}}
+                          </a>
+                        </div>
+                @endforeach
             </div>
         </div>
     </div>
