@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class AttractionSeeder extends Seeder
+class BerlinSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,16 +11,18 @@ class AttractionSeeder extends Seeder
      */
     public function run()
     {
-        $obj = File::get(storage_path('app/Dest/Paris/Paris.txt'));
+        $obj = File::get(storage_path('app/Dest/Berlin/berlin.txt'));
         // $attraction = file_get_contents(storage_path('app/Dest/Paris/Paris.txt'));
         $attractions_json = json_decode($obj);
         $atts = $attractions_json->attractions;
         $days = array("Mon","Tue","Wed","Thu","Fri","Sat","Sun");
+        Log::info($atts);
         foreach($atts as $att) {
 	        $timings = $att->all_timings;
 	        $start_times = array();
 		        $end_times = array();
 	        $sugg_hours = $att->suggested_hours;
+
 			preg_match_all('!\d+!', $sugg_hours, $matches); 
 	        foreach($days as $day ) {
 		        // $start =  explode(" - ",$timings->$day);
@@ -42,6 +44,7 @@ class AttractionSeeder extends Seeder
 			    	}
 		    	}
 		    }
+
 	        DB::table('attractions')->insert([
 	            'name' => $att->name,
 	            'start_time' => serialize($start_times),
@@ -56,10 +59,12 @@ class AttractionSeeder extends Seeder
 	            'rank' => $att->rank,
 	            'split_ratings' => serialize($att->ratings),
 	            'images' => serialize($att->images),
-	            'dest_id' =>1,
+	            'dest_id' =>3,
 	        ]);
+
 	        $attrid = (DB::table('attractions')->where('name', $att->name)->first())->id;
 	        foreach($att->category as $cat) {
+
 		        DB::table('category')->insert([
 		            'name' => $cat,
 		            'attraction_id' => $attrid,

@@ -18,11 +18,17 @@ class CreateAttractionTable extends Migration
             $table->string('name');
             $table->string('start_time')->default(null);
             $table->string('end_time')->default(null);
-            $table->string('duration');
+            $table->string('duration')->default(null);
             $table->string('rating');
             $table->longText('description');
             $table->string('latitude');
             $table->string('longitude');
+            $table->string('phone');
+            $table->string('address');
+            $table->string('rank');
+            $table->longText('images');
+            $table->string('split_ratings');
+            $table->integer('dest_id')->unsigned();
         });
     }
 

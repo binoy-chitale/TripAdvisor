@@ -1,9 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\Log;
 use Illuminate\Http\Request;
 use App\Dest as Dest;
+use App\Attraction as Attraction;
 class DashboardController extends Controller
 {
     /**
@@ -26,6 +27,8 @@ class DashboardController extends Controller
         //$destination = Dest::where('name',$name)->first();
         $destination = Dest::where('name',$name)->first();
         $directory = $destination->directory;
-        return view('dashboard',['dest' =>$destination]);
+        $attractions = Attraction::where('dest_id',$destination->id);
+        // return view('dashboard',['dest' =>$destination,'attractions' =>$attractions]);
+        return view('dashboard',['attractions' =>$attractions]);
     }
 }

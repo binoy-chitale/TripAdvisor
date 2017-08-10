@@ -17,13 +17,21 @@ class DestTableSeeder extends Seeder
             'directory' => $path.'/Dest/Paris',
         ]);
        DB::table('dest')->insert([
-            'name' => 'Milan',
-            'directory' => $path.'/Dest/Milan',
+            'name' => 'Melbourne',
+            'directory' => $path.'/Dest/Melbourne',
 
         ]);
        DB::table('dest')->insert([
-            'name' => 'Rome',
-            'directory' => $path.'/Dest/Rome',
+            'name' => 'Berlin',
+            'directory' => $path.'/Dest/Berlin',
+        ]);
+       DB::table('dest')->insert([
+            'name' => 'London',
+            'directory' => $path.'/Dest/London',
+        ]);
+       DB::table('dest')->insert([
+            'name' => 'New-York',
+            'directory' => $path.'/Dest/New-York',
         ]);
     }
 }
