@@ -16,11 +16,8 @@
                                         $attri = (json_decode($attr));
                                         $images = (unserialize($attri->images));
                                         foreach ($images as $image) {
-                                            ?>
-                                            <img src="{{$image}}" class="image-city ">
-                                            <?php
-                                        }
-                                    ?>          
+                                    ?>
+                                    <img src="{{$image}}" class="image-city ">        
                                 </p>
                             </div>
                         @endforeach

@@ -18,4 +18,5 @@ Route::get('/', function () {
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/dest/{name}', 'DashboardController@dash');
-Route::get('/view/{name}', 'DummyController@preview');
+Route::get('/view/{name}', 'CategoryController@viewCategories');
+Route::post('/plan/{name}', 'CategoryController@getCategories');
