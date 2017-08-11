@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace TripAdvisor\Http\Controllers;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Http\Request;
-use App\Dest as Dest;
-use App\Attraction as Attraction;
+use TripAdvisor\Dest as Dest;
+use TripAdvisor\Attraction as Attraction;
 class DashboardController extends Controller
 {
     /**
@@ -24,11 +24,10 @@ class DashboardController extends Controller
      */
     public function dash($name)
     {
-        //$destination = Dest::where('name',$name)->first();
         $destination = Dest::where('name',$name)->first();
         $directory = $destination->directory;
         $attractions = Attraction::where('dest_id',$destination->id)->get();
         // return view('dashboard',['dest' =>$destination,'attractions' =>$attractions]);
-        return view('dashboard',['attractions' =>$attractions]);
+        return view('dashboard',['attractions' =>$attractions, 'name'=>$name]);
     }
 }
