@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace TripAdvisor\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Dest as Dest;
+use TripAdvisor\Dest as Dest;
 class HomeController extends Controller
 {
     /**

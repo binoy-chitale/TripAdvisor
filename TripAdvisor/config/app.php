@@ -171,11 +171,11 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        TripAdvisor\Providers\AppServiceProvider::class,
+        TripAdvisor\Providers\AuthServiceProvider::class,
+        // TripAdvisor\Providers\BroadcastServiceProvider::class,
+        TripAdvisor\Providers\EventServiceProvider::class,
+        TripAdvisor\Providers\RouteServiceProvider::class,
 
     ],
 

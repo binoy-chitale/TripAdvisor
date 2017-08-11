@@ -43,7 +43,9 @@ class LondonSeeder extends Seeder
 			    	}
 		    	}
 		    }
-	    	var_dump($start_times);
+	    	// var_dump($start_times);
+	        // var_dump($att->images);
+            // var_dump(serialize($att->images));
 	        DB::table('attractions')->insert([
 	            'name' => $att->name,
 	            'start_time' => serialize($start_times),
