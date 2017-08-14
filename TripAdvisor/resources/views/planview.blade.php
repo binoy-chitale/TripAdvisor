@@ -1,13 +1,7 @@
 @extends('layouts.app')
 @section('content')
 
+<?php
 
-<div>
-	<?php
-		var_dump($categories);
-		// print_r($attractions);
-		print_r($name);
-	?>
-</div>
-
+?>
 @endsection
