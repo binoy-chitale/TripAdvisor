@@ -1,21 +1,13 @@
 @extends('layouts.app')
 @section('content')
 <div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Destinations</div>
-                <div class="panel-body">
-                    @foreach($dests as $dest)
-                    <div class="list-group">
-                          <a href="/dest/{{$dest->name}}" class="list-group-item">
-                            {{$dest->name}}
-                          </a>
-                        </div>
-                    @endforeach
+        <div class="row" style="display:flex;flex-wrap:wrap; justify-content:flex-start;">
+                @foreach($dests as $dest)
+                <div onclick="window.location.href = '/dest/{{$dest->name}}';" class="panel panel-default tile" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(&quot;/images/{{$dest->name}}.jpg&quot;);">
+                          <h1 align="center">{{$dest->name}}</h1>
+
                 </div>
-            </div>
+                @endforeach
         </div>
-    </div>
 </div>
 @endsection

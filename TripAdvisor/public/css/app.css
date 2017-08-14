@@ -10,6 +10,37 @@ img.image-city {
   padding: 0.5em;
   position: absolute;
 }
+.row {
+  width: auto;
+}
+div .tile {
+  width: 50%;
+  height: 400px;
+  margin-bottom: 0px;
+}
+
+div .tile h1 {
+  color:white;
+  font-size:50px;
+  line-height: 100%;
+  vertical-align: middle;
+}
+div .tile {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  align-self:center;   
+  background-position:center;
+  background-size:cover;
+}
+div .tile:hover {
+  opacity: 0.9;
+
+}
+
+#title_brand {
+  margin: auto;
+}
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);@charset "UTF-8";/*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.

@@ -14,24 +14,24 @@ class DestTableSeeder extends Seeder
         $path = storage_path();
         DB::table('dest')->insert([
             'name' => 'Paris',
-            'directory' => $path.'/Dest/Paris',
+            'directory' => 'app/Dest/Paris/Paris.txt',
         ]);
        DB::table('dest')->insert([
             'name' => 'Melbourne',
-            'directory' => $path.'/Dest/Melbourne',
+            'directory' => 'app/Dest/Melbourne/melbourne.txt',
 
         ]);
        DB::table('dest')->insert([
             'name' => 'Berlin',
-            'directory' => $path.'/Dest/Berlin',
+            'directory' => 'app/Dest/Berlin/berlin.txt',
         ]);
        DB::table('dest')->insert([
             'name' => 'London',
-            'directory' => $path.'/Dest/London',
+            'directory' => 'app/Dest/London/london.txt',
         ]);
        DB::table('dest')->insert([
             'name' => 'New-York',
-            'directory' => $path.'/Dest/New-York',
+            'directory' => 'app/Dest/NewYork/newyork.txt',
         ]);
     }
 }
