@@ -1,4 +1,4 @@
-{
+{"attractions":[{
     "overall rating": "55", 
     "ratings": {
         "Excellent": "10221", 
@@ -11116,4 +11116,4 @@
         "Sights & Landmarks"
     ], 
     "additional_info": null
-},
+}]}

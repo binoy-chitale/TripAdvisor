@@ -24,7 +24,7 @@ class CategoryController extends Controller{
             $flag=0;
             $n = 0;
             $radius= 5;
-            foreach ($distarray[$currentStop] as $key => $value) {
+            foreach ($dist[$currentStop] as $key => $value) {
                 $lat1 = (float)$value['latitude'];
                 $lon1 = (float)$value['longitude'];
             }
@@ -123,7 +123,7 @@ class CategoryController extends Controller{
                 }
             }
 
-            return view('planview',['currentStop'=>$currentStop, 'distarray'=>$distarray, 'visit'=>$visit]);
+            return view('planview',['currentStop'=>$currentStop, 'distarray'=>$sorteddistarray, 'visit'=>$visit]);
         }
     }
 }

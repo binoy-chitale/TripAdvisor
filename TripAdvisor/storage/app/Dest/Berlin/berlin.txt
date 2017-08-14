@@ -1,4 +1,4 @@
-{
+{"attractions":[{
     "overall rating": "4.54.5", 
     "ratings": {
         "Excellent": "7689", 
@@ -22356,4 +22356,4 @@
         "Shopping"
     ], 
     "additional_info": null
-},
+}]}
