@@ -6,8 +6,7 @@ use TripAdvisor\Dest as Dest;
 use TripAdvisor\Attraction as Attraction;
 use TripAdvisor\Category as Category;
 use Illuminate\Support\Facades\Input;
-
-
+use DB;
 class CategoryController extends Controller{
 
     public function calculateDistance($lat1, $lon1, $lat2, $lon2){      
