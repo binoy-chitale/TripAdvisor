@@ -12,14 +12,17 @@ class AttractionSeeder extends Seeder
     public function run()
     {
         $paths = DB::table('dest')->pluck('directory')->toArray();
+        // var_dump($paths);
         foreach($paths as $path) {
 	        $destid=DB::table('dest')->where('directory',$path)->first()->id;
 	        $obj = File::get(storage_path($path));
 	        // $attraction = file_get_contents(storage_path('app/Dest/Paris/Paris.txt'));
 	        $attractions_json = json_decode($obj);
+	        // var_dump($attractions_json);
 	        $atts = $attractions_json->attractions;
 	        $days = array("Mon","Tue","Wed","Thu","Fri","Sat","Sun");
 	        foreach($atts as $att) {
+		        // var_dump($att->name);
 		        $timings = $att->all_timings;
 		        $start_times = array();
 			        $end_times = array();

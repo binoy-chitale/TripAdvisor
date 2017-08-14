@@ -1,6 +1,5 @@
 @extends('layouts.app')
 @section('content')
-
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
@@ -17,11 +16,7 @@
                     	@endforeach
 						 <br><button type="submit" class="btn btn-plan" >Plan!</button>         
                     </div>
-                    <?php 
-                    $attractions = serialize($attractions); 
-                    ?>
-
-                    {!!Form::hidden('attractions',  $attractions)!!}
+                    {!!Form::hidden('attractions',$attractions)!!}
                     {!!Form::close()!!}
                 </div>
             </div>
