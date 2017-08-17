@@ -20,3 +20,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/dest/{name}', 'DashboardController@dash');
 Route::get('/view/{name}', 'CategoryController@viewCategories');
 Route::post('/plan/{name}', 'CategoryController@getCategories');
+Route::get('/dest/{name}/{placename}', 'PlaceViewController@view');

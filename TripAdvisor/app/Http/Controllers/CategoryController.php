@@ -20,23 +20,34 @@ class CategoryController extends Controller{
     }
 
     public function findNextStop($dist, $visit, $currentStop){
-            $list = [];
-            $flag=0;
-            $n = 0;
-            $radius= 5;
-            foreach ($dist[$currentStop] as $key => $value) {
-                $lat1 = (float)$value['latitude'];
-                $lon1 = (float)$value['longitude'];
+        $list = [];
+        $flag=0;
+        $n = 0;
+        $radius= 5;
+        foreach ($dist[$currentStop] as $key => $value) {
+            if(is_null($value['latitude']) || is_null($value['longitude']) || ($value['longitude'])=='null' || ($value['latitude']=='null') ){
+                $list[$currentStop]= 0;
+                return $list;
             }
-            foreach ($dist as $keyinner => $valueinner) {
-                if($n>20){
-                    $radius = $radius + 3;
-                    $n = 0;
+            $lat1 = (float)$value['latitude'];
+            $lon1 = (float)$value['longitude'];
+        }
+        
+        foreach ($dist as $keyinner => $valueinner) {
+            if($n>20){
+                $radius = $radius + 3;
+                $n = 0;
+            }
+            if($keyinner!=$currentStop && !in_array($keyinner, $visit)){
+
+                if(is_null($valueinner[0]['latitude']) || is_null($valueinner[0]['longitude']) || ($valueinner[0]['longitude'])=='null' || ($valueinner[0]['latitude']=='null') ){
+
                 }
-                if($keyinner!=$currentStop && !in_array($keyinner, $visit)){
+
+                else{
                     $lat2 = (float)$valueinner[0]['latitude'];
                     $lon2 = (float)$valueinner[0]['longitude'];
-                    
+                
                     $var = $this->calculateDistance($lat1, $lon1, $lat2, $lon2);
                     if($var<$radius){
                         if(sizeof($list)<5){
@@ -50,10 +61,7 @@ class CategoryController extends Controller{
                     else{
                         $n++;
                     }
-                }                    
-        
-            if($flag==1){
-                break;
+                }
             }
         }
         asort($list);
@@ -114,6 +122,7 @@ class CategoryController extends Controller{
                 array_push($visit, $key);
                 break;
             }
+            
             for($i=0;$i<5;$i++){
                 $value = $this->findNextStop($sorteddistarray, $visit, $currentStop);
                 foreach ($value as $key => $val) {
@@ -123,7 +132,7 @@ class CategoryController extends Controller{
                 }
             }
 
-            return view('planview',['currentStop'=>$currentStop, 'distarray'=>$sorteddistarray, 'visit'=>$visit]);
+            return view('planview',['currentStop'=>$currentStop,'rating'=>$rating, 'distarray'=>$sorteddistarray, 'visit'=>$visit]);
         }
     }
 }
