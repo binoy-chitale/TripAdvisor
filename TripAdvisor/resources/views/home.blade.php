@@ -3,7 +3,7 @@
 <div class="container">
         <div class="row" style="display:flex;flex-wrap:wrap; justify-content:flex-start;">
                 @foreach($dests as $dest)
-                <div onclick="window.location.href = '/dest/{{$dest->name}}';" class="panel panel-default tile" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(&quot;/images/{{$dest->name}}.jpg&quot;);">
+                <div onclick="window.location.href = '/view/{{$dest->name}}';" class="panel panel-default tile" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(&quot;/images/{{$dest->name}}.jpg&quot;);">
                           <h1 align="center">{{$dest->name}}</h1>
 
                 </div>

@@ -5,8 +5,8 @@ use Illuminate\Http\Request;
 use TripAdvisor\Dest as Dest;
 use TripAdvisor\Attraction as Attraction;
 use TripAdvisor\Category as Category;
+use Illuminate\Support\Facades\Input;
 use DB;
-
 class CategoryController extends Controller{
 
     public function calculateDistance($lat1, $lon1, $lat2, $lon2){      
@@ -67,7 +67,6 @@ class CategoryController extends Controller{
         asort($list);
         return $list;    
     }
-
     public function viewCategories($name){
         $destination = Dest::where('name',$name)->first();
         $attractions = Attraction::where('dest_id',$destination->id)->get();
@@ -87,6 +86,8 @@ class CategoryController extends Controller{
     	if(isset($_POST['catvalues'])){    		
     	    $catvalues = $_POST['catvalues'];
             $userselectedcategories = [];
+            $start = strtotime($_POST['start_date']);
+            $end = strtotime($_POST['start_date']);
             foreach ($catvalues as $catvalues) {
                 array_push($userselectedcategories,str_replace('%20', ' ', $catvalues));
             }

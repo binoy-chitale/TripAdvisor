@@ -60,6 +60,7 @@ div .tile:hover {
 
 }
 
+<<<<<<< HEAD
 .row-class {
   white-space: pre-line;
 }
@@ -72,6 +73,94 @@ div .tile:hover {
 
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+=======
+#title_brand {
+  margin: auto;
+  text-align: center;
+}
+.cbox {
+  display: none;
+}
+label {
+  border:0;
+  margin: 5px 5px 5px 5px;
+  padding: 3px 8px 3px 8px;
+  border-radius: 25px;
+  background: rgba(209, 209, 224,0.8);
+  color: black;
+  outline: none;
+  font-weight: 600;
+}
+label:hover {
+  border:0;
+  border-radius: 25px;
+  background: rgba(255, 51, 0,1);
+  color: white;
+}
+.label_selected {
+  border:0;
+  margin: 5px 5px 5px 5px;
+  padding: 3px 8px 3px 8px;
+  border-radius: 25px;
+  background: rgba(255, 51, 0,1);
+  color: white;
+}
+.btn_category {
+  border:0;
+  margin: 5px 5px 5px 5px;
+  padding: 3px 8px 3px 8px;
+  border-radius: 25px;
+  background: rgba(209, 209, 224,0.8);
+  color: black;
+  outline: none;
+  font-weight: 600;
+}
+.btn_selected {
+  border:0;
+  margin: 5px 5px 5px 5px;
+  padding: 3px 8px 3px 8px;
+  border-radius: 25px;
+  background: rgba(255, 51, 0,1);
+  color: white;
+
+}
+.btn_category:hover {
+  border:0;
+  border-radius: 25px;
+  background: rgba(255, 51, 0,1);
+  color: white;
+}
+.btn-plan {
+  width: 100%;
+  background:rgba(255, 51, 0,1);
+  color: white !important;
+  font-weight: 600 !important;
+  outline: none;
+  margin-top: 20px;
+}
+.btn-plan:hover {
+  background: rgba(204, 41, 0,1)
+}
+[type="date"] {
+  background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+}
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+input {
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 3px 5px;
+  box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
+  width: 190px;
+}
+.datepick{
+  margin:auto;
+>>>>>>> 35da562084b5d90a31d8e8b099d77d9349af8844
 }
   
 
