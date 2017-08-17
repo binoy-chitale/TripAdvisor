@@ -45,7 +45,7 @@ div .tile:hover {
 .cbox {
   display: none;
 }
-label {
+label.catpicker {
   border:0;
   margin: 5px 5px 5px 5px;
   padding: 3px 8px 3px 8px;
@@ -55,13 +55,13 @@ label {
   outline: none;
   font-weight: 600;
 }
-label:hover {
+label.catpicker:hover {
   border:0;
   border-radius: 25px;
   background: rgba(255, 51, 0,1);
   color: white;
 }
-.label_selected {
+label.label_selected {
   border:0;
   margin: 5px 5px 5px 5px;
   padding: 3px 8px 3px 8px;
@@ -114,7 +114,7 @@ label:hover {
 [type="date"]::-webkit-calendar-picker-indicator {
   opacity: 0;
 }
-input {
+input.datepick {
   border: 1px solid #c4c4c4;
   border-radius: 5px;
   background-color: #fff;

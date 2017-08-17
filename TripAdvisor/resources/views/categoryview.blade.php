@@ -8,11 +8,11 @@
                 	{!!Form::open(array('action' => 'CategoryController@getCategories', 'url'=>'/plan/'.$name))!!}
                 	<div class="panel-body">
                         <div style="display:flex;">
-                            <input type="date" name="start_date" class="datepick"><input type="date" name="end_date" class="datepick"><br>
+                            <input type="date" name="start_date" class="datepick" value="{{csrf_token()}}"><input type="date" name="end_date" class="datepick" value="{{csrf_token()}}"><br>
                         </div><br>
                         @foreach($categories as $category)
-						            <label for="btn_{{$category->name}}">{{$category->name}}</label> 
-                                    <input class="cbox" id="btn_{{$category->name}}"type="checkbox" value="{{$category->name}}" name= "catvalues[]"/>
+						            <label for="btn_{{$category->name}}" class="catpicker">{{$category->name}}</label> 
+                                    <input class="cbox" id="btn_{{$category->name}}"type="checkbox" value="{{csrf_token()}}" name= "catvalues[]"/>
                     	@endforeach
 						 <br><button type="submit" class="btn btn-plan" >Plan!</button>         
                     </div>
