@@ -66,10 +66,12 @@ class AttractionSeeder extends Seeder
 		        ]);
 		        $attrid = (DB::table('attractions')->where('name', $att->name)->first())->id;
 		        foreach($att->category as $cat) {
-			        DB::table('category')->insert([
-			            'name' => $cat,
-			            'attraction_id' => $attrid,
-			        ]); 
+		        	if(strpos($cat, 'Other')==false && strpos($cat, 'More')==false){
+				        DB::table('category')->insert([
+				            'name' => $cat,
+				            'attraction_id' => $attrid,
+				        ]);
+				    } 
 			    }
 		    }
 		}

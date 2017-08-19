@@ -65,7 +65,9 @@ class CategoryController extends Controller{
                         }
                         else{
                             $n++;
-                            
+                            if($currentStop==215){
+
+                        }
                         }
                     }                    
             
