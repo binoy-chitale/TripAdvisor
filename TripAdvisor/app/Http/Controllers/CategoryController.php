@@ -93,7 +93,7 @@ class CategoryController extends Controller{
         	->all();	
 		});
 
-        $categories = Category::select('name')->whereIn('attraction_id', $attractionid)->groupBy('name')->get();
+        $categories = Category::select('name')->whereIn('attraction_id', $attractionid)->groupBy('name')->orderBy('name','desc')->take(10)->get();
 
         return view('categoryview',['name'=>$name, 'categories'=>$categories, 'attractions'=>$attractions] );
     }

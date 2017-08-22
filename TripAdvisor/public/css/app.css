@@ -1,4 +1,3 @@
-
 .container {
     padding: 2px 16px;
 }
@@ -15,36 +14,22 @@ img.image-city {
   padding: 0.5em;
 }
 
-.img__description {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  visibility: hidden;
-  opacity: 0;
-
-}
-
-.img__wrap:hover .img__description {
-  visibility: visible;
-}
-
-.row {
-  width: auto;
-}
 div .tile {
   width: 50%;
   height: 400px;
   margin-bottom: 0px;
 }
 
-div .tile h1 {
+div .tile .title {
+  position: relative;
   color:white;
-  font-size:50px;
-  line-height: 100%;
-  vertical-align: middle;
+  font-size:30px;
+  z-index:1;
+  transition:top .5s ease;
+  text-transform: uppercase;
+  top:120px;
 }
+
 div .tile {
   display:flex;
   justify-content:center;
@@ -55,17 +40,16 @@ div .tile {
 }
 div .tile:hover {
   opacity: 0.9;
-
 }
 
-.row-class {
-  white-space: pre-line;
+div .tile:hover .title{
+  top:90px;
 }
-  
+
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    min-height: 200px;
+    height: 270px;
 }
 
 .card:hover {
@@ -102,6 +86,7 @@ label.label_selected {
   background: rgba(255, 51, 0,1);
   color: white;
 }
+
 .btn_category {
   border:0;
   margin: 5px 5px 5px 5px;
@@ -157,9 +142,147 @@ input.datepick {
 }
 .datepick{
   margin:auto;
->>>>>>> 35da562084b5d90a31d8e8b099d77d9349af8844
 }
-  
+.hvrbox,
+.hvrbox * {
+  box-sizing: border-box;
+}
+.hvrbox {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+}
+.hvrbox img {
+  max-width: 100%;
+}
+.hvrbox .hvrbox-layer_bottom {
+  display: block;
+}
+.hvrbox .hvrbox-layer_top {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 15px;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -ms-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+  overflow:hidden;
+  text-overflow: ellipsis;
+
+}
+.hvrbox:hover .hvrbox-layer_top,
+.hvrbox.active .hvrbox-layer_top {
+  opacity: 1;
+}
+.hvrbox .hvrbox-text {
+  text-align: justify;
+  font-size: 10px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow:hidden;
+  text-overflow: ellipsis;
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.hvrbox .hvrbox-text_mobile {
+  font-size: 15px;
+  border-top: 1px solid rgb(179, 179, 179); /* for old browsers */
+  border-top: 1px solid rgba(179, 179, 179, 0.7);
+  margin-top: 5px;
+  padding-top: 2px;
+  display: none;
+}
+.carousel{
+  height:500px;
+  }
+
+.carousel .carousel-inner .item img {
+  min-width:100%;
+  height:500px;
+}
+
+.attraction-title{
+  color: #636b6f;
+  text-align: center;
+  font-size:22px;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+.attraction-description{
+  color:#636b6f;
+  font-size: 14px;
+  text-align: justify;
+}
+
+.attraction-address, .ratings{
+  color:#636b6f;
+  font-size: 12px;  
+}
+.carousel.slide{
+  padding:0;
+}
+
+.horizontal-rule{
+  margin-bottom:0px;
+  margin-top:5px; 
+}
+
+.search-form .form-group {
+  float: right !important;
+  transition: all 0.35s, border-radius 0s;
+  width: 100%;
+  height: 32px;
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+}
+.search-form .form-group input.form-control {
+  padding-right: 20px;
+  border: 0 none;
+  background: transparent;
+  box-shadow: none;
+  display:block;
+}
+.search-form .form-group input.form-control::-webkit-input-placeholder {
+  display: none;
+}
+
+.search-form .form-group input.form-control:-ms-input-placeholder {
+  display: none;
+}
+
+.search-form .form-group span.form-control-feedback {
+  position: absolute;
+  top: -1px;
+  right: -2px;
+  z-index: 2;
+  display: block;
+  width: 32px;
+  height: 32px;
+  line-height: 34px;
+  text-align: center;
+  color: #3596e0;
+  left: initial;
+  font-size: 14px;
+}
+
+.row{
+  width:auto;
+}
 
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);@charset "UTF-8";/*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
