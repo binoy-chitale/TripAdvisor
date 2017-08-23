@@ -1,6 +1,5 @@
 @extends('layouts.app')
 @section('content')
-<<<<<<< HEAD
 <div class="container appcontainer">
 	<div class = "col-md-10">
 	    <div class="row itenerary" style="display:flex;">
@@ -41,21 +40,9 @@
 			@endforeach
 			</ul>
 		</div>
-=======
-<div class="container">
-    <div class="row">
-		@foreach($itenerary as $dayplan)
-			<div class="panel-heading" style="text-align:center;"><h1>{{$dayplan['day']->format("d-m-Y")}}</h1> </div>
-			<div class="panel-body">
-				@foreach($dayplan['plan'] as $item)
-					<p>{{$item->name}}&nbsp {{$item->startofvisit}}&nbsp {{$item->endofvisit}}</p>
-				@endforeach
-			</div>
-		@endforeach    
->>>>>>> parent of 1976da6... added draggable itenerary
+
 	</div>
 </div>
-<<<<<<< HEAD
 @endsection
 @section('scripts')
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -70,6 +57,4 @@
   .sortable li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em; }
   .sortable li span { position: absolute; margin-left: -1.3em; }
 </style>
-=======
->>>>>>> parent of 1976da6... added draggable itenerary
 @endsection
