@@ -36,7 +36,7 @@ img.image-city {
 }
 .row.itenerary{
   overflow-x: scroll;
-  height: 500px;
+  height: 100%;
 }
 div .tile {
   width: 50%;
@@ -121,8 +121,9 @@ div .tile:hover .button {
 }
 .catpickpanel{
   background-size:cover;
-  background-image: url('/images/panelbg.jpg');
-  opacity:70%;
+  /*background-image: url('/images/panelbg.jpg');*/
+  border: 2px solid #1b1e24;
+  border-radius: 5px;
 }
 
 label.catpicker {
@@ -227,21 +228,45 @@ input.datepick {
   font-weight: 700;
   cursor: move;
 }
+
 .invisible-list li{
   display: none;
 }
 .sortable.invisible-list{
   margin-bottom: 5px;
 }
-.invisible-list button{
-  margin-top: 0;
+.invisible-list .trashbutton{
+  background: #1b1e24;
+  width: 100%;
+  font-size: 0.9vw;
+  color: white !important;
+  font-weight: 600 !important;
+  outline: none;
+
+}
+.invisible-list:hover .trashbutton{
+  background: rgb(204, 51, 0);
 }
 div .ui-sortable{
   width: 100%;
 }
-.panel.daycolumn{
+/*.panel.daycolumn{
   width: 20%;
+}*/
+
+.daycolumn {
+  min-width: 200px;
 }
+#fixed-div {
+    position: fixed;
+    top: 1em;
+    right: 1em;
+    padding-top: 5%;
+}
+/*
+#column{
+  width:200px;
+}*/
 .container.appcontainer {
   margin: 0;
   width: 100%;
@@ -260,12 +285,13 @@ div .ui-sortable{
 }
 .sortable .sidebar-list {
   padding:0;
-  height: 60px;
+  height: 8vh;
   margin-bottom: 5px;
   border-bottom: 1px solid grey;
+  cursor: move;
 }
 .sortable .sidebar-list  .itemname{
-  font-size: 1vw;
+  font-size: 0.9vw;
   font-weight: 700;
   overflow: hidden;
   white-space:nowrap;
@@ -284,15 +310,21 @@ div .ui-sortable{
 }
 .tn-img{
   height: 100%;
-  width: 30%;
+  width: 22.5%;
   border-radius: 100%;
   padding: 5px 10px 5px 10px; 
+  max-height: 50px;
+}
+.day-item div img {
+  height:15vh;
+  width: 100%;
+  border-radius: 2px;
 }
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
 
 
 
-.panel-heading h4 {
+.panelheadingdiv h4 {
    color: #fafafa;
    font-size: 1.2vw;
    font-weight: 700;
@@ -314,11 +346,21 @@ div .ui-sortable{
   padding:5px;
   width: 100%;
   animation: float 5s infinite;
-  box-shadow: 0;
+  box-shadow: none;
 }
- 
+.daycolumn  .panelbodydiv {
+  background: white;
+  border-radius:3px;
+  border-collapse: collapse;
+  margin: auto;
+  max-width: 600px;
+  padding:5px;
+  width: 100%;
+  animation: float 5s infinite;
+  box-shadow: none;
+} 
 .panel .panel.panel-heading {
-  color:#D5DDE5;;
+  color:#D5DDE5;
   background-color:#1b1e24;
   border-right: 1px solid #343a45;
   font-size:23px;
@@ -330,7 +372,19 @@ div .ui-sortable{
   margin-bottom: 0;
   cursor: pointer;
 }
-
+.daycolumn .panelheaderdiv {
+  color:#D5DDE5;
+  background-color:#1b1e24;
+  border-right: 1px solid #343a45;
+  font-size:23px;
+  font-weight: 100;
+  padding:5px;
+  text-align:center;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  vertical-align:middle;
+  margin-bottom: 0;
+  cursor: pointer;
+}
 th:first-child {
   border-top-left-radius:3px;
 }
