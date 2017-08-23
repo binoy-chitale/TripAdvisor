@@ -1,4 +1,3 @@
-
 .container {
     padding: 2px 16px;
 }
@@ -45,33 +44,69 @@ div .tile {
   margin-bottom: 0px;
 }
 
-div .tile h1 {
+div .tile .title {
   color:white;
-  font-size:50px;
+  font-size:20px;
   line-height: 100%;
-  vertical-align: middle;
+  color:white;
+  padding-top: 100px;
+  z-index: 1;
+  transition: padding-top .7s ease;
 }
 div .tile {
   display:flex;
   justify-content:center;
-  align-items:center;
-  align-self:center;   
   background-position:center;
   background-size:cover;
+  text-transform: uppercase;
 }
 div .tile:hover {
   opacity: 0.9;
-
 }
 
-.row-class {
-  white-space: pre-line;
+div .tile:hover .title{
+  padding-top: 50px;
 }
-  
+
+.button {
+  padding-top: 300px;
+  width: 30%;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .35s ease;
+}
+
+.button .buttonleft {
+  width: 100%;
+  padding: 12px 48px;
+  text-align: center;
+  color: white;
+  border: solid 2px white;
+  z-index: 1;
+  margin-left: 10px;
+  float: left;
+}
+
+.button .buttonright {
+  position:relative;
+  width: 100%;
+  padding: 12px 48px;
+  text-align: center;
+  color: white;
+  border: solid 2px white;
+  z-index: 1;
+  float:right;
+  margin-right: 10px;
+}
+
+div .tile:hover .button {
+  opacity: 1;
+}
+
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    min-height: 200px;
+    height: 270px;
 }
 
 .card:hover {
@@ -84,29 +119,33 @@ div .tile:hover {
 .cbox {
   display: none;
 }
+.catpickpanel{
+  background-size:cover;
+  background-image: url('/images/panelbg.jpg');
+  opacity:70%;
+}
+
 label.catpicker {
   border:0;
   margin: 5px 5px 5px 5px;
   padding: 3px 8px 3px 8px;
-  border-radius: 25px;
-  background: rgba(209, 209, 224,0.8);
-  color: black;
-  outline: none;
+  background: transparent;
+  color: white;
+  outline: 1px solid white;
   font-weight: 600;
 }
 label.catpicker:hover {
   border:0;
-  border-radius: 25px;
-  background: rgba(255, 51, 0,1);
-  color: white;
+  background: white;
+  color: black;
 }
+
 label.label_selected {
   border:0;
   margin: 5px 5px 5px 5px;
   padding: 3px 8px 3px 8px;
-  border-radius: 25px;
-  background: rgba(255, 51, 0,1);
-  color: white;
+  background: white;
+  color: black;
 }
 .btn_category {
   border:0;
@@ -125,7 +164,6 @@ label.label_selected {
   border-radius: 25px;
   background: rgba(255, 51, 0,1);
   color: white;
-
 }
 .btn_category:hover {
   border:0;
@@ -135,14 +173,14 @@ label.label_selected {
 }
 .btn-plan {
   width: 100%;
-  background:rgba(255, 51, 0,1);
+  background:transparent;
   color: white !important;
   font-weight: 600 !important;
   outline: none;
   margin-top: 20px;
 }
 .btn-plan:hover {
-  background: rgba(204, 41, 0,1)
+   text-shadow: 2px 2px 10px white;
 }
 [type="date"] {
   background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
@@ -150,7 +188,7 @@ label.label_selected {
 [type="date"]::-webkit-inner-spin-button {
   display: none;
 }
-[type="date"]::-webkit-calendar-picker-indicator {
+[type="date"]::-webkit-calendar-picker-indicator{
   opacity: 0;
 }
 input.datepick {
@@ -351,7 +389,154 @@ td {
   border-right: 1px solid #C1C3D1;
 }
 
+}
+.hvrbox,
+.hvrbox * {
+  box-sizing: border-box;
+}
+.hvrbox {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+}
+.hvrbox img {
+  max-width: 100%;
+}
+.hvrbox .hvrbox-layer_bottom {
+  display: block;
+}
+.hvrbox .hvrbox-layer_top {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 15px;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -ms-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+  overflow:hidden;
+  text-overflow: ellipsis;
+}
+.hvrbox:hover .hvrbox-layer_top,
+.hvrbox.active .hvrbox-layer_top {
+  opacity: 1;
+}
+.hvrbox .hvrbox-text {
+  text-align: justify;
+  font-size: 10px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow:hidden;
+  text-overflow: ellipsis;
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.hvrbox .hvrbox-text_mobile {
+  font-size: 15px;
+  border-top: 1px solid rgb(179, 179, 179); /* for old browsers */
+  border-top: 1px solid rgba(179, 179, 179, 0.7);
+  margin-top: 5px;
+  padding-top: 2px;
+  display: none;
+}
 
+.carousel{
+  height:500px;
+  }
+
+.carousel .carousel-inner .item img {
+  min-width:100%;
+  height:500px;
+}
+
+.attraction-title{
+  color: #636b6f;
+  text-align: center;
+  font-size:22px;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+.attraction-description{
+  color:#636b6f;
+  font-size: 14px;
+  text-align: justify;
+}
+
+.attraction-address, .ratings{
+  color:#636b6f;
+  font-size: 12px;  
+}
+
+.carousel.slide{
+  padding:0;
+}
+
+.horizontal-rule{
+  margin-bottom:0px;
+  margin-top:5px; 
+  height: 2px;
+  color: black;
+  display: block;
+  width:15%;
+}
+
+.search-form .form-group {
+  float: right !important;
+  transition: all 0.35s, border-radius 0s;
+  width: 100%;
+  height: 32px;
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+}
+
+.search-form .form-group input.form-control {
+  padding-right: 20px;
+  border: 0 none;
+  background: transparent;
+  box-shadow: none;
+  display:block;
+}
+
+.search-form .form-group input.form-control::-webkit-input-placeholder {
+  display: none;
+}
+
+.search-form .form-group input.form-control:-ms-input-placeholder {
+  display: none;
+}
+
+.search-form .form-group span.form-control-feedback {
+  position: absolute;
+  top: -1px;
+  right: -2px;
+  z-index: 2;
+  display: block;
+  width: 32px;
+  height: 32px;
+  line-height: 34px;
+  text-align: center;
+  color: #3596e0;
+  left: initial;
+  font-size: 14px;
+}
+
+.row{
+  width:auto;
+}
 
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);@charset "UTF-8";/*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)

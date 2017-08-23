@@ -43,6 +43,18 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
+                        <?php
+                            if(preg_match('/\/dest\/*/', $_SERVER['REQUEST_URI'])){
+                            echo('<li><form class="search-form">
+                                <span class="form-group has-feedback">
+                                    <label for="search" class="sr-only">Search</label>
+                                    <input type="text" class="form-control" name="search" id="search" placeholder="Search">
+                                    <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                                </span>
+                            </form></li>');
+                            }
+                        ?>
+                        
                         @if (Auth::guest())
                             <li><a href="{{ route('login') }}">Login</a></li>
                             <li><a href="{{ route('register') }}">Register</a></li>
@@ -67,6 +79,7 @@
                                 </ul>
                             </li>
                         @endif
+
                     </ul>
                 </div>
             </div>
