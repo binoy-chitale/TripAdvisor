@@ -51,7 +51,7 @@ foreach($attractions as $attraction)
   </div>
   <div class="col-md-6">
     	<div class="attraction-title">{{$attr->name}}</div>
-    	<hr class="horizontal-rule" width=15% align=center>
+    	<hr class="horizontal-rule" align=center>
     	<br>
     	<?php
     	if(!preg_match('/ *reviews$/', $attr->description)){

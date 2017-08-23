@@ -33,52 +33,49 @@ class CategoryController extends Controller{
     }
 
     public function findNextStop($dist,$currentStop){
-            $list = [];
-            $flag=0;
-            $n = 0;
-            $radius= 5;
-            foreach ($dist[$currentStop] as $key => $value) {
-                $lat1 = (float)$value['latitude'];
-                $lon1 = (float)$value['longitude'];
-            }
-            while (true) {
-                $reset=0;
-                foreach ($dist as $keyinner => $valueinner) {
-                    if($n>20){
-                        $radius = $radius + 5;
-                        $n = 0;
-                        $reset=1;
-                        break;
-                    }
-                    if($keyinner!=$currentStop && !in_array($keyinner, $this->visit)&& !in_array($keyinner, $this->marked)){
-                        $lat2 = (float)$valueinner[0]['latitude'];
-                        $lon2 = (float)$valueinner[0]['longitude'];
-                        $var = $this->calculateDistance($lat1, $lon1, $lat2, $lon2);
-                        if($var<$radius){
-                            if(sizeof($list)<5){
-                                $list[$keyinner]=$var;
-                            }
-                            else{
-                                $flag = 1;   
-                                break;
-                            }
-                        }
-                        else{
-                            $n++;
-                            if($currentStop==215){
-
-                        }
-                        }
-                    }                    
-            
-                if($flag==1){
+        $list = [];
+        $flag=0;
+        $n = 0;
+        $radius= 5;
+        foreach ($dist[$currentStop] as $key => $value) {
+            $lat1 = (float)$value['latitude'];
+            $lon1 = (float)$value['longitude'];
+        }
+        while (true) {
+            $reset=0;
+            foreach ($dist as $keyinner => $valueinner) {
+                if($n>20){
+                    $radius = $radius + 5;
+                    $n = 0;
+                    $reset=1;
                     break;
                 }
-                }
-               if($reset==0){
+                if($keyinner!=$currentStop && !in_array($keyinner, $this->visit)&& !in_array($keyinner, $this->marked)){
+                    $lat2 = (float)$valueinner[0]['latitude'];
+                    $lon2 = (float)$valueinner[0]['longitude'];
+                    $var = $this->calculateDistance($lat1, $lon1, $lat2, $lon2);
+                    if($var<$radius){
+                        if(sizeof($list)<5){
+                            $list[$keyinner]=$var;
+                        }
+                        else{
+                            $flag = 1;   
+                            break;
+                        }
+                    }
+                    else{
+                        $n++;
+                    }
+                }                    
+        
+            if($flag==1){
                 break;
-               } 
             }
+            }
+           if($reset==0){
+            break;
+           } 
+        }
         asort($list);
         reset($list);
         return key($list);    
@@ -99,8 +96,13 @@ class CategoryController extends Controller{
     }
 
     public function getCategories($name){
-    	if(isset($_POST['catvalues'])){    		
-    	    $catvalues = $_POST['catvalues'];
+    	if(!empty($_POST)){
+            if(array_key_exists('catvalues',$_POST)){ 		
+    	       $catvalues = $_POST['catvalues'];
+            }
+            else{
+                $catvalues = [];
+            }
             $start = new DateTime($_POST['start_date']);
             $end = new DateTime($_POST['end_date']);
             $this->attractions = json_decode($_POST['attractions']);
@@ -114,6 +116,9 @@ class CategoryController extends Controller{
                 array_push($this->itenerary,$this->getDayPlan($day));
             }
             return view('planview',['distarray'=>$this->sorteddistarray, 'visit'=>$this->visit,'itenerary'=>$this->itenerary]);
+        }
+        else{
+            return redirect()->back();
         }
     }
     public function makeRatingsList(){
