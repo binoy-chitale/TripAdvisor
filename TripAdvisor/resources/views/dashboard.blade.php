@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+
 <body>
     <div>
         <div class="container">
@@ -16,7 +17,7 @@
                             <?php break;?>
                         @endforeach
                         <?php
-                            $maxPos = 39;
+                            $maxPos = 35;
                             $flag=1;
                             $text=$attr->name;
                             if (strlen($text) > $maxPos){
@@ -50,4 +51,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="{{ asset('js/search.js') }}"></script>
 </body>
+@endsection
+@section('search')
+<li><form class="search-form">
+        <span class="form-group has-feedback">
+            <label for="search" class="sr-only">Search</label>
+            <input type="text" class="form-control" name="search" id="search" placeholder="Search">
+            <span class="glyphicon glyphicon-search form-control-feedback"></span>
+        </span>
+</form></li>
 @endsection
