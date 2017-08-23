@@ -13,6 +13,7 @@ class AttractionSeeder extends Seeder
     {
         $paths = DB::table('dest')->pluck('directory')->toArray();
         // var_dump($paths);
+        $catlist=array("Sights & Landmarks","Museums","Tours","Nature & Parks","Concerts & Shows","Outdoor Activities","Shopping","Nightlife","Fun & Games","Food & Drink","Boat Tours & Water Sports","Classes & Workshops","Spas & Wellness","Transportation","Traveller Resources","Zoos & Aquariums","Water & Amusement Parks","Casinos & Gambling","Events","Day Trips");
         foreach($paths as $path) {
 	        $destid=DB::table('dest')->where('directory',$path)->first()->id;
 	        $obj = File::get(storage_path($path));
@@ -66,7 +67,7 @@ class AttractionSeeder extends Seeder
 		        ]);
 		        $attrid = (DB::table('attractions')->where('name', $att->name)->first())->id;
 		        foreach($att->category as $cat) {
-		        	if(strpos($cat, 'Other')==false && strpos($cat, 'More')==false){
+		        	if(strpos($cat, 'Other')==false && strpos($cat, 'More')==false && in_array($cat, $catlist)){
 				        DB::table('category')->insert([
 				            'name' => $cat,
 				            'attraction_id' => $attrid,

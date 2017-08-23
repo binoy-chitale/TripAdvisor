@@ -113,7 +113,7 @@ class CategoryController extends Controller{
             foreach ($period as $day) {
                 array_push($this->itenerary,$this->getDayPlan($day));
             }
-            return view('planview',['distarray'=>$this->sorteddistarray, 'visit'=>$this->visit,'itenerary'=>$this->itenerary]);
+            return view('planview',['attractions'=>$this->attractions, 'visit'=>$this->visit,'itenerary'=>$this->itenerary]);
         }
     }
     public function makeRatingsList(){
