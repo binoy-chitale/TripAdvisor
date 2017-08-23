@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 <div class="container appcontainer">
-	<div class = "col-md-10">
+	<div class = "col-md-9">
 	    <div class="row itenerary" style="display:flex;">
 			@foreach($itenerary as $dayplan)
 				<div class="panel panel-default daycolumn">	
@@ -15,9 +15,10 @@
 						</div>
 				</div>
 			@endforeach
-		</div><ul class="sortable invisible-list"><button class="btn btn-plan" >Trash</button><ul>
+		</div>
 	</div>
-	<div class="col-md-2">
+	<div class="col-md-3">
+		<ul class="sortable invisible-list"><button class="btn btn-plan" ><span>Remove</span></button></ul>
 		<div class="scrollable-sidebar">
 			<ul  class="sortable">
 			@foreach($attractions as $attraction)
@@ -40,7 +41,6 @@
 			@endforeach
 			</ul>
 		</div>
-
 	</div>
 </div>
 @endsection

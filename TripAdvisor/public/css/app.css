@@ -2,7 +2,9 @@
 .container {
     padding: 2px 16px;
 }
-
+.navbar.navbar-static-top{
+  margin-bottom: 5px;   
+}
 img.image-city {
   width: 200px;
   height: 200px;
@@ -35,7 +37,7 @@ img.image-city {
 }
 .row.itenerary{
   overflow-x: scroll;
-  height: 400px;
+  height: 500px;
 }
 div .tile {
   width: 50%;
@@ -190,6 +192,12 @@ input.datepick {
 .invisible-list li{
   display: none;
 }
+.sortable.invisible-list{
+  margin-bottom: 5px;
+}
+.invisible-list button{
+  margin-top: 0;
+}
 div .ui-sortable{
   width: 100%;
 }
@@ -198,25 +206,29 @@ div .ui-sortable{
 }
 .container.appcontainer {
   margin: 0;
+  width: 100%;
 }
 .scrollable-sidebar {
   transform:translate3d(0,0,0);
   overflow-y: scroll;
   overflow-x:hidden;
   max-height: 700px;
+  border: 2px solid rgba(224, 224, 235,1);
+  border-radius: 5px;
 }
 .startend {
   text-align: center;
-  font-size: 1.2vw;
+  font-size: 0.9vw;
 }
 .sortable .sidebar-list {
   padding:0;
-  height: 50px;
+  height: 60px;
   margin-bottom: 5px;
   border-bottom: 1px solid grey;
 }
 .sortable .sidebar-list  .itemname{
-  font-size: 10px;
+  font-size: 1vw;
+  font-weight: 700;
   overflow: hidden;
   white-space:nowrap;
   text-overflow:ellipsis;
@@ -234,7 +246,7 @@ div .ui-sortable{
 }
 .tn-img{
   height: 100%;
-  width: 40%;
+  width: 30%;
   border-radius: 100%;
   padding: 5px 10px 5px 10px; 
 }
