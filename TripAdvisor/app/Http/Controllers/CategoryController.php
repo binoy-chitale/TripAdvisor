@@ -22,6 +22,7 @@ class CategoryController extends Controller{
     var $attractionidlist=[];
     var $userselectedcategories = [];   
     var $marked=[];
+    var $catvalues =[];
     public function calculateDistance($lat1, $lon1, $lat2, $lon2){      
         $theta = $lon1 - $lon2;
         $dist = sin(deg2rad($lat1)) * sin(deg2rad($lat2)) +  cos(deg2rad($lat1)) * cos(deg2rad($lat2)) * cos(deg2rad($theta));
@@ -66,15 +67,16 @@ class CategoryController extends Controller{
                     else{
                         $n++;
                     }
-                }                    
-        
-            if($flag==1){
+                }
+
+                if($flag==1){
+                    break;
+                } 
+                        
+            }
+            if($reset==0){
                 break;
-            }
-            }
-           if($reset==0){
-            break;
-           } 
+            }        
         }
         asort($list);
         reset($list);
@@ -90,7 +92,7 @@ class CategoryController extends Controller{
         	->all();	
 		});
 
-        $categories = Category::select('name')->whereIn('attraction_id', $attractionid)->groupBy('name')->orderBy('name','desc')->take(10)->get();
+        $categories = Category::select('name')->whereIn('attraction_id', $attractionid)->groupBy('name')->get();
 
         return view('categoryview',['name'=>$name, 'categories'=>$categories, 'attractions'=>$attractions] );
     }
@@ -98,10 +100,7 @@ class CategoryController extends Controller{
     public function getCategories($name){
     	if(!empty($_POST)){
             if(array_key_exists('catvalues',$_POST)){ 		
-    	       $catvalues = $_POST['catvalues'];
-            }
-            else{
-                $catvalues = [];
+    	       $this->catvalues = $_POST['catvalues'];
             }
             $date=$_POST['date'];
             $date= explode(' - ', $date);
@@ -121,7 +120,7 @@ class CategoryController extends Controller{
             return view('planview',['attractions'=>$this->attractions, 'visit'=>$this->visit,'itenerary'=>$this->itenerary]);
         }
         else{
-            return redirect()->back();
+            return redirect('/plan/'.$name);
         }
     }
     public function makeRatingsList(){
@@ -132,9 +131,10 @@ class CategoryController extends Controller{
             }
     }
     public function updateRatingsWithCategories(){
-        $list = Category::select('attraction_id', DB::raw('count(*) as count'))->whereIn('attraction_id',$this->attractionidlist)->whereIn('name' ,$this->userselectedcategories)->groupBy('attraction_id')->get();    
+        $list = Category::select('attraction_id', DB::raw('count(*) as count'))->whereIn('attraction_id',$this->attractionidlist)->whereIn('name' ,$this->catvalues)->groupBy('attraction_id')->get();    
         foreach ($list as $list) {
-            $this->rating[$list->attraction_id] = $this->rating[$list->attraction_id] + $list->count*0.005;
+            $this->rating[$list->attraction_id] = $this->rating[$list->attraction_id] + $list->count*0.5;
+            $this->rating[$list->attraction_id] = (string)$this->rating[$list->attraction_id];     
         }
     }
     public function getDayPlan($day) {
@@ -194,7 +194,7 @@ class CategoryController extends Controller{
                 }
             if($att=$this->isOpen($currentStop,clone $day)) {
                 array_push($this->visit,$currentStop);
-                $day->add(new DateInterval("PT{$this->getTravelTime()}H"));
+                $day->add(new DateInterval("PT{$this->getTravelTime()}S"));
                 foreach ($this->attractions as $attraction) {
                     if($attraction->id == $currentStop){
                         $attraction->startofvisit=$day->format("H:i");
@@ -221,6 +221,21 @@ class CategoryController extends Controller{
         }
     }
     public function getTravelTime(){
+        // $stop1 = (array_values($this->visit)[count($this->visit)-2]);
+        // $stop2 = (array_values($this->visit)[count($this->visit)-1]);
+        // foreach ($this->distarray[$stop1] as $key => $value) {
+        //     $lat1 = (float)$value['latitude'];
+        //     $lon1 = (float)$value['longitude'];
+        // }
+        // foreach ($this->distarray[$stop2] as $key => $value) {
+        //     $lat2 = (float)$value['latitude'];
+        //     $lon2 = (float)$value['longitude'];
+        // }
+        // $url="https://maps.googleapis.com/maps/api/distancematrix/json?origins=".$lat1.",".$lon1."&destinations=".$lat2.",".$lon2;
+        // $json = file_get_contents($url); 
+        // $result = json_decode($json, true);
+        // return ($result['rows']['0']['elements']['0']['duration']['value']);
+        // return $min;
         return "1";
     }
     public function isOpen($id,$day) {
@@ -274,8 +289,7 @@ class CategoryController extends Controller{
         }
         return false;
     }
-    public function getLunchTime()
-    {
+    public function getLunchTime(){
         return 2;
     }
 }

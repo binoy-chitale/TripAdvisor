@@ -17,7 +17,16 @@ Route::get('/', function () {
 
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/dest/{name}', 'DashboardController@dash');
-Route::get('/view/{name}', 'CategoryController@viewCategories');
-Route::post('/plan/{name}', 'CategoryController@getCategories');
-Route::get('/dest/{name}/{placename}', 'PlaceViewController@view');
+Route::get('/view/{name}', 'DashboardController@dash');
+Route::get('/plan/{name}', 'CategoryController@viewCategories');
+Route::post('/planned/{name}', 'CategoryController@getCategories');
+Route::get('/view/{name}/{placename}', 'PlaceViewController@view');
+Route::get('/plan',function(){
+	return redirect('/home');
+});
+Route::get('/planned/{name}', function($name){
+	return redirect('/plan/'.$name);
+});
+Route::get('/planned', function(){
+	return redirect('/home');
+});

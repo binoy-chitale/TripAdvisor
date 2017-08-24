@@ -228,13 +228,13 @@ label.label_selected {
   background: #454545;
   color:white;
 }
-/*#datepicker{
+#datepicker{
   border:2px solid;
   border-color:#454545;
   border-radius:4px;
   margin-right:5px;
   align:center;
-}*/
+}
 
 .sortable .starttime {
   position: relative;
@@ -294,7 +294,7 @@ div .ui-sortable{
     position: fixed;
     top: 1em;
     right: 1em;
-    padding-top: 3%;
+    padding-top: 5%;
 }
 /*
 #column{
@@ -398,7 +398,7 @@ div .ui-sortable{
   text-align:center;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   vertical-align:middle;
-  margin-bottom: 0;
+  margin-bottom: 0; 
   cursor: pointer;
 }
 .daycolumn .panelheaderdiv {
@@ -414,11 +414,6 @@ div .ui-sortable{
   margin-bottom: 0;
   cursor: pointer;
 }
- 
-.sortable .day-item:hover {
-  background:rgba(208, 208, 225,0.2);
-}
-
 .hvrbox,
 .hvrbox * {
   box-sizing: border-box;
