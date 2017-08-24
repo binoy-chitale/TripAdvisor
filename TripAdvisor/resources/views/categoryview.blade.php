@@ -8,7 +8,7 @@
                 	{!!Form::open(array('action' => 'CategoryController@getCategories', 'url'=>'/plan/'.$name))!!}
                 	<div class="panel-body catpickpanel">
                         <div align=center>
-                            <input name="date" id="datepicker" class="datepick" value="{{csrf_token()}}">
+                            <input type= "text" name="date" id="datepicker" class="datepick" value="{{csrf_token()}}">
                         <span class="glyphicon glyphicon-calendar"></span>
                         </div><br>
                         @foreach($categories as $category)
