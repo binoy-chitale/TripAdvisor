@@ -1,14 +1,16 @@
 @extends('layouts.app')
 @section('content')
+
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
                 <div class="panel-heading catpickheading" style="text-align:center; background: #1b1e24; color:white; font-weight: 600; border-radius:4px; border:2px solid; border-color:#1b1e24; text-transform:uppercase;">{{$name}}</div>
-                	{!!Form::open(array('action' => 'CategoryController@getCategories', 'url'=>'/plan/'.$name))!!}
+                	{!!Form::open(array('action' => 'CategoryController@getCategories', 'url'=>'/planned/'.$name))!!}
                 	<div class="panel-body catpickpanel">
                         <div align=center>
-                            <input name="date" id="datepicker" class="datepick" value="{{csrf_token()}}">
+                            <input type= "text" name="date" id="datepicker" class="datepick" value="{{csrf_token()}}">
+
                         <span class="glyphicon glyphicon-calendar"></span>
                         </div><br>
                         @foreach($categories as $category)

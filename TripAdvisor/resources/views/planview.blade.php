@@ -9,7 +9,7 @@
 						<div class="panelbodydiv">
 							<ul class="sortable">
 							@foreach($dayplan['plan'] as $item)
-								<li class="ui-state-default day-item" onclick="location.href ='/dest/{{$name}}/{{$item->name}}'">
+								<li class="ui-state-default day-item" onclick="location.href ='/view/{{$name}}/{{$item->name}}'">
 								@if(property_exists($item,"images"))
 								<div class="img-wrapper">
 									<img src="{{unserialize($item->images)[0]}}"></span>

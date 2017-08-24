@@ -1,12 +1,11 @@
 @extends('layouts.app')
 @section('content')
-
 <body>
     <div>
         <div class="container">
             @foreach($attractions as $attr)
             <div class="col-md-3 col-sm-6 img__wrap search" id="card">
-                <div onclick="window.location.href = '/dest/{{$name}}/{{$attr->name}}';" class="card hvrbox">
+                <div onclick="window.location.href = '/view/{{$name}}/{{$attr->name}}';" class="card hvrbox">
                     <div class="container">    
                         <?php
                             $attri = (json_decode($attr));
