@@ -107,6 +107,7 @@ class CategoryController extends Controller{
             $date= explode(' - ', $date);
             $start = new DateTime($date[0]);
             $end = new DateTime($date[1]);
+            $end = $end->modify( '+1 day' );
             $this->attractions = json_decode($_POST['attractions']);
             $interval = DateInterval::createFromDateString('1 day');
             $period = new DatePeriod($start, $interval, $end);

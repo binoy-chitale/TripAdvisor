@@ -6,14 +6,14 @@ $( function() {
   		 // ui.item.removeClass("sidebar-list");
   		 // ui.item.addClass("ui-state-default", "day-item", "ui-sortable-handle");
   		 ui.item.attr("class","ui-state-default day-item ui-sortable-handle");
-  		 console.log(ui.item);
   		 current = ui.item[0];
   		 var image = current.getElementsByClassName("tn-img");
-  		 image[0].style = "display:none";
+       image[0].style ="height: 15vh;width: 100%;border-radius: 2px;";
+       image[0].className = "";
   		 var starttime = current.getElementsByClassName("starttime");
-  		 starttime[0].style = "display:inline; font-size:1.2vw";
+  		 starttime[0].style = "display:inline; font-size:0.9vw";
   		 var endtime = current.getElementsByClassName("endtime");
-  		 endtime[0].style = "display:inline;font-size:1.2vw";
+  		 endtime[0].style = "display:inline;font-size:0.9vw";
   	}
   	var listitems = $(this);
   	var starttimes = listitems[0].getElementsByClassName("starttime");
