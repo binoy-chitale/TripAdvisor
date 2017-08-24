@@ -9,13 +9,20 @@
 						<div class="panelbodydiv">
 							<ul class="sortable">
 							@foreach($dayplan['plan'] as $item)
-								<li class="ui-state-default day-item">
+								<li class="ui-state-default day-item" onclick="location.href ='/dest/{{$name}}/{{$item->name}}'">
 								@if(property_exists($item,"images"))
-								<div>
+								<div class="img-wrapper">
 									<img src="{{unserialize($item->images)[0]}}"></span>
 								</div>
 								@endif
-								<span class="itemname">{{$item->name}}</span><div class="startend"><span class="starttime">{{$item->startofvisit}}</span>-<span class="endtime">{{$item->endofvisit}}</span></div></li>
+								<span class="itemname">{{$item->name}}</span><div class="startend"><span class="starttime">{{$item->startofvisit}}</span>-<span class="endtime">{{$item->endofvisit}}</span></div>
+								@php
+								$start = DateTime::createFromFormat("H:i",$item->startofvisit);
+								$end = DateTime::createFromFormat("H:i",$item->endofvisit);
+								$duration =  $start->diff($end);
+								@endphp
+								<span class="duration" style="display:none">Stay for {{$duration->h}} hours</span>
+								</li>
 							@endforeach
 							</ul>
 						</div>
@@ -33,11 +40,21 @@
             </span>
         </form>
 		<div class="scrollable-sidebar">
-			<ul  class="sortable">
+			<ul  class="sortable side-sortable">
 			@foreach($attractions as $attraction)
 			<li class="sidebar-list">
-					<img class="tn-img" src="{{unserialize($attraction->images)[0]}}"></img>
+					@if(sizeof($attraction->images)!=0)
+						<img class="tn-img" src="{{unserialize($attraction->images)[0]}}"></img>
+					@endif
+					@php
+					$datetime = DateTime::createFromFormat("H:i","10:00");
+					if($attraction->duration == ""){
+						$attraction->duration = "2";
+					}
+					$datetime->add(new DateInterval("PT{$attraction->duration}H"));
+					@endphp
 					<span class="itemname">{{$attraction->name}}</span>
+					<span class="duration">Stay for {{$attraction->duration}} hours</span>
 					<div class = "startend">
 						<span class="starttime" style="display:none;">10:00</span>
 						@php
@@ -48,7 +65,6 @@
 						$datetime->add(new DateInterval("PT{$attraction->duration}H"));
 						@endphp
 						<span class="endtime" style="display:none;">{{$datetime->format("H:i")}}</span>
-						<span class = "duration">{{$attraction->duration}}</span>
 					</div>
 			</li>
 			@endforeach

@@ -118,7 +118,7 @@ class CategoryController extends Controller{
             foreach ($period as $day) {
                 array_push($this->itenerary,$this->getDayPlan($day));
             }
-            return view('planview',['attractions'=>$this->attractions, 'visit'=>$this->visit,'itenerary'=>$this->itenerary]);
+            return view('planview',['attractions'=>$this->attractions, 'visit'=>$this->visit,'itenerary'=>$this->itenerary,'name'=>$name]);
         }
         else{
             return redirect()->back();
@@ -169,7 +169,7 @@ class CategoryController extends Controller{
                     $temp=clone $day;
                     $day->add(new DateInterval("PT{$this->getLunchTime()}H"));
                     $lunch = new \stdClass();
-                    $lunch->name = "lunch break";
+                    $lunch->name = "Lunch";
                     $lunch->startofvisit=$temp->format("H:i");
                     $lunch->endofvisit=$day->format("H:i");
                     array_push($itenerary['plan'],$lunch);

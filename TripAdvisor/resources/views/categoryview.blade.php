@@ -13,7 +13,7 @@
                         </div><br>
                         @foreach($categories as $category)
 						            <label for="btn_{{$category->name}}" class="catpicker">{{$category->name}}</label> 
-                                    <input class="cbox" id="btn_{{$category->name}}"type="checkbox" value="{{csrf_token()}}" name= "catvalues[]"/>
+                                    <input class="cbox" id="btn_{{$category->name}}"type="checkbox" value="{{$category->name}}" name= "catvalues[]"/>
                     	@endforeach
 						 <br><button type="submit" value="submit" class="btn-plan btn" id="plan" style="font-size:14px; margin-top: 20px; border: 2px solid; border-radius: 4px; border-color:#454545; font-weight:600;">Plan!</button>         
                     </div>

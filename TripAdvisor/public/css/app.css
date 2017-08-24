@@ -248,15 +248,20 @@ input.datepick {
 }
 .sortable .day-item{
   padding-left: 0;
+  padding-right: 0;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
   border-left:0px;
   border-right: 0px;
   border-top: 0px;
-  border-bottom:1px solid #0d2148;
+  border-bottom:1px solid grey;
   background: white;
   font-weight: 700;
   cursor: move;
 }
-
+.form-group .glyphicon-search.glyphicon.form-control-feedback{
+  color:#1b1e24;
+}
 .invisible-list li{
   display: none;
 }
@@ -283,18 +288,32 @@ div .ui-sortable{
 }*/
 
 .daycolumn {
-  min-width: 200px;
+  min-width: 250px;
+  border:1px solid rgba(215, 217, 221,0.8);
 }
 #fixed-div {
     position: fixed;
     top: 1em;
     right: 1em;
     padding-top: 3%;
+    height: 100%;
 }
 /*
 #column{
   width:200px;
 }*/
+.duration {
+    font-size: 0.7vw;
+    font-weight: 700;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-left: 0 !important;
+    max-width: 90%;
+    padding-top: 5px;
+    display: inline;
+    position: relative !important;
+}
 .container.appcontainer {
   margin: 0;
   width: 100%;
@@ -303,9 +322,9 @@ div .ui-sortable{
   transform:translate3d(0,0,0);
   overflow-y: scroll;
   overflow-x:hidden;
-  max-height: 700px;
   border: 2px solid rgba(224, 224, 235,1);
   border-radius: 5px;
+  height: 100%;
 }
 .startend {
   text-align: center;
@@ -339,14 +358,16 @@ div .ui-sortable{
 .tn-img{
   height: 100%;
   width: 22.5%;
-  border-radius: 100%;
+  border-radius: 10px;
   padding: 5px 10px 5px 10px; 
-  max-height: 50px;
+  max-height: 100px;
+  max-width: 100px;
 }
 .day-item div img {
   height:15vh;
   width: 100%;
-  border-radius: 2px;
+  border-radius: 4px;
+  box-shadow:2px 2px 2px #888888;
 }
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
 
@@ -386,6 +407,7 @@ div .ui-sortable{
   width: 100%;
   animation: float 5s infinite;
   box-shadow: none;
+  height: 100%;
 } 
 .panel .panel.panel-heading {
   color:#D5DDE5;
