@@ -48,6 +48,7 @@
 						$datetime->add(new DateInterval("PT{$attraction->duration}H"));
 						@endphp
 						<span class="endtime" style="display:none;">{{$datetime->format("H:i")}}</span>
+						<span class = "duration">{{$attraction->duration}}</span>
 					</div>
 			</li>
 			@endforeach
