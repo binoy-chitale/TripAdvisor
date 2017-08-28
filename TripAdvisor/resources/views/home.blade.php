@@ -11,14 +11,4 @@
                 @endforeach
         </div>
 </div>
-
-<div id="Normal">
-    <button onclick="myFunction()" class="btn btn-primary btn-circle btn-lg"><i class="glyphicon glyphicon-print"></i></button>
-<div>
 @endsection
-
-<script>
-function myFunction() {
-    window.print();
-}
-</script>

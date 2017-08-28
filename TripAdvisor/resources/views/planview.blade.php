@@ -15,7 +15,7 @@
 									<img src="{{unserialize($item->images)[0]}}"></span>
 								</div>
 								@endif
-								<span class="itemname">{{$item->name}}</span><div class="startend"><span class="starttime">{{$item->startofvisit}}</span>-<span class="endtime">{{$item->endofvisit}}</span></div>
+								<span class="itemname">{{$item->name}}</span><br><div class="startend"><span class="starttime">{{$item->startofvisit}}</span>-<span class="endtime">{{$item->endofvisit}}</span></div>
 								@php
 								$start = DateTime::createFromFormat("H:i",$item->startofvisit);
 								$end = DateTime::createFromFormat("H:i",$item->endofvisit);
@@ -81,7 +81,7 @@
 </div>
 <div id="plot">
     <button type="submit" class="btn btn-primary btn-circle btn-lg"><i class="glyphicon glyphicon-map-marker"></i></button>
-    <span id="dest">{{$name}}</span>
+    <span id="dest" style="display:none">{{$name}}</span>
 </div>
 <div id="Normal">
     <button onclick="myFunction()" class="btn btn-primary btn-circle btn-lg"><i class="glyphicon glyphicon-print"></i></button>

@@ -3,28 +3,50 @@ $( function() {
     $( ".sortable" ).sortable({
   connectWith: ".sortable",
   tolerance: 'pointer',
+  helper:'clone',
+  start:function(event, ui){
+    
+
+  },
   update : function(event,ui){
+      var cancelled=0;
+      if(ui.sender!=null){
+        var lastendtime = ui.item.parent()[0].lastChild.getElementsByClassName("endtime")[0].innerHTML;
+        console.log(lastendtime);
+        if(lastendtime < "10:00" && lastendtime >= "01:00" && !$(this).hasClass("side-sortable")){
+             ui.sender.sortable('cancel');
+             cancelled=1;
+        }
+      }
     if(!ui.item.hasClass("sidebar-list") && $(this).hasClass("side-sortable")) {
   		 // ui.item.removeClass("sidebar-list");
   		 // ui.item.addClass("ui-state-default", "day-item", "ui-sortable-handle");
-       ui.item.attr("class","sidebar-list ui-sortable-handle");
-       current = ui.item[0];
-       var wrapper = current.getElementsByClassName("img-wrapper");
-       wrapper[0].style="display:inline;";
-       var duration = current.getElementsByClassName("duration");
-       duration[0].style="display:inline;";
-       var startend = current.getElementsByClassName("startend");
-       startend[0].style="display:none;";
-       var image = current.getElementsByTagName("img");
-       image[0].className = "tn-img";
+       // ui.item.attr("class","sidebar-list ui-sortable-handle");
+       // current = ui.item[0];
+       // var wrapper = current.getElementsByClassName("img-wrapper");
+       // wrapper[0].style="display:inline;";
+       // var duration = current.getElementsByClassName("duration");
+       // duration[0].style="display:inline;";
+       // var startend = current.getElementsByClassName("startend");
+       // startend[0].style="display:none;";
+       // var image = current.getElementsByTagName("img");
+       // image[0].className = "tn-img";
+       ui.sender.sortable('cancel');
+       cancelled=1;
   	}
-    if(ui.item.hasClass("sidebar-list") && !$(this).hasClass("side-sortable")) {
+    if(ui.item.hasClass("sidebar-list") && cancelled!=1){
+      console.log(ui.item.clone());
+      if(ui.sender!=null){
+        $clone = ui.sender[0].appendChild(ui.item.clone()[0]);
+      }
+    }
+    if(ui.item.hasClass("sidebar-list") && !$(this).hasClass("side-sortable") && cancelled==0) {
        // ui.item.removeClass("sidebar-list");
        // ui.item.addClass("ui-state-default", "day-item", "ui-sortable-handle");
        ui.item.attr("class","ui-state-default day-item ui-sortable-handle");
        current = ui.item[0];
        var image = current.getElementsByClassName("tn-img");
-       image[0].style ="height: 30vh;width: 100%;border-radius: 2px;";
+       image[0].style ="height: 30vh;width:100%;border-radius: 2px;";
        image[0].className = "";
        var starttime = current.getElementsByClassName("starttime");
        starttime[0].style = "display:inline; font-size:0.9vw";
@@ -42,13 +64,10 @@ $( function() {
     	var starttime = starttimes[i]; 
     	var endtime = endtimes[i];
     	var itemname = itemnames[i];
-    	currentTime = updateTimes(currentTime,starttime,endtime,itemname);
-      if(currentTime < "10:00" && currentTime > "03:00" && !$(this).hasClass("side-sortable")){
-         ui.sender.sortable('cancel');
-      }
-	  }
-  	
-  }
+    	console.log(starttime);
+      currentTime = updateTimes(currentTime,starttime,endtime,itemname);
+	  }	
+}
 });
     $( ".sortable" ).disableSelection();
   } );
@@ -61,23 +80,21 @@ function updateTimes(currentTime,starttime,endtime,itemname){
   }
   else{
    		var temp = new Date.parseExact(currentTime,"HH:mm");
-    		if(!(itemname.innerHTML.toUpperCase()==="LUNCH BREAK")) {
+    		if(!(itemname.innerHTML.toUpperCase()==="LUNCH")) {
     			currentTime = temp.addHours(1).toString("HH:mm");
     		}
   }
 	var oldstarttime = new Date.parseExact(starttime.innerHTML,"HH:mm");
 	var oldendtime = new Date.parseExact(endtime.innerHTML,"HH:mm");
 	var newstarttime = new Date.parseExact(currentTime,"HH:mm");
-	starttime.innerHTML = newstarttime.toString("HH:mm");
-	var duration = Math.abs(oldendtime - oldstarttime) / 36e5;
+  starttime.innerHTML = newstarttime.toString("HH:mm");
+  var duration = Math.abs(oldendtime - oldstarttime) / 36e5;
   if(duration > 12){
     duration = 24-duration;
   }
-  console.log(newstarttime.toString("HH:mm")+">");
   var newendtime = newstarttime.addHours(duration);
   endtime.innerHTML = newendtime.toString("HH:mm");
 	currentTime = newendtime.toString("HH:mm");
-	console.log(newendtime.toString("HH:mm"));
   return currentTime;
 
 }
@@ -93,6 +110,7 @@ $("#plot").click(function(){
           latlon.push(listitems[j].getElementsByClassName("itemname")[0].innerHTML);
           latlon.push(listitems[j].getElementsByClassName("lat")[0].innerHTML);
           latlon.push(listitems[j].getElementsByClassName("lon")[0].innerHTML);
+          latlon.push(listitems[j].getElementsByTagName("img")[0].src);
       }
       daylocations.push(latlon);
     }

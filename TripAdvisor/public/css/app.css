@@ -243,11 +243,11 @@ label.label_selected {
 .sortable .itemname {
   position: relative;
   margin: auto;
-  display: block;
+  display: inline;
   text-align: center;
   font-size: 1vw;
 }
-.sortable .day-item{
+/*.sortable .day-item{
   padding-left: 0;
   padding-right: 0;
   padding-top: 0.4em;
@@ -259,6 +259,15 @@ label.label_selected {
   background: white;
   font-weight: 700;
   cursor: move;
+  height:5vh;
+}*/
+.sortable .day-item{
+  padding: 0;
+  height: 8vh;
+  margin-bottom: 5px;
+  border-bottom: 1px solid grey;
+  cursor: move;
+  min-height: 80px;
 }
 .form-group .glyphicon-search.glyphicon.form-control-feedback{
   color:#1b1e24;
@@ -312,12 +321,14 @@ div .ui-sortable{
 .panelbodydiv .sortable{
   width: 100%;
 }
-#Normal button{
-  position:fixed;
-  float:left;
-  bottom: 0;
-  bottom: 6em;
+#Normal{
+position:fixed;
+  float:left; 
+  margin-bottom: 8vh;
+  bottom: 1em;
   left: 1em;
+}
+#Normal button{ 
   border-radius: 100%;
   height: 7vh;
   width: 7vh;
@@ -369,6 +380,7 @@ div .ui-sortable{
 .startend {
   text-align: center;
   font-size: 0.9vw;
+  display: inline;
 }
 .sortable .sidebar-list {
   padding:0;
@@ -376,7 +388,7 @@ div .ui-sortable{
   margin-bottom: 5px;
   border-bottom: 1px solid grey;
   cursor: move;
-  min-height: 50px;
+  min-height: 80px;
 }
 .sortable .sidebar-list  .itemname{
   font-size: 0.9vw;
@@ -404,12 +416,22 @@ div .ui-sortable{
   max-height: 100px;
   max-width: 100px;
 }
-.day-item div img {
-  height:30vh;
-  width: 100%;
+/*.day-item div img {
+  height:100%;
   border-radius: 4px;
   box-shadow:2px 2px 2px #888888;
   border : 2px solid #1b1e24;
+}*/
+.day-item div img{
+  height: 100%;
+  width: 22.5%;
+  border-radius: 10px;
+  padding: 5px 10px 5px 10px; 
+  max-height: 100px;
+  max-width: 100px;
+}
+.img-wrapper{
+  display: inline;
 }
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
 

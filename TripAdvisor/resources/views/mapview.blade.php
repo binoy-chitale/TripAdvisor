@@ -1,7 +1,15 @@
 @extends('layouts.app')
 @section('content')
-<div id="map" class="col-md-8 col-md-offset-2">
-	
+<div class="container">
+	<div class = "col-md-4">
+		<div class="scrollable-sidebar">
+		<ul  class="sortable side-sortable">
+			
+		</ul>
+		</div>
+	</div>
+	<div id="map" class="col-md-8">
+	</div>
 </div>
 @endsection
 @section('scripts')
@@ -14,8 +22,23 @@
       function initMap() {
         var colors = ["http://maps.google.com/mapfiles/ms/icons/red-dot.png","http://maps.google.com/mapfiles/ms/icons/blue-dot.png","http://maps.google.com/mapfiles/ms/icons/green-dot.png","http://maps.google.com/mapfiles/ms/icons/orange-dot.png","http://maps.google.com/mapfiles/ms/icons/yellow-dot.png","http://maps.google.com/mapfiles/ms/icons/purple-dot.png","http://labs.google.com/ridefinder/images/mm_20_gray.png","http://labs.google.com/ridefinder/images/mm_20_white.png","http:// labs.google.com/ridefinder/images/mm_20_blue.png","http://labs.google.com/ridefinder/images/mm_20_black.png"];	 
 	    var locations = JSON.parse(localStorage['locations']);
-	    console.log(locations);
+	    var list = document.getElementsByClassName("side-sortable")[0];
+	    for(i=0;i<locations.length;i++){
+	    	for(j=0;j<locations[i].length;j++){
+		    	var listitem = document.createElement("li");
+		    	listitem.className="sidebar-list ui-sortable-handle";
+		    	var itemname = document.createElement("span");
+		    	itemname.innerHTML = locations[i][j][0];
+		    	itemname.className = "itemname";
+		    	var image = document.createElement("img");
+		    	image.className = "tn-img";
+		    	image.src=locations[i][j][3];
+		    	listitem.appendChild(image);
+		    	listitem.appendChild(itemname);
+		    	list.appendChild(listitem);
 
+		    }
+	    }
 	    var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 10,
           center: {lat:parseFloat(locations[0][0][1]), lng:parseFloat(locations[0][0][2])}
@@ -69,3 +92,10 @@
 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDg5aW83Iq_iMB8ZRu-qhnox6-SQ9JM2-Q&callback=initMap">
 </script>
 @endsection('scripts')
+@section('styles')
+<style type="text/css">
+  .sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+  .sortable li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em; }
+  .sortable li span { position: absolute; margin-left: -1.3em; }
+</style>
+@endsection
