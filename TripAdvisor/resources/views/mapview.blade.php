@@ -3,7 +3,6 @@
 <div id="map" class="col-md-8 col-md-offset-2">
 	
 </div>
-<div id="hidden"style="display:none">{{$locations}}</div>
 @endsection
 @section('scripts')
 <script type="text/javascript">
@@ -13,10 +12,10 @@
 </script>
 <script>
       function initMap() {
-        var colors = ["http://maps.google.com/mapfiles/ms/icons/red-dot.png","http://maps.google.com/mapfiles/ms/icons/blue-dot.png","http://maps.google.com/mapfiles/ms/icons/green-dot.png","http://maps.google.com/mapfiles/ms/icons/orange-dot.png","http://maps.google.com/mapfiles/ms/icons/yellow-dot.png","http://maps.google.com/mapfiles/ms/icons/purple-dot.png","http://labs.google.com/ridefinder/images/mm_20_gray.png","http://labs.google.com/ridefinder/images/mm_20_white.png","http:// labs.google.com/ridefinder/images/mm_20_blue.png","http://labs.google.com/ridefinder/images/mm_20_black.png"];
-        var locationsAsString = document.getElementById("hidden").innerHTML;
-	    var locations = JSON.parse(locationsAsString);
-	    console.log("here");
+        var colors = ["http://maps.google.com/mapfiles/ms/icons/red-dot.png","http://maps.google.com/mapfiles/ms/icons/blue-dot.png","http://maps.google.com/mapfiles/ms/icons/green-dot.png","http://maps.google.com/mapfiles/ms/icons/orange-dot.png","http://maps.google.com/mapfiles/ms/icons/yellow-dot.png","http://maps.google.com/mapfiles/ms/icons/purple-dot.png","http://labs.google.com/ridefinder/images/mm_20_gray.png","http://labs.google.com/ridefinder/images/mm_20_white.png","http:// labs.google.com/ridefinder/images/mm_20_blue.png","http://labs.google.com/ridefinder/images/mm_20_black.png"];	 
+	    var locations = JSON.parse(localStorage['locations']);
+	    console.log(locations);
+
 	    var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 10,
           center: {lat:parseFloat(locations[0][0][1]), lng:parseFloat(locations[0][0][2])}

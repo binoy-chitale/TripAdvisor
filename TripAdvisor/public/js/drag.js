@@ -81,3 +81,24 @@ function updateTimes(currentTime,starttime,endtime,itemname){
   return currentTime;
 
 }
+$("#plot").click(function(){
+  var all_lists = document.getElementsByClassName("daycolumn");
+  var locations=[];
+  for(i=0;i<all_lists.length;i++){
+    var listitems = all_lists[i].getElementsByTagName("li");
+    var daylocations=[]
+    for(j=0;j<listitems.length;j++){
+      var latlon=[]
+      if(listitems[j].getElementsByClassName("lat").length != 0 && listitems[j].getElementsByClassName("lon").length != 0){
+          latlon.push(listitems[j].getElementsByClassName("itemname")[0].innerHTML);
+          latlon.push(listitems[j].getElementsByClassName("lat")[0].innerHTML);
+          latlon.push(listitems[j].getElementsByClassName("lon")[0].innerHTML);
+      }
+      daylocations.push(latlon);
+    }
+    locations.push(daylocations);
+  }
+  localStorage['locations'] = JSON.stringify(locations);
+  var dest = document.getElementById("dest").innerHTML;
+  location.href = "/plot/"+dest;
+});

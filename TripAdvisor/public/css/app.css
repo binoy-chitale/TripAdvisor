@@ -1,8 +1,4 @@
-#Normal{
-  position:absolute;
-  float:left;
-  bottom: 0;
-}
+
 
 .btn-circle {
   width: 30px;
@@ -316,15 +312,27 @@ div .ui-sortable{
 .panelbodydiv .sortable{
   width: 100%;
 }
+#Normal button{
+  position:fixed;
+  float:left;
+  bottom: 0;
+  bottom: 6em;
+  left: 1em;
+  border-radius: 100%;
+  height: 7vh;
+  width: 7vh;
+}
 #plot {
     position: fixed;
     bottom: 1em;
     left: 1em;
-
 }
 #plot button{
   background-color:#1b1e24;
   border-color: #1b1e24;
+  height: 7vh;
+  width: 7vh;
+  border-radius: 100%;
 }
 /*
 #column{

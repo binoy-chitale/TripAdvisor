@@ -22,6 +22,9 @@
 								$duration =  $start->diff($end);
 								@endphp
 								<span class="duration" style="display:none">Stay for {{$duration->h}} hours</span>
+								@if(property_exists($item,"latitude")&&property_exists($item,"longitude"))
+								<span class="lat" style="display:none">{{$item->latitude}}</span><span class="lon" style="display:none">{{$item->longitude}}</span>
+								@endif
 								</li>
 							@endforeach
 							</ul>
@@ -67,18 +70,27 @@
 						@endphp
 						<span class="endtime" style="display:none;">{{$datetime->format("H:i")}}</span>
 					</div>
+					@if(property_exists($attraction,"latitude")&&property_exists($attraction,"longitude"))
+						<span class="lat" style="display:none">{{$attraction->latitude}}</span><span class="lon" style="display:none">{{$attraction->longitude}}</span>
+					@endif
 			</li>
 			@endforeach
 			</ul>
 		</div>
 	</div>
 </div>
-{!!Form::open(array('action' => 'PlotController@plot', 'url'=>'/plot/'.$name))!!}
 <div id="plot">
     <button type="submit" class="btn btn-primary btn-circle btn-lg"><i class="glyphicon glyphicon-map-marker"></i></button>
+    <span id="dest">{{$name}}</span>
 </div>
-{!!Form::hidden('itenerary',json_encode($itenerary))!!}
-{!!Form::close()!!}
+<div id="Normal">
+    <button onclick="myFunction()" class="btn btn-primary btn-circle btn-lg"><i class="glyphicon glyphicon-print"></i></button>
+</div>
+<script>
+function myFunction() {
+    window.print();
+}
+</script>
 @endsection
 @section('scripts')
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
