@@ -37,7 +37,7 @@ class CategoryController extends Controller{
         $list = [];
         $flag=0;
         $n = 0;
-        $radius= 5;
+        $radius= 2;
         foreach ($dist[$currentStop] as $key => $value) {
             $lat1 = (float)$value['latitude'];
             $lon1 = (float)$value['longitude'];
@@ -46,7 +46,7 @@ class CategoryController extends Controller{
             $reset=0;
             foreach ($dist as $keyinner => $valueinner) {
                 if($n>20){
-                    $radius = $radius + 5;
+                    $radius = $radius + 1;
                     $n = 0;
                     $reset=1;
                     break;
@@ -133,7 +133,7 @@ class CategoryController extends Controller{
     public function updateRatingsWithCategories(){
         $list = Category::select('attraction_id', DB::raw('count(*) as count'))->whereIn('attraction_id',$this->attractionidlist)->whereIn('name' ,$this->catvalues)->groupBy('attraction_id')->get();    
         foreach ($list as $list) {
-            $this->rating[$list->attraction_id] = $this->rating[$list->attraction_id] + $list->count*0.5;
+            $this->rating[$list->attraction_id] = $this->rating[$list->attraction_id] + $list->count*0.1;
             $this->rating[$list->attraction_id] = (string)$this->rating[$list->attraction_id];     
         }
     }
@@ -194,7 +194,11 @@ class CategoryController extends Controller{
                 }
             if($att=$this->isOpen($currentStop,clone $day)) {
                 array_push($this->visit,$currentStop);
-                $day->add(new DateInterval("PT{$this->getTravelTime()}S"));
+                $day->add(new DateInterval("PT{$this->getTravelTime()}H"));
+                $hours =$att->duration;
+                if($hours==""){
+                    $hours=2;
+                }
                 foreach ($this->attractions as $attraction) {
                     if($attraction->id == $currentStop){
                         $attraction->startofvisit=$day->format("H:i");
@@ -204,10 +208,7 @@ class CategoryController extends Controller{
                         array_push($itenerary['plan'],$attraction);
                     }
                 }
-                $hours =$att->duration;
-                if($hours==""){
-                    $hours=2;
-                }
+                
                 $day->add(new DateInterval("PT{$hours}H"));
             }
             array_push($this->marked, $currentStop);
@@ -236,7 +237,7 @@ class CategoryController extends Controller{
         // $result = json_decode($json, true);
         // return ($result['rows']['0']['elements']['0']['duration']['value']);
         // return $min;
-        return "1";
+        return 1;
     }
     public function isOpen($id,$day) {
         $days = array("Mon"=>0,"Tue"=>1,"Wed"=>2,"Thu"=>3,"Fri"=>4,"Sat"=>5,"Sun"=>6);

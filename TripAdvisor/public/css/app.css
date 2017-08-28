@@ -300,13 +300,40 @@ div .ui-sortable{
     position: fixed;
     top: 1em;
     right: 1em;
-    padding-top: 2%;
+    margin-top: 50px;
     height: 100%;
+    transform:translate3d(0,0,0) ;
+    z-index: 100;
+    background: white;
+    padding-left: 0px;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-top: 0px;
+}
+#fixed-div .sortable{
+  width: 100%;
+}
+.panelbodydiv .sortable{
+  width: 100%;
+}
+#plot {
+    position: fixed;
+    bottom: 1em;
+    left: 1em;
+
+}
+#plot button{
+  background-color:#1b1e24;
+  border-color: #1b1e24;
 }
 /*
 #column{
   width:200px;
 }*/
+#map{
+  height: 500px;
+  width: 700px;
+}
 .duration {
     font-size: 0.7vw;
     font-weight: 700;
@@ -341,6 +368,7 @@ div .ui-sortable{
   margin-bottom: 5px;
   border-bottom: 1px solid grey;
   cursor: move;
+  min-height: 50px;
 }
 .sortable .sidebar-list  .itemname{
   font-size: 0.9vw;
@@ -369,10 +397,11 @@ div .ui-sortable{
   max-width: 100px;
 }
 .day-item div img {
-  height:15vh;
+  height:30vh;
   width: 100%;
   border-radius: 4px;
   box-shadow:2px 2px 2px #888888;
+  border : 2px solid #1b1e24;
 }
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
 
@@ -583,7 +612,9 @@ div .ui-sortable{
 .row{
   width:auto;
 }
-
+.scrollable-sidebar .sortable{
+  width: 100%;  
+}
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);@charset "UTF-8";/*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.

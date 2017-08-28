@@ -21,6 +21,7 @@ Route::get('/view/{name}', 'DashboardController@dash');
 Route::get('/plan/{name}', 'CategoryController@viewCategories');
 Route::post('/planned/{name}', 'CategoryController@getCategories');
 Route::get('/view/{name}/{placename}', 'PlaceViewController@view');
+Route::post('/plot/{name}', 'PlotController@plot');
 Route::get('/plan',function(){
 	return redirect('/home');
 });

@@ -31,6 +31,7 @@
 		</div>
 	</div>
 	<div class="col-md-3" id="fixed-div">
+		
 		<ul class="sortable invisible-list"><button class="btn trashbutton" ><span>Remove</span></button></ul>
 		<form class="search-form">
             <span class="form-group has-feedback">
@@ -72,6 +73,12 @@
 		</div>
 	</div>
 </div>
+{!!Form::open(array('action' => 'PlotController@plot', 'url'=>'/plot/'.$name))!!}
+<div id="plot">
+    <button type="submit" class="btn btn-primary btn-circle btn-lg"><i class="glyphicon glyphicon-map-marker"></i></button>
+</div>
+{!!Form::hidden('itenerary',json_encode($itenerary))!!}
+{!!Form::close()!!}
 @endsection
 @section('scripts')
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

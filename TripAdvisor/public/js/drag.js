@@ -1,4 +1,5 @@
 $( function() {
+    console.log("here");
     $( ".sortable" ).sortable({
   connectWith: ".sortable",
   tolerance: 'pointer',
@@ -23,7 +24,7 @@ $( function() {
        ui.item.attr("class","ui-state-default day-item ui-sortable-handle");
        current = ui.item[0];
        var image = current.getElementsByClassName("tn-img");
-       image[0].style ="height: 15vh;width: 100%;border-radius: 2px;";
+       image[0].style ="height: 30vh;width: 100%;border-radius: 2px;";
        image[0].className = "";
        var starttime = current.getElementsByClassName("starttime");
        starttime[0].style = "display:inline; font-size:0.9vw";
@@ -42,6 +43,9 @@ $( function() {
     	var endtime = endtimes[i];
     	var itemname = itemnames[i];
     	currentTime = updateTimes(currentTime,starttime,endtime,itemname);
+      if(currentTime < "10:00" && currentTime > "03:00" && !$(this).hasClass("side-sortable")){
+         ui.sender.sortable('cancel');
+      }
 	  }
   	
   }
@@ -66,6 +70,9 @@ function updateTimes(currentTime,starttime,endtime,itemname){
 	var newstarttime = new Date.parseExact(currentTime,"HH:mm");
 	starttime.innerHTML = newstarttime.toString("HH:mm");
 	var duration = Math.abs(oldendtime - oldstarttime) / 36e5;
+  if(duration > 12){
+    duration = 24-duration;
+  }
   console.log(newstarttime.toString("HH:mm")+">");
   var newendtime = newstarttime.addHours(duration);
   endtime.innerHTML = newendtime.toString("HH:mm");
