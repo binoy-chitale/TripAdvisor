@@ -194,7 +194,7 @@ class CategoryController extends Controller{
                 }
             if($att=$this->isOpen($currentStop,clone $day)) {
                 array_push($this->visit,$currentStop);
-                $day->add(new DateInterval("PT{$this->getTravelTime()}H"));
+                $day->add(new DateInterval("PT{$this->getTravelTime()}S"));
                 $hours =$att->duration;
                 if($hours==""){
                     $hours=2;
@@ -222,22 +222,24 @@ class CategoryController extends Controller{
         }
     }
     public function getTravelTime(){
-        // $stop1 = (array_values($this->visit)[count($this->visit)-2]);
-        // $stop2 = (array_values($this->visit)[count($this->visit)-1]);
-        // foreach ($this->distarray[$stop1] as $key => $value) {
-        //     $lat1 = (float)$value['latitude'];
-        //     $lon1 = (float)$value['longitude'];
-        // }
-        // foreach ($this->distarray[$stop2] as $key => $value) {
-        //     $lat2 = (float)$value['latitude'];
-        //     $lon2 = (float)$value['longitude'];
-        // }
+        $stop1 = (array_values($this->visit)[count($this->visit)-2]);
+        $stop2 = (array_values($this->visit)[count($this->visit)-1]);
+        foreach ($this->distarray[$stop1] as $key => $value) {
+            $lat1 = (float)$value['latitude'];
+            $lon1 = (float)$value['longitude'];
+        }
+        foreach ($this->distarray[$stop2] as $key => $value) {
+            $lat2 = (float)$value['latitude'];
+            $lon2 = (float)$value['longitude'];
+        }
         // $url="https://maps.googleapis.com/maps/api/distancematrix/json?origins=".$lat1.",".$lon1."&destinations=".$lat2.",".$lon2;
         // $json = file_get_contents($url); 
         // $result = json_decode($json, true);
         // return ($result['rows']['0']['elements']['0']['duration']['value']);
         // return $min;
-        return 1;
+        $distance= $this->calculateDistance($lat1,$lon2,$lat2,$lon2);
+        $time=$distance*3600/4.28;
+        return round($time);
     }
     public function isOpen($id,$day) {
         $days = array("Mon"=>0,"Tue"=>1,"Wed"=>2,"Thu"=>3,"Fri"=>4,"Sat"=>5,"Sun"=>6);

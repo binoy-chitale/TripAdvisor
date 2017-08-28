@@ -3,20 +3,13 @@ $( function() {
     $( ".sortable" ).sortable({
   connectWith: ".sortable",
   tolerance: 'pointer',
+  helper:'clone',
+  start:function(event, ui){
+     $clone = ui.item.clone().insertBefore(ui.item);
+  },
   update : function(event,ui){
     if(!ui.item.hasClass("sidebar-list") && $(this).hasClass("side-sortable")) {
-  		 // ui.item.removeClass("sidebar-list");
-  		 // ui.item.addClass("ui-state-default", "day-item", "ui-sortable-handle");
-       ui.item.attr("class","sidebar-list ui-sortable-handle");
-       current = ui.item[0];
-       var wrapper = current.getElementsByClassName("img-wrapper");
-       wrapper[0].style="display:inline;";
-       var duration = current.getElementsByClassName("duration");
-       duration[0].style="display:inline;";
-       var startend = current.getElementsByClassName("startend");
-       startend[0].style="display:none;";
-       var image = current.getElementsByTagName("img");
-       image[0].className = "tn-img";
+  		 ui.sender.sortable('cancel');
   	}
     if(ui.item.hasClass("sidebar-list") && !$(this).hasClass("side-sortable")) {
        // ui.item.removeClass("sidebar-list");
@@ -62,6 +55,7 @@ function updateTimes(currentTime,starttime,endtime,itemname){
   else{
    		var temp = new Date.parseExact(currentTime,"HH:mm");
     		if(!(itemname.innerHTML.toUpperCase()==="LUNCH BREAK")) {
+          console.log(itemname);
     			currentTime = temp.addHours(1).toString("HH:mm");
     		}
   }
@@ -73,11 +67,11 @@ function updateTimes(currentTime,starttime,endtime,itemname){
   if(duration > 12){
     duration = 24-duration;
   }
-  console.log(newstarttime.toString("HH:mm")+">");
+  // console.log(newstarttime.toString("HH:mm")+">");
   var newendtime = newstarttime.addHours(duration);
   endtime.innerHTML = newendtime.toString("HH:mm");
 	currentTime = newendtime.toString("HH:mm");
-	console.log(newendtime.toString("HH:mm"));
+	// console.log(newendtime.toString("HH:mm"));
   return currentTime;
 
 }
@@ -102,3 +96,21 @@ $("#plot").click(function(){
   var dest = document.getElementById("dest").innerHTML;
   location.href = "/plot/"+dest;
 });
+
+function calculateDistance(lat1, lon1, lat2, lon2){      
+  var theta = lon1 - lon2;
+  var dist = Math.sin(deg2rad(lat1)) * Math.sin(deg2rad(lat2)) +  Math.cos(deg2rad(lat1)) * Math.cos(deg2rad(lat2)) * Math.cos(deg2rad(theta));
+  dist = Math.acos(dist);
+  dist = rad2deg(dist);
+  var miles = dist * 60 * 1.1515;
+  var km = miles*1.609344;
+  return km;
+}
+
+function deg2rad (angle) {
+  return angle * 0.017453292519943295 // (angle / 180) * Math.PI;
+}
+
+function rad2deg(angle){
+  return angle * 57.29577951308232 // angle / Math.PI * 180
+}

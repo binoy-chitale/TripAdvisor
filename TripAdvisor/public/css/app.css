@@ -292,6 +292,8 @@ div .ui-sortable{
   min-width: 250px;
   border:1px solid rgba(215, 217, 221,0.8);
 }
+
+
 #fixed-div {
     position: fixed;
     top: 1em;
@@ -338,6 +340,9 @@ div .ui-sortable{
 #column{
   width:200px;
 }*/
+#daycolumn{
+  width:200px;
+}
 #map{
   height: 500px;
   width: 700px;
