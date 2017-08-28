@@ -15,6 +15,7 @@ $( function() {
         console.log(lastendtime);
         if(lastendtime < "10:00" && lastendtime >= "01:00" && !$(this).hasClass("side-sortable")){
              ui.sender.sortable('cancel');
+            changeTimes(ui.sender);
              cancelled=1;
         }
       }
@@ -31,7 +32,9 @@ $( function() {
        // startend[0].style="display:none;";
        // var image = current.getElementsByTagName("img");
        // image[0].className = "tn-img";
+       
        ui.sender.sortable('cancel');
+       changeTimes(ui.sender);
        cancelled=1;
   	}
     if(ui.item.hasClass("sidebar-list") && cancelled!=1){
@@ -46,16 +49,17 @@ $( function() {
        ui.item.attr("class","ui-state-default day-item ui-sortable-handle");
        current = ui.item[0];
        var image = current.getElementsByClassName("tn-img");
-       image[0].style ="height: 30vh;width:100%;border-radius: 2px;";
+       image[0].style ="height: 100%;width: 22.5%;border-radius: 10px;padding: 5px 10px 5px 10px; max-height: 100px;max-width: 100px;";
        image[0].className = "";
        var starttime = current.getElementsByClassName("starttime");
-       starttime[0].style = "display:inline; font-size:0.9vw";
+       starttime[0].style = "display:inline; font-size:0.7vw";
        var endtime = current.getElementsByClassName("endtime");
-       endtime[0].style = "display:inline;font-size:0.9vw";
+       endtime[0].style = "display:inline;font-size:0.7vw";
        var endtime = current.getElementsByClassName("duration");
        endtime[0].style = "display:none;";
     }
-  	var listitems = $(this);
+  	
+    var listitems = $(this);
   	var starttimes = listitems[0].getElementsByClassName("starttime");
   	var endtimes = listitems[0].getElementsByClassName("endtime");
   	var itemnames = listitems[0].getElementsByClassName("itemname");
@@ -120,3 +124,17 @@ $("#plot").click(function(){
   var dest = document.getElementById("dest").innerHTML;
   location.href = "/plot/"+dest;
 });
+function changeTimes(sender){
+  var listitems = sender;
+    var starttimes = listitems[0].getElementsByClassName("starttime");
+    var endtimes = listitems[0].getElementsByClassName("endtime");
+    var itemnames = listitems[0].getElementsByClassName("itemname");
+    var currentTime = 0;
+    for (var i = 0; i < starttimes.length; i++) {
+      var starttime = starttimes[i]; 
+      var endtime = endtimes[i];
+      var itemname = itemnames[i];
+      console.log(starttime);
+      currentTime = updateTimes(currentTime,starttime,endtime,itemname);
+    }
+}
