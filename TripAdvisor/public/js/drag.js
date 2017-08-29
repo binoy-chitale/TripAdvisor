@@ -1,82 +1,76 @@
-
 $( function() {
-    console.log("here");
-    $( ".sortable" ).sortable({
-  connectWith: ".sortable",
-  tolerance: 'pointer',
-  helper:'clone',
-  start:function(event, ui){
-    
-
-  },
-  update : function(event,ui){
+  $( ".sortable" ).sortable({
+    connectWith: ".sortable",
+    tolerance: 'pointer',
+    helper:'clone',
+    start:function(event, ui){
+    },
+    update : function(event,ui){
       var cancelled=0;
       if(ui.sender!=null){
         var lastendtime = ui.item.parent()[0].lastChild.getElementsByClassName("endtime")[0].innerHTML;
-        console.log(lastendtime);
         if(lastendtime < "10:00" && lastendtime >= "01:00" && !$(this).hasClass("side-sortable")){
              ui.sender.sortable('cancel');
             changeTimes(ui.sender);
              cancelled=1;
         }
       }
-    if(!ui.item.hasClass("sidebar-list") && $(this).hasClass("side-sortable")) {
-  		 // ui.item.removeClass("sidebar-list");
-  		 // ui.item.addClass("ui-state-default", "day-item", "ui-sortable-handle");
-       // ui.item.attr("class","sidebar-list ui-sortable-handle");
-       // current = ui.item[0];
-       // var wrapper = current.getElementsByClassName("img-wrapper");
-       // wrapper[0].style="display:inline;";
-       // var duration = current.getElementsByClassName("duration");
-       // duration[0].style="display:inline;";
-       // var startend = current.getElementsByClassName("startend");
-       // startend[0].style="display:none;";
-       // var image = current.getElementsByTagName("img");
-       // image[0].className = "tn-img";
-       
-       ui.sender.sortable('cancel');
-       changeTimes(ui.sender);
-       cancelled=1;
-  	}
-    if(ui.item.hasClass("sidebar-list") && cancelled!=1){
-      console.log(ui.item.clone());
-      if(ui.sender!=null){
-        $clone = ui.sender[0].appendChild(ui.item.clone()[0]);
+      if(!ui.item.hasClass("sidebar-list") && $(this).hasClass("side-sortable")) {
+    		 ui.sender.sortable('cancel');
+         changeTimes(ui.sender);
+         cancelled=1;
+    	}
+      if(ui.item.hasClass("sidebar-list") && cancelled!=1){
+        if(ui.sender!=null){
+          $clone = ui.sender[0].appendChild(ui.item.clone()[0]);
+        }
+      }
+      if(ui.item.hasClass("sidebar-list") && !$(this).hasClass("side-sortable") && cancelled==0) {
+         // ui.item.removeClass("sidebar-list");
+         // ui.item.addClass("ui-state-default", "day-item", "ui-sortable-handle");
+         ui.item.attr("class","ui-state-default day-item ui-sortable-handle");
+         current = ui.item[0];
+         var image = current.getElementsByClassName("tn-img");
+         image[0].style ="height: 100%;width: 100%;border-radius: 10px;padding: 5px 10px 5px 10px; max-height: 100px;max-width: 100px;";
+         image[0].className = "";
+         var starttime = current.getElementsByClassName("starttime");
+         starttime[0].style = "display:inline; font-size:0.7vw";
+         var endtime = current.getElementsByClassName("endtime");
+         endtime[0].style = "display:inline;font-size:0.7vw";
+         var endtime = current.getElementsByClassName("duration");
+         endtime[0].style = "display:none;";
+      }
+    	if(!$(this).hasClass("side-sortable")){
+        var listitems = $(this);
+      	var starttimes = listitems[0].getElementsByClassName("starttime");
+      	var endtimes = listitems[0].getElementsByClassName("endtime");
+      	var itemnames = listitems[0].getElementsByClassName("itemname");
+        var latitudes = listitems[0].getElementsByClassName("lat");
+        var longitudes = listitems[0].getElementsByClassName("lon");
+      	var currentTime = 0;
+        var travelduration=[];
+        travelduration[0]=0;
+        for (var i = 1; i < latitudes.length; i++) {
+          travelduration[i]=calculateTime(latitudes[i-1].innerHTML,longitudes[i-1].innerHTML,latitudes[i].innerHTML,longitudes[i].innerHTML); 
+        };
+        var traveltime=0;
+        var j =0;
+        for (var i = 0; i < starttimes.length; i++) {
+        	var starttime = starttimes[i]; 
+        	var endtime = endtimes[i];
+        	var itemname = itemnames[i];        
+          if(!itemname.innerHTML.includes("Lunch")){
+            traveltime = travelduration[j];
+            j++;
+          }
+          else traveltime=0;
+          currentTime = updateTimeTravel(currentTime,starttime,endtime,itemname,traveltime);  
+    	  }	
       }
     }
-    if(ui.item.hasClass("sidebar-list") && !$(this).hasClass("side-sortable") && cancelled==0) {
-       // ui.item.removeClass("sidebar-list");
-       // ui.item.addClass("ui-state-default", "day-item", "ui-sortable-handle");
-       ui.item.attr("class","ui-state-default day-item ui-sortable-handle");
-       current = ui.item[0];
-       var image = current.getElementsByClassName("tn-img");
-       image[0].style ="height: 100%;width: 100%;border-radius: 10px;padding: 5px 10px 5px 10px; max-height: 100px;max-width: 100px;";
-       image[0].className = "";
-       var starttime = current.getElementsByClassName("starttime");
-       starttime[0].style = "display:inline; font-size:0.7vw";
-       var endtime = current.getElementsByClassName("endtime");
-       endtime[0].style = "display:inline;font-size:0.7vw";
-       var endtime = current.getElementsByClassName("duration");
-       endtime[0].style = "display:none;";
-    }
-  	if(!$(this).hasClass("side-sortable")){
-      var listitems = $(this);
-    	var starttimes = listitems[0].getElementsByClassName("starttime");
-    	var endtimes = listitems[0].getElementsByClassName("endtime");
-    	var itemnames = listitems[0].getElementsByClassName("itemname");
-    	var currentTime = 0;
-      for (var i = 0; i < starttimes.length; i++) {
-      	var starttime = starttimes[i]; 
-      	var endtime = endtimes[i];
-      	var itemname = itemnames[i];
-      	console.log(starttime);
-        currentTime = updateTimes(currentTime,starttime,endtime,itemname);
-  	  }	
-    }
-}
+  });
+  $( ".sortable" ).disableSelection();
 });
-    $( ".sortable" ).disableSelection();
-  } );
 function initializeTime(){
 	return "10:00";
 }
@@ -102,8 +96,30 @@ function updateTimes(currentTime,starttime,endtime,itemname){
   endtime.innerHTML = newendtime.toString("HH:mm");
 	currentTime = newendtime.toString("HH:mm");
   return currentTime;
-
 }
+function updateTimeTravel(currentTime,starttime,endtime,itemname,travelduration){
+  if(currentTime===0){
+    currentTime = initializeTime();
+  }
+  else{
+    var temp = new Date.parseExact(currentTime,"HH:mm");
+    temp.addMinutes(travelduration);
+    currentTime = temp;
+  }
+  var oldstarttime = new Date.parseExact(starttime.innerHTML,"HH:mm");
+  var oldendtime = new Date.parseExact(endtime.innerHTML,"HH:mm");
+  var newstarttime = new Date.parseExact(currentTime.toString("HH:mm"),"HH:mm");
+  starttime.innerHTML = newstarttime.toString("HH:mm");
+  var duration = Math.abs(oldendtime - oldstarttime) / 36e5;
+  if(duration > 12){
+    duration = 24-duration;
+  }
+  var newendtime = newstarttime.addHours(duration);
+  endtime.innerHTML = newendtime.toString("HH:mm");
+  currentTime = newendtime.toString("HH:mm");
+  return currentTime;
+}
+
 $("#plot").click(function(){
   var all_lists = document.getElementsByClassName("daycolumn");
   var locations=[];
@@ -126,17 +142,47 @@ $("#plot").click(function(){
   var dest = document.getElementById("dest").innerHTML;
   location.href = "/plot/"+dest;
 });
+  
 function changeTimes(sender){
   var listitems = sender;
-    var starttimes = listitems[0].getElementsByClassName("starttime");
-    var endtimes = listitems[0].getElementsByClassName("endtime");
-    var itemnames = listitems[0].getElementsByClassName("itemname");
-    var currentTime = 0;
-    for (var i = 0; i < starttimes.length; i++) {
-      var starttime = starttimes[i]; 
-      var endtime = endtimes[i];
-      var itemname = itemnames[i];
-      console.log(starttime);
-      currentTime = updateTimes(currentTime,starttime,endtime,itemname);
+  var starttimes = listitems[0].getElementsByClassName("starttime");
+  var endtimes = listitems[0].getElementsByClassName("endtime");
+  var itemnames = listitems[0].getElementsByClassName("itemname");
+  var latitudes = listitems[0].getElementsByClassName("lat");
+  var longitudes = listitems[0].getElementsByClassName("lon");  
+  var currentTime = 0;
+  var travelduration=[];
+  travelduration[0]=0;
+  for (var i = 1; i < latitudes.length; i++) {
+    travelduration[i]=calculateTime(latitudes[i-1].innerHTML,longitudes[i-1].innerHTML,latitudes[i].innerHTML,longitudes[i].innerHTML); 
+  };
+  var traveltime=0;
+  var j =0;
+  for (var i = 0; i < starttimes.length; i++) {
+    var starttime = starttimes[i]; 
+    var endtime = endtimes[i];
+    var itemname = itemnames[i];
+    if(!itemname.innerHTML.includes("Lunch")){
+      traveltime = travelduration[j];
+      j++;
     }
+    else traveltime=0;
+    currentTime = updateTimeTravel(currentTime,starttime,endtime,itemname,traveltime);
+  }
+}
+
+function calculateTime(lat1, lon1, lat2, lon2) {
+  var radlat1 = Math.PI * lat1/180;
+  var radlat2 = Math.PI * lat2/180;
+  var theta = lon1-lon2;
+  var radtheta = Math.PI * theta/180;
+  var dist = Math.sin(radlat1) * Math.sin(radlat2) + Math.cos(radlat1) * Math.cos(radlat2) * Math.cos(radtheta);
+  dist = Math.acos(dist);
+  dist = dist * 180/Math.PI;
+  dist = dist * 60 * 1.1515;
+  dist = dist * 1.609344; 
+  console.log(dist);
+  var time = dist*60/4.28;
+  console.log(time);
+  return Math.round(time);
 }
