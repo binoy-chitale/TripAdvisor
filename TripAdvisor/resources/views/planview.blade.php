@@ -11,15 +11,15 @@
 							@foreach($dayplan['plan'] as $item)
 								<li class="ui-state-default day-item" onclick="location.href ='/view/{{$name}}/{{$item->name}}'">
 								@if(property_exists($item,"images"))
-								<div class="img-wrapper">
+								<div class="img-wrapper col-sm-3">
 									<img src="{{unserialize($item->images)[0]}}"></span>
 								</div>
 								@else
-								<div class="img-wrapper">
+								<div class="img-wrapper col-sm-3">
 									<img src="{{ asset('images/lunch.png') }}"></span>
 								</div>
 								@endif
-								<span class="itemname">{{$item->name}}</span><div class="startend"><span class="starttime">{{$item->startofvisit}}</span>-<span class="endtime">{{$item->endofvisit}}</span></div>
+								<div class="col-sm-9"><h1 class="itemname">{{$item->name}}</h1><p class="startend"><span class="starttime">{{$item->startofvisit}}</span>-<span class="endtime">{{$item->endofvisit}}</span></p></div>
 								@php
 								$start = DateTime::createFromFormat("H:i",$item->startofvisit);
 								$end = DateTime::createFromFormat("H:i",$item->endofvisit);
@@ -52,7 +52,9 @@
 			@foreach($attractions as $attraction)
 			<li class="sidebar-list">
 					@if(sizeof($attraction->images)!=0)
+					<div class="img-wrapper col-sm-3">	
 						<img class="tn-img" src="{{unserialize($attraction->images)[0]}}"></img>
+					</div>
 					@endif
 					@php
 					$datetime = DateTime::createFromFormat("H:i","10:00");
@@ -61,9 +63,10 @@
 					}
 					$datetime->add(new DateInterval("PT{$attraction->duration}H"));
 					@endphp
-					<span class="itemname">{{$attraction->name}}</span>
+					<div class="col-sm-9">
+					<h1 class="itemname">{{$attraction->name}}</h1>
 					<span class="duration">Stay for {{$attraction->duration}} hours</span>
-					<div class = "startend">
+					<p class = "startend">
 						<span class="starttime" style="display:none;">10:00</span>
 						@php
 						$datetime = DateTime::createFromFormat("H:i","10:00");
@@ -73,6 +76,7 @@
 						$datetime->add(new DateInterval("PT{$attraction->duration}H"));
 						@endphp
 						<span class="endtime" style="display:none;">{{$datetime->format("H:i")}}</span>
+					</p>
 					</div>
 					@if(property_exists($attraction,"latitude")&&property_exists($attraction,"longitude"))
 						<span class="lat" style="display:none">{{$attraction->latitude}}</span><span class="lon" style="display:none">{{$attraction->longitude}}</span>
