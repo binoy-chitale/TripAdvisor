@@ -305,18 +305,19 @@ label.label_selected {
   padding: 0;
   height: 8vh;
   margin-bottom: 5px;
-  border: 4px solid #1b1e24;
+  border: 2px solid #1b1e24;
+  box-shadow:inset 0 0 10px rgba(27, 30, 36,0.4);
   cursor: move;
   min-height: 80px;
   margin-top: 30px;
   margin-bottom: 30px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .form-group .glyphicon-search.glyphicon.form-control-feedback{
   color:#1b1e24;
 }
-.invisible-list li{
-  display: none;
+#fixed-div .invisible-list li{
+  display: none !important; 
 }
 .sortable.invisible-list{
   margin-bottom: 5px;
@@ -442,7 +443,7 @@ position:fixed;
   text-overflow:ellipsis;
   margin-left: 0;
   max-width: 90%;
-  padding-top: 5px;
+  padding-top: 5px;s
 }
 .sortable .sidebar-list .startend{
   display: inline;
@@ -467,16 +468,18 @@ position:fixed;
 .day-item img{
   height: 100%;
   width: 100%;
-  border-radius: 10px;
-  padding: 5px 10px 5px 10px; 
+  padding: 0; 
   max-height: 100px;
   max-width: 100px;
 }
 li .img-wrapper{
   display: inline;
   height: 100%;
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-bottom: 2px;
+  padding-top: 2px;
+
 }
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
 

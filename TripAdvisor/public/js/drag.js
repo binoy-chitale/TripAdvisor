@@ -49,7 +49,7 @@ $( function() {
        ui.item.attr("class","ui-state-default day-item ui-sortable-handle");
        current = ui.item[0];
        var image = current.getElementsByClassName("tn-img");
-       image[0].style ="height: 100%;width: 100%;border-radius: 10px;padding: 5px 10px 5px 10px; max-height: 100px;max-width: 100px;";
+       image[0].style ="height: 100%;width: 100%;padding: 0; max-height: 100px;max-width: 100px;";
        image[0].className = "";
        var starttime = current.getElementsByClassName("starttime");
        starttime[0].style = "display:inline; font-size:0.7vw";
@@ -117,7 +117,9 @@ $("#plot").click(function(){
           latlon.push(listitems[j].getElementsByClassName("lon")[0].innerHTML);
           latlon.push(listitems[j].getElementsByTagName("img")[0].src);
       }
-      daylocations.push(latlon);
+      if(latlon.length!=0){
+        daylocations.push(latlon);
+      }
     }
     locations.push(daylocations);
   }

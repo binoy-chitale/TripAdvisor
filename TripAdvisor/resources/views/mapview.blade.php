@@ -1,8 +1,8 @@
 @extends('layouts.app')
 @section('content')
-<div class="container">
+<div class="container" style="width:100%;">
 	<div class = "col-md-4">
-		<div class="scrollable-sidebar">
+		<div class="scrollable-sidebar"style ="height:100vh">
 		<ul  class="sortable side-sortable">
 			
 		</ul>
@@ -19,10 +19,16 @@
   	};
 </script>
 <script>
+      var markers =[];
+      var directionsDisplay;
+      var directionsService;
       function initMap() {
         var colors = ["http://maps.google.com/mapfiles/ms/icons/red-dot.png","http://maps.google.com/mapfiles/ms/icons/blue-dot.png","http://maps.google.com/mapfiles/ms/icons/green-dot.png","http://maps.google.com/mapfiles/ms/icons/orange-dot.png","http://maps.google.com/mapfiles/ms/icons/yellow-dot.png","http://maps.google.com/mapfiles/ms/icons/purple-dot.png","http://labs.google.com/ridefinder/images/mm_20_gray.png","http://labs.google.com/ridefinder/images/mm_20_white.png","http:// labs.google.com/ridefinder/images/mm_20_blue.png","http://labs.google.com/ridefinder/images/mm_20_black.png"];	 
+	    var strokeColors = ["red","blue","green","yellow","black","grey","orange","purple"];
 	    var locations = JSON.parse(localStorage['locations']);
 	    var list = document.getElementsByClassName("side-sortable")[0];
+	    directionsDisplay = new google.maps.DirectionsRenderer;
+	    directionsService = new google.maps.DirectionsService;
 	    for(i=0;i<locations.length;i++){
 	    	for(j=0;j<locations[i].length;j++){
 		    	var listitem = document.createElement("li");
@@ -40,14 +46,24 @@
 		    }
 	    }
 	    var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 10,
+          zoom: 12,
           center: {lat:parseFloat(locations[0][0][1]), lng:parseFloat(locations[0][0][2])}
         });
-        var markers =[];
+        directionsDisplay.setMap(map);
+	    lastIndex=0;
 	    for (i = 0; i < locations.length; i++){
 		    for (j = 0; j < locations[i].length; j++) {
 					markers.push([locations[i][j][0],parseFloat(locations[i][j][1]),parseFloat(locations[i][j][2]),colors[i%colors.length]]);
-			}
+			} 
+			var directionRenderer = new google.maps.DirectionsRenderer({
+				suppressMarkers: true,
+				polylineOptions: {
+			    strokeColor: strokeColors[i%strokeColors.length],
+			    }
+			});
+			directionRenderer.setMap(map);
+			calcRoute(markers.slice(lastIndex,markers.length),directionRenderer);
+			lastIndex=markers.length;
 		}	
 		for( i = 0; i < markers.length; i++ ) {
         var position = new google.maps.LatLng(markers[i][1], markers[i][2]);
@@ -86,6 +102,32 @@
 	        strokeWeight: 2,
 	        scale: 1,
 	    };
+	  }
+	  function calcRoute(waypoints,renderer) {
+		  // var selectedMode = document.getElementById('mode').value;
+		  console.log(waypoints);
+		  waypts=[];
+		  for(var i=1;i<waypoints.length-1;i++){
+		  	waypts.push(
+		  	{
+		  		location : new google.maps.LatLng(waypoints[i][1], waypoints[i][2]),
+		  		stopover: true
+		  	});
+		  }
+		  var request = {
+	      origin: new google.maps.LatLng(waypoints[0][1], waypoints[0][2]),
+	      destination: new google.maps.LatLng(waypoints[waypoints.length-1][1], waypoints[waypoints.length-1][2]),
+	      waypoints:waypts,
+	      // Note that Javascript allows us to access the constant
+	      // using square brackets and a string value as its
+	      // "property."
+	      travelMode: google.maps.TravelMode['DRIVING']
+  	 	  };
+		  directionsService.route(request, function(response, status) {
+	      if (status == 'OK') {
+		      renderer.setDirections(response);
+		  }
+		  });
 	  }
 </script>
 <script async defer
