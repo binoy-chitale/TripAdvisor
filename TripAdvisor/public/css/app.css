@@ -232,21 +232,57 @@ label.label_selected {
   align:center;
 }
 
-.sortable .starttime {
+/*.sortable .starttime {
   position: relative;
   margin: auto;
+}*/
+.sortable .starttime{
+  font-size: 0.7vw;
+    font-weight: 700;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-left: 0 !important;
+    max-width: 90%;
+    padding-top: 5px;
+    display: inline;
+    position: relative !important;
 }
-.sortable .endtime {
+/*.sortable .endtime {
   position: relative;
   margin: auto;
+}*/
+.sortable .endtime{
+  font-size: 0.7vw;
+    font-weight: 700;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-left: 0 !important;
+    max-width: 90%;
+    padding-top: 5px;
+    display: inline;
+    position: relative !important;
 }
-.sortable .itemname {
+.sortable .itemname{
+  font-size: 1vw;
+  font-weight: 700;
+  overflow: hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  margin-left: 0;
+  max-width: 280px;
+  padding-top: 5px;
+  display: inline;
+  position: absolute;
+}
+/*.sortable .itemname {
   position: relative;
   margin: auto;
   display: inline;
   text-align: center;
   font-size: 1vw;
-}
+}*/
 /*.sortable .day-item{
   padding-left: 0;
   padding-right: 0;
@@ -265,9 +301,12 @@ label.label_selected {
   padding: 0;
   height: 8vh;
   margin-bottom: 5px;
-  border-bottom: 1px solid grey;
+  border: 4px solid #1b1e24;
   cursor: move;
   min-height: 80px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
 }
 .form-group .glyphicon-search.glyphicon.form-control-feedback{
   color:#1b1e24;
@@ -298,8 +337,9 @@ div .ui-sortable{
 }*/
 
 .daycolumn {
-  min-width: 250px;
+  min-width: 400px;
   border:1px solid rgba(215, 217, 221,0.8);
+
 }
 
 

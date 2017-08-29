@@ -14,6 +14,10 @@
 								<div class="img-wrapper">
 									<img src="{{unserialize($item->images)[0]}}"></span>
 								</div>
+								@else
+								<div class="img-wrapper">
+									<img src="{{ asset('images/lunch.png') }}"></span>
+								</div>
 								@endif
 								<span class="itemname">{{$item->name}}</span><div class="startend"><span class="starttime">{{$item->startofvisit}}</span>-<span class="endtime">{{$item->endofvisit}}</span></div>
 								@php
