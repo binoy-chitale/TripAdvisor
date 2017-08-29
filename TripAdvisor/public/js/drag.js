@@ -134,7 +134,9 @@ $("#plot").click(function(){
           latlon.push(listitems[j].getElementsByClassName("lon")[0].innerHTML);
           latlon.push(listitems[j].getElementsByTagName("img")[0].src);
       }
-      daylocations.push(latlon);
+      if(latlon.length!=0){
+        daylocations.push(latlon);
+      }
     }
     locations.push(daylocations);
   }
