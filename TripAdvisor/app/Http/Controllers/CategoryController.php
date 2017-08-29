@@ -186,7 +186,7 @@ class CategoryController extends Controller{
                     $temp=clone $day;
                     $day->add(new DateInterval("PT{$this->getLunchTime()}H"));
                     $lunch = new \stdClass();
-                    $lunch->name = "lunch break";
+                    $lunch->name = "Lunch";
                     $lunch->startofvisit=$temp->format("H:i");
                     $lunch->endofvisit=$day->format("H:i");
                     array_push($itenerary['plan'],$lunch);

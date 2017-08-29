@@ -49,7 +49,7 @@ $( function() {
        ui.item.attr("class","ui-state-default day-item ui-sortable-handle");
        current = ui.item[0];
        var image = current.getElementsByClassName("tn-img");
-       image[0].style ="height: 100%;width: 22.5%;border-radius: 10px;padding: 5px 10px 5px 10px; max-height: 100px;max-width: 100px;";
+       image[0].style ="height: 100%;width: 100%;border-radius: 10px;padding: 5px 10px 5px 10px; max-height: 100px;max-width: 100px;";
        image[0].className = "";
        var starttime = current.getElementsByClassName("starttime");
        starttime[0].style = "display:inline; font-size:0.7vw";
@@ -58,19 +58,20 @@ $( function() {
        var endtime = current.getElementsByClassName("duration");
        endtime[0].style = "display:none;";
     }
-  	
-    var listitems = $(this);
-  	var starttimes = listitems[0].getElementsByClassName("starttime");
-  	var endtimes = listitems[0].getElementsByClassName("endtime");
-  	var itemnames = listitems[0].getElementsByClassName("itemname");
-  	var currentTime = 0;
-    for (var i = 0; i < starttimes.length; i++) {
-    	var starttime = starttimes[i]; 
-    	var endtime = endtimes[i];
-    	var itemname = itemnames[i];
-    	console.log(starttime);
-      currentTime = updateTimes(currentTime,starttime,endtime,itemname);
-	  }	
+  	if(!$(this).hasClass("side-sortable")){
+      var listitems = $(this);
+    	var starttimes = listitems[0].getElementsByClassName("starttime");
+    	var endtimes = listitems[0].getElementsByClassName("endtime");
+    	var itemnames = listitems[0].getElementsByClassName("itemname");
+    	var currentTime = 0;
+      for (var i = 0; i < starttimes.length; i++) {
+      	var starttime = starttimes[i]; 
+      	var endtime = endtimes[i];
+      	var itemname = itemnames[i];
+      	console.log(starttime);
+        currentTime = updateTimes(currentTime,starttime,endtime,itemname);
+  	  }	
+    }
 }
 });
     $( ".sortable" ).disableSelection();
