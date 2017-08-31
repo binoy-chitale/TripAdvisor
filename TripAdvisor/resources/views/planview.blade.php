@@ -74,6 +74,7 @@
 			@foreach($attractions as $attraction)
 			<li class="sidebar-list">
 					@if(sizeof($attraction->images)!=0)
+					<div class ="row">
 					<div class="img-wrapper col-sm-3">	
 						<img class="tn-img" src="{{unserialize($attraction->images)[0]}}"></img>
 					</div>
@@ -106,6 +107,7 @@
 							@endphp
 							<span class="endtime" style="display:none;">{{$datetime->format("H:i")}}</span>
 						</span>
+					</div>
 					</div>
 					@if(property_exists($attraction,"latitude")&&property_exists($attraction,"longitude"))
 						<span class="lat" style="display:none">{{$attraction->latitude}}</span><span class="lon" style="display:none">{{$attraction->longitude}}</span>
