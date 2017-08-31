@@ -59,10 +59,15 @@
 				suppressMarkers: true,
 				polylineOptions: {
 			    strokeColor: strokeColors[i%strokeColors.length],
+			    icons: [{
+		        icon: {path: google.maps.SymbolPath.FORWARD_CLOSED_ARROW},
+		        offset: '100%',
+		        repeat: '100px'
+    			}]
 			    }
 			});
 			directionRenderer.setMap(map);
-			calcRoute(markers.slice(lastIndex,markers.length),directionRenderer);
+			calcRoute(markers.slice(lastIndex,markers.length),directionRenderer,map);
 			lastIndex=markers.length;
 		}	
 		for( i = 0; i < markers.length; i++ ) {
@@ -103,7 +108,7 @@
 	        scale: 1,
 	    };
 	  }
-	  function calcRoute(waypoints,renderer) {
+	  function calcRoute(waypoints,renderer,map) {
 		  // var selectedMode = document.getElementById('mode').value;
 		  console.log(waypoints);
 		  waypts=[];
@@ -128,6 +133,10 @@
 		      renderer.setDirections(response);
 		  }
 		  });
+		  var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(waypoints[0][1], waypoints[0][2]),
+            map: map,
+        });
 	  }
 </script>
 <script async defer
