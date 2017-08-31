@@ -96,8 +96,8 @@
 							}
 						?>
 					<span class="duration">Stay for {{$attraction->duration}} hours</span>
-						<span class = "startend">
-							<span class="starttime" style="display:none;">10:00</span>-
+						<span class = "startend" style="display:none;">
+							<span class="starttime">10:00</span>-
 							@php
 							$datetime = DateTime::createFromFormat("H:i","10:00");
 							if($attraction->duration == ""){
@@ -105,7 +105,7 @@
 							}
 							$datetime->add(new DateInterval("PT{$attraction->duration}H"));
 							@endphp
-							<span class="endtime" style="display:none;">{{$datetime->format("H:i")}}</span>
+							<span class="endtime">{{$datetime->format("H:i")}}</span>
 						</span>
 					</div>
 					</div>

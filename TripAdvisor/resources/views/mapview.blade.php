@@ -1,14 +1,14 @@
 @extends('layouts.app')
 @section('content')
 <div class="container" style="width:100%;">
-	<div class = "col-md-4">
+	<div class = "col-md-3">
 		<div class="scrollable-sidebar"style ="height:100vh">
 		<ul  class="sortable side-sortable">
 			
 		</ul>
 		</div>
 	</div>
-	<div id="map" class="col-md-8">
+	<div id="map" class="col-md-9">
 	</div>
 </div>
 @endsection
@@ -27,9 +27,19 @@
 	    var strokeColors = ["red","blue","green","yellow","black","grey","orange","purple"];
 	    var locations = JSON.parse(localStorage['locations']);
 	    var list = document.getElementsByClassName("side-sortable")[0];
+	    list.style="cursor:pointer";
 	    directionsDisplay = new google.maps.DirectionsRenderer;
 	    directionsService = new google.maps.DirectionsService;
 	    for(i=0;i<locations.length;i++){
+	    	var listitem = document.createElement("li");
+	    	listitem.className="sidebar-list ui-sortable-handle";
+	    	listitem.style="background:#1b1e24;";
+	    	var itemname = document.createElement("span");
+	    	itemname.innerHTML = "Day "+(i+1);
+	    	itemname.className = "itemname";
+	    	listitem.appendChild(itemname);
+	    	list.appendChild(listitem);
+	    	itemname.style = "color:white;font-size:2vw;margin-left:10%";
 	    	for(j=0;j<locations[i].length;j++){
 		    	var listitem = document.createElement("li");
 		    	listitem.className="sidebar-list ui-sortable-handle";
@@ -133,10 +143,7 @@
 		      renderer.setDirections(response);
 		  }
 		  });
-		  var marker = new google.maps.Marker({
-            position: new google.maps.LatLng(waypoints[0][1], waypoints[0][2]),
-            map: map,
-        });
+		 
 	  }
 </script>
 <script async defer
