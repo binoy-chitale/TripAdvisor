@@ -1,4 +1,47 @@
+#attrcontent{
+  display: none;
+}
 
+
+.stars-container, #stars {
+  position: relative;
+  color: transparent;
+  font-size:0.9em;
+  margin-left:-0em;
+}
+
+.stars-container:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '★★★★★';
+  color: lightgray;
+}
+
+.stars-container:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '★★★★★';
+  color: gold;
+  overflow: hidden;
+}
+
+.stars-0:after { width: 0%; }
+.stars-5:after { width: 10%; }
+.stars-10:after { width: 20%; }
+.stars-15:after { width: 30%; }
+.stars-20:after { width: 40%; }
+.stars-25:after { width: 50%; }
+.stars-30:after { width: 60%; }
+.stars-35:after { width: 70%; }
+.stars-40:after { width: 80%; }
+.stars-45:after { width: 90%; }
+.stars-50:after { width: 100%; }
+
+#startend{
+  margin-left:0px;
+}
 
 .btn-circle {
   width: 30px;
@@ -237,7 +280,8 @@ label.label_selected {
   margin: auto;
 }*/
 .sortable .starttime{
-  font-size: 0.7vw;
+  /*font-size: 0.7vw;*/
+    font-size: 9px;
     font-weight: 700;
     overflow: hidden;
     white-space: nowrap;
@@ -253,7 +297,8 @@ label.label_selected {
   margin: auto;
 }*/
 .sortable .endtime{
-  font-size: 0.7vw;
+  /*font-size: 0.7vw;*/
+    font-size: 9px;
     font-weight: 700;
     overflow: hidden;
     white-space: nowrap;
@@ -265,7 +310,8 @@ label.label_selected {
     position: relative !important;
 }
 .sortable .itemname{
-  font-size: 1vw;
+  /*font-size: 1vw;*/
+  font-size: 11px;
   font-weight: 700;
   overflow: hidden;
   white-space:nowrap;
@@ -274,6 +320,7 @@ label.label_selected {
   margin-top: 5px;
   max-width: 280px;
   padding-top: 5px;
+  margin-bottom: 0px;
 }
 .item-wrapper{
   text-align: center;
@@ -305,12 +352,12 @@ label.label_selected {
   padding: 0;
   height: 8vh;
   margin-bottom: 5px;
-  border: 2px solid #1b1e24;
-  box-shadow:inset 0 0 10px rgba(27, 30, 36,0.4);
+  /*border: 2px solid #1b1e24;*/
+  /*box-shadow:inset 0 0 10px rgba(27, 30, 36,0.4);*/
   cursor: move;
   min-height: 80px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   border-radius: 5px;
 }
 .form-group .glyphicon-search.glyphicon.form-control-feedback{
@@ -342,11 +389,10 @@ div .ui-sortable{
 }*/
 
 .daycolumn {
-  min-width: 400px;
+  min-width: 300px;
   border:1px solid rgba(215, 217, 221,0.8);
 
 }
-
 
 #fixed-div {
     position: fixed;
@@ -428,9 +474,12 @@ position:fixed;
   height: 100%;
 }
 .startend {
-  text-align: center;
+  /*text-align: center;*/
   font-size: 0.9vw;
   display: inline;
+  padding-top:0px;
+  /*position:relative;*/
+  margin-left: 10px;
 }
 .sortable .sidebar-list {
   padding:0;
@@ -441,7 +490,7 @@ position:fixed;
   min-height: 80px;
 }
 .sortable .sidebar-list  .itemname{
-  font-size: 0.9vw;
+  /*font-size: 0.9vw;*/
   font-weight: 700;
   overflow: hidden;
   white-space:nowrap;
@@ -486,11 +535,17 @@ li .img-wrapper{
   padding-top: 2px;
 
 }
+
+.dayno, .daydate{
+  font-size: 15px;
+  font-weight: 200;
+}
+
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
 
 .panelheadingdiv h4 {
    color: #fafafa;
-   font-size: 1.2vw;
+   /*font-size: 1.2vw;*/
    font-weight: 700;
    font-style:normal;
    font-family: "Roboto", helvetica, arial, sans-serif;

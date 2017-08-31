@@ -1,15 +1,17 @@
 @extends('layouts.app')
 @section('content')
+<?php $dayno=1; ?>
 <div class="container appcontainer">
 	<div class = "col-md-9">
 	    <div class="row itenerary" style="display:flex;">
 			@foreach($itenerary as $dayplan)
 				<div id="column"class="daycolumn">	
-					<div class="panelheaderdiv"><h4>{{$dayplan['day']->format('d-m-Y')}}</h4></div>
-						<div class="panelbodydiv">
+					<div class="panelheaderdiv"><span class="dayno">Day {{$dayno}}: </span><span class="daydate">{{$dayplan['day']->format('d-m-Y')}}</span>
+					</div>
+					<div class="panelbodydiv">
 							<ul class="sortable">
 							@foreach($dayplan['plan'] as $item)
-								<li class="ui-state-default day-item" onclick="location.href ='/view/{{$name}}/{{$item->name}}'">
+								<li class="ui-state-default day-item" id="expand">
 								@if(property_exists($item,"images"))
 								<div class="img-wrapper col-sm-3">
 									<img src="{{unserialize($item->images)[0]}}"></span>
@@ -19,7 +21,26 @@
 									<img src="{{ asset('images/lunch.png') }}"></span>
 								</div>
 								@endif
-								<div class="col-sm-9"><h1 class="itemname">{{$item->name}}</h1><p class="startend"><span class="starttime">{{$item->startofvisit}}</span>-<span class="endtime">{{$item->endofvisit}}</span></p></div>
+								<div class="col-sm-9">
+									<h1 class="itemname">{{$item->name}}</h1>
+									<?php
+									if(strcasecmp($item->name, "lunch")!=0){
+										$stars=(int)$item->stars;
+										$stars=$item->stars*10;
+									echo('<span class="stars-container stars'.$stars.'" id="stars">★★★★★</span>');
+									}
+									?>
+									<br>
+									<span class="startend" id="startend"><span class="starttime">{{$item->startofvisit}}</span>-<span class="endtime">{{$item->endofvisit}}</span></span>
+									<div id="attrcontent">
+								        <ul>
+								            <li>This is just some random content.</li>
+								            <li>This is just some random content.</li>
+								            <li>This is just some random content.</li>
+								            <li>This is just some random content.</li>
+								        </ul>
+								    </div>
+								</div>
 								@php
 								$start = DateTime::createFromFormat("H:i",$item->startofvisit);
 								$end = DateTime::createFromFormat("H:i",$item->endofvisit);
@@ -32,8 +53,9 @@
 								</li>
 							@endforeach
 							</ul>
-						</div>
+					</div>
 				</div>
+				<?php $dayno=$dayno+1;?>
 			@endforeach
 		</div>
 	</div>
@@ -65,18 +87,25 @@
 					@endphp
 					<div class="col-sm-9">
 					<h1 class="itemname">{{$attraction->name}}</h1>
+					<?php
+							if(strcasecmp($item->name, "lunch")!=0){
+								$stars=(int)$item->stars;
+								$stars=$item->stars*10;
+							echo('<span class="stars-container stars-'.$stars.'" id="stars">★★★★★</span><br>');
+							}
+						?>
 					<span class="duration">Stay for {{$attraction->duration}} hours</span>
-					<p class = "startend">
-						<span class="starttime" style="display:none;">10:00</span>
-						@php
-						$datetime = DateTime::createFromFormat("H:i","10:00");
-						if($attraction->duration == ""){
-							$attraction->duration = "2";
-						}
-						$datetime->add(new DateInterval("PT{$attraction->duration}H"));
-						@endphp
-						<span class="endtime" style="display:none;">{{$datetime->format("H:i")}}</span>
-					</p>
+						<span class = "startend">
+							<span class="starttime" style="display:none;">10:00</span>-
+							@php
+							$datetime = DateTime::createFromFormat("H:i","10:00");
+							if($attraction->duration == ""){
+								$attraction->duration = "2";
+							}
+							$datetime->add(new DateInterval("PT{$attraction->duration}H"));
+							@endphp
+							<span class="endtime" style="display:none;">{{$datetime->format("H:i")}}</span>
+						</span>
 					</div>
 					@if(property_exists($attraction,"latitude")&&property_exists($attraction,"longitude"))
 						<span class="lat" style="display:none">{{$attraction->latitude}}</span><span class="lon" style="display:none">{{$attraction->longitude}}</span>
@@ -106,7 +135,11 @@ function myFunction() {
 <script type="text/javascript" src="{{ asset('js/date.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/drag.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/att_search.js') }}"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="{{ asset('js/displaycontent.js') }}"></script>
+
 @endsection
+
 @section('styles')
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <style type="text/css">

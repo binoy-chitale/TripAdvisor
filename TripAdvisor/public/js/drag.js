@@ -31,12 +31,12 @@ $( function() {
          ui.item.attr("class","ui-state-default day-item ui-sortable-handle");
          current = ui.item[0];
          var image = current.getElementsByClassName("tn-img");
-         image[0].style ="height: 100%;width: 100%;border-radius: 10px;padding: 5px 10px 5px 10px; max-height: 100px;max-width: 100px;";
+         image[0].style ="height: 100%;width: 100%; max-height: 100px;max-width: 100px;";
          image[0].className = "";
          var starttime = current.getElementsByClassName("starttime");
-         starttime[0].style = "display:inline; font-size:0.7vw";
+         starttime[0].style = "display:inline;";
          var endtime = current.getElementsByClassName("endtime");
-         endtime[0].style = "display:inline;font-size:0.7vw";
+         endtime[0].style = "display:inline;";
          var endtime = current.getElementsByClassName("duration");
          endtime[0].style = "display:none;";
       }
