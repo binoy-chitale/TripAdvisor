@@ -3,7 +3,7 @@
 <?php $dayno=1; ?>
 <div class="container appcontainer">
 	<div class = "col-md-9 timetable">
-	    <div class="row itenerary" style="display:flex;">
+	    <div id="timetable" class="row itenerary" style="display:flex;">
 			@foreach($itenerary as $dayplan)
 				<div id="column"class="daycolumn">	
 					<div class="panelheaderdiv"><span class="dayno">Day {{$dayno}}: </span><span class="daydate">{{$dayplan['day']->format('d-m-Y')}}</span>
@@ -113,11 +113,12 @@
     <span id="dest" style="display:none;">{{$name}}</span>
 </div>
 <div id="Normal">
-    <button onclick="myFunction()" class="btn btn-primary btn-circle btn-lg"><i class="glyphicon glyphicon-print"></i></button>
+    <button onclick="" class="btn btn-primary btn-circle btn-lg"><i class="glyphicon glyphicon-print"></i></button>
 </div>
+<iframe id="ifmcontentstoprint" style="height: 0px; width: 0px; position: absolute"></iframe>
 <script>
 function myFunction() {
-    window.print();
+    // window.print();
 }
 </script>
 @endsection
@@ -128,7 +129,32 @@ function myFunction() {
 <script type="text/javascript" src="{{ asset('js/drag.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/att_search.js') }}"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+<script type="text/javascript">
+	$('#Normal').click(function(){
+		
+		// document.getElementById("fixed-div").style="display:none;";
+		// console.log(document.getElementsByClassName("timetable")[0]);
+		// var timetable = document.getElementsByClassName("timetable")[0];
+		// timetable.className="timetable";
+		// timetable.style="width:100;overflow:visible;";
+		// window.print();
+		var content = document.getElementById("timetable");
+		var pri = document.getElementById("ifmcontentstoprint").contentWindow;
+		pri.document.open();
+		pri.document.write(content.innerHTML);	
+		var images =pri.document.getElementsByTagName("img");
+		var stars =pri.document.getElementsByClassName("stars-container");
+		for(var i=0;i<images.length;i++){
+			images[i].style="display:none";
+		}
+		for(var i=0;i<stars.length;i++){
+			stars[i].style="display:none";
+		}
+		pri.document.close();	
+		pri.focus();
+		pri.print()
+	});
+</script>
 
 @endsection
 
