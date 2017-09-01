@@ -87,7 +87,12 @@ foreach($attractions as $attraction)
 		echo '</div><br/>';
 
 		echo '<div class="ratings">Attraction Rating:<div>'.substr($attr->rating,0,5).'</div></div>';
-    	?>
+
+    $stars=(float)$item->stars;
+    $stars=$item->stars*10;
+    echo('<span class="stars-container stars-'.$stars.'" id="stars">★★★★★</span><br>');
+            
+   ?>
 
 
    </div>

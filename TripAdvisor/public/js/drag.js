@@ -8,7 +8,8 @@ $( function() {
     update : function(event,ui){
       var cancelled=0;
       if(ui.sender!=null){
-        var lastendtime = ui.item.parent()[0].lastChild.getElementsByClassName("endtime")[0].innerHTML;
+        console.log(ui.item.parent());
+        var lastendtime = ui.item.parent()[0].lastElementChild.getElementsByClassName("endtime")[0].innerHTML;
         if(lastendtime < "10:00" && lastendtime >= "01:00" && !$(this).hasClass("side-sortable")){
              ui.sender.sortable('cancel');
             changeTimes(ui.sender);
