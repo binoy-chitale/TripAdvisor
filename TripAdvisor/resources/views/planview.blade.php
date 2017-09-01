@@ -32,7 +32,7 @@
 
 <?php $dayno=1; ?>
 <div class="container appcontainer">
-	<div class = "col-md-9">
+	<div class = "col-md-9 timetable">
 	    <div class="row itenerary" style="display:flex;">
 			@foreach($itenerary as $dayplan)
 				<div id="column" class="daycolumn">	
@@ -139,22 +139,22 @@
 					echo('<span class="stars-container stars-'.$stars.'" id="stars">★★★★★</span><br>');
 				?>
 				<span class="duration">Stay for {{$attraction->duration}} hours</span>
-					<span class = "startend" id="startend">
-						<span class="starttime" style="display:none;">10:00</span>
-						@php
-						$datetime = DateTime::createFromFormat("H:i","10:00");
-						if($attraction->duration == ""){
-							$attraction->duration = "2";
-						}
-						$datetime->add(new DateInterval("PT{$attraction->duration}H"));
-						@endphp
-						<span class="endtime" style="display:none;">{{$datetime->format("H:i")}}</span>
-						</span>
+				<span class = "startend" style="display:none;">
+					<span class="starttime">10:00</span>-
+					@php
+					$datetime = DateTime::createFromFormat("H:i","10:00");
+					if($attraction->duration == ""){
+						$attraction->duration = "2";
+					}
+					$datetime->add(new DateInterval("PT{$attraction->duration}H"));
+					@endphp
+					<span class="endtime">{{$datetime->format("H:i")}}</span>
+				</span>
 
-					</div>
-					@if(property_exists($attraction,"latitude")&&property_exists($attraction,"longitude"))
-						<span class="lat" style="display:none">{{$attraction->latitude}}</span><span class="lon" style="display:none">{{$attraction->longitude}}</span>
-					@endif
+				</div>
+				@if(property_exists($attraction,"latitude")&&property_exists($attraction,"longitude"))
+					<span class="lat" style="display:none">{{$attraction->latitude}}</span><span class="lon" style="display:none">{{$attraction->longitude}}</span>
+				@endif
 			</li>
 			@endforeach
 			</ul>
@@ -163,7 +163,7 @@
 </div>
 <div id="plot">
     <button type="submit" class="btn btn-primary btn-circle btn-lg"><i class="glyphicon glyphicon-map-marker"></i></button>
-    <span id="dest">{{$name}}</span>
+    <span id="dest" style="display:none;">{{$name}}</span>
 </div>
 <div id="Normal">
     <button onclick="myFunction()" class="btn btn-primary btn-circle btn-lg"><i class="glyphicon glyphicon-print"></i></button>

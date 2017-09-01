@@ -28,6 +28,7 @@ class CreateAttractionTable extends Migration
             $table->string('rank');
             $table->longText('images');
             $table->string('split_ratings');
+            $table->string('stars');
             $table->integer('dest_id')->unsigned();
         });
     }

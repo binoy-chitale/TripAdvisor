@@ -34,6 +34,8 @@ $( function() {
          var image = current.getElementsByClassName("tn-img");
          image[0].style ="height: 100%;width: 100%; max-height: 100px;max-width: 100px;";
          image[0].className = "";
+         var startend = current.getElementsByClassName("startend");
+         startend[0].style = "display:inline";
          var starttime = current.getElementsByClassName("starttime");
          starttime[0].style = "display:inline;";
          var endtime = current.getElementsByClassName("endtime");
