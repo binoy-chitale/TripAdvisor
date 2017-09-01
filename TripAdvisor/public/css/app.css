@@ -1,8 +1,3 @@
-#attrcontent{
-  display: none;
-}
-
-
 .stars-container, #stars {
   position: relative;
   color: transparent;
@@ -39,8 +34,8 @@
 .stars-45:after { width: 90%; }
 .stars-50:after { width: 100%; }
 
-#startend{
-  margin-left:0px;
+.startend{
+  margin-left:0px !important;
 }
 
 .btn-circle {
@@ -311,7 +306,7 @@ label.label_selected {
 }
 .sortable .itemname{
   /*font-size: 1vw;*/
-  font-size: 11px;
+  font-size: 15px;
   font-weight: 700;
   overflow: hidden;
   white-space:nowrap;
@@ -425,6 +420,7 @@ position:fixed;
   border-radius: 100%;
   height: 7vh;
   width: 7vh;
+  padding:0;
 }
 #plot {
     position: fixed;
@@ -437,6 +433,7 @@ position:fixed;
   height: 7vh;
   width: 7vh;
   border-radius: 100%;
+  padding: 0;
 }
 /*
 #column{
@@ -450,20 +447,54 @@ position:fixed;
   width: 700px;
 }
 .duration {
-    font-size: 0.7vw;
+    font-size: 10px;
     font-weight: 700;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     margin-left: 0 !important;
-    max-width: 90%;
+    /*max-width: 90%;*/
     padding-top: 5px;
     display: inline;
-    position: relative !important;
 }
 .container.appcontainer {
   margin: 0;
   width: 100%;
+}
+@media(max-height: 700px){
+  .container.appcontainer {
+    margin: 0;
+    width: 100%;
+    height: 500px;
+  }
+}
+@media(min-height: 1100px){
+   .appcontainer{
+    margin:0;
+    width:100%;
+    height:1100px;
+  }
+  #map{
+    width: 1400px;
+    height: 1100px;
+  }
+}
+.timetable{
+  height: 100%;
+}
+@media(max-width:768px){
+  #fixed-div{
+    width:200px;
+  }
+  .daycolumn{
+    min-width: 200px;
+  }
+  ul li .img-wrapper{
+    display:none;
+  }
+  img{
+   display:none; 
+  }
 }
 .scrollable-sidebar {
   transform:translate3d(0,0,0);

@@ -114,8 +114,21 @@ class CategoryController extends Controller{
             $this->updateRatingsWithCategories();            
             arsort($this->rating);
             $this->makeSortedDistArray();
+            $limit=25;
             foreach ($period as $day) {
-                array_push($this->itenerary,$this->getDayPlan($day));
+                if($limit>0){ 
+                    $daysplan = $this->getDayPlan($day);
+                    array_push($this->itenerary,$daysplan);
+                    $limit=$limit-1;
+                }
+                else{
+                    $daysplan = [];
+                    $daysplan['plan'] = array();
+                    $daysplan['day']="";
+                    $daysplan['day']=$day;
+                    array_push($this->itenerary,$daysplan);
+                }
+
             }
             return view('planview',['attractions'=>$this->attractions, 'visit'=>$this->visit,'itenerary'=>$this->itenerary,'name'=>$name]);
         }

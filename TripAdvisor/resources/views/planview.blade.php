@@ -2,7 +2,7 @@
 @section('content')
 <?php $dayno=1; ?>
 <div class="container appcontainer">
-	<div class = "col-md-9">
+	<div class = "col-md-9 timetable">
 	    <div class="row itenerary" style="display:flex;">
 			@foreach($itenerary as $dayplan)
 				<div id="column"class="daycolumn">	
@@ -11,7 +11,7 @@
 					<div class="panelbodydiv">
 							<ul class="sortable">
 							@foreach($dayplan['plan'] as $item)
-								<li class="ui-state-default day-item" id="expand">
+								<li class="ui-state-default day-item">
 								@if(property_exists($item,"images"))
 								<div class="img-wrapper col-sm-3">
 									<img src="{{unserialize($item->images)[0]}}"></span>
@@ -21,7 +21,7 @@
 									<img src="{{ asset('images/lunch.png') }}"></span>
 								</div>
 								@endif
-								<div class="col-sm-9">
+								<div class="col-sm-9" id="expand">
 									<h1 class="itemname">{{$item->name}}</h1>
 									<?php
 									if(strcasecmp($item->name, "lunch")!=0){
@@ -32,14 +32,6 @@
 									?>
 									<br>
 									<span class="startend" id="startend"><span class="starttime">{{$item->startofvisit}}</span>-<span class="endtime">{{$item->endofvisit}}</span></span>
-									<div id="attrcontent">
-								        <ul>
-								            <li>This is just some random content.</li>
-								            <li>This is just some random content.</li>
-								            <li>This is just some random content.</li>
-								            <li>This is just some random content.</li>
-								        </ul>
-								    </div>
 								</div>
 								@php
 								$start = DateTime::createFromFormat("H:i",$item->startofvisit);
@@ -74,7 +66,6 @@
 			@foreach($attractions as $attraction)
 			<li class="sidebar-list">
 					@if(sizeof($attraction->images)!=0)
-					<div class ="row">
 					<div class="img-wrapper col-sm-3">	
 						<img class="tn-img" src="{{unserialize($attraction->images)[0]}}"></img>
 					</div>
@@ -108,7 +99,6 @@
 							<span class="endtime">{{$datetime->format("H:i")}}</span>
 						</span>
 					</div>
-					</div>
 					@if(property_exists($attraction,"latitude")&&property_exists($attraction,"longitude"))
 						<span class="lat" style="display:none">{{$attraction->latitude}}</span><span class="lon" style="display:none">{{$attraction->longitude}}</span>
 					@endif
@@ -120,7 +110,7 @@
 </div>
 <div id="plot">
     <button type="submit" class="btn btn-primary btn-circle btn-lg"><i class="glyphicon glyphicon-map-marker"></i></button>
-    <span id="dest">{{$name}}</span>
+    <span id="dest" style="display:none;">{{$name}}</span>
 </div>
 <div id="Normal">
     <button onclick="myFunction()" class="btn btn-primary btn-circle btn-lg"><i class="glyphicon glyphicon-print"></i></button>
@@ -138,7 +128,7 @@ function myFunction() {
 <script type="text/javascript" src="{{ asset('js/drag.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/att_search.js') }}"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="{{ asset('js/displaycontent.js') }}"></script>
+
 
 @endsection
 
