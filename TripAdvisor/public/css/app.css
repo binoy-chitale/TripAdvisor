@@ -1,3 +1,12 @@
+.day-item.minutes{
+  background: transparent;
+  font-size: 12px;
+  border-width: 0px;
+  text-align: left;
+  margin-left: 15px;
+  font-style: italic; 
+}
+
 .modal-description-div, .modal-rank-div, .modal-address-div, .modal-phone-div{
   text-align:justify;
 }
@@ -41,7 +50,6 @@
 
 .col-sm-9 > .glyphicon.glyphicon-info-sign{
 position: absolute;}
-
 
 .stars-container {
   position: relative !important;
@@ -325,7 +333,14 @@ label.label_selected {
   margin-right:5px;
   align:center;
 }
-
+.minutes{
+  height: 1vh !important;
+  min-height:30px !important;
+}
+.minutes {
+  text-align: center;
+  color: #777;
+}
 /*.sortable .starttime {
   position: relative;
   margin: auto;

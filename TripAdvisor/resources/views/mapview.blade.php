@@ -10,6 +10,7 @@
 	</div>
 	<div id="map" class="col-md-9">
 	</div>
+	<div id="legend"></div>
 </div>
 @endsection
 @section('scripts')
@@ -22,13 +23,14 @@
       var markers =[];
       var gmarkers=[];
       var allmarkers = [];
+      var icons=[];
       var directionsDisplay;
       var directionsService;
       var map;
       var infowindows = [];
       function initMap() {
-        var colors = ["http://maps.google.com/mapfiles/ms/icons/red-dot.png","http://maps.google.com/mapfiles/ms/icons/blue-dot.png","http://maps.google.com/mapfiles/ms/icons/green-dot.png","http://maps.google.com/mapfiles/ms/icons/orange-dot.png","http://maps.google.com/mapfiles/ms/icons/yellow-dot.png","http://maps.google.com/mapfiles/ms/icons/purple-dot.png","http://maps.google.com/mapfiles/ms/icons/pink-dot.png","http://maps.google.com/mapfiles/ms/icons/ltblue-dot.png","http://labs.google.com/ridefinder/images/mm_20_lt_blue.png","http://labs.google.com/ridefinder/images/mm_20_black.png"];	 
-	    var strokeColors = ["red","blue","green","orange","yellow","purple","black","grey","orange","purple"];
+        var colors = ["http://maps.google.com/mapfiles/ms/icons/red-dot.png","http://maps.google.com/mapfiles/ms/icons/blue-dot.png","http://maps.google.com/mapfiles/ms/icons/green-dot.png","http://maps.google.com/mapfiles/ms/icons/orange-dot.png","http://maps.google.com/mapfiles/ms/icons/yellow-dot.png","http://maps.google.com/mapfiles/ms/icons/purple-dot.png","http://maps.google.com/mapfiles/ms/icons/pink-dot.png","http://maps.google.com/mapfiles/ms/icons/ltblue-dot.png"];	 
+	    var strokeColors = ["red","blue","green","orange","yellow","purple","pink","#00ffff","black","grey","orange","purple","#00ff80","#663300","#9900ff","#ffffff"];
 	    var locations = JSON.parse(localStorage['locations']);
 	    var list = document.getElementsByClassName("side-sortable")[0];
 	    directionsDisplay = new google.maps.DirectionsRenderer;
@@ -54,6 +56,13 @@
     			}]
 			    }
 			});
+			icons.push(
+				 {
+		            name: 'Day'+(i+1),
+		            icon: google.maps.SymbolPath.CIRCLE,
+		            fillColor:strokeColors[i%strokeColors.length],
+		         }
+			);
 			directionRenderer.setMap(map);
 			if(lastIndex<markers.length){
 				calcRoute(markers.slice(lastIndex,markers.length),directionRenderer,map);
@@ -63,7 +72,6 @@
 		for( i = 0; i < markers.length; i++ ) {
         var position = new google.maps.LatLng(markers[i][1], markers[i][2]);
         // var position = {lat:markers[i][1],lng:markers[0][2]};
-        console.log();
         var marker = new google.maps.Marker({
             position: position,
             map: map,
@@ -80,6 +88,31 @@
         //     }
         // })(marker, i));
     	}
+    	// var icons = {
+     //      red: {
+     //        name: '',
+     //        icon: google.maps.SymbolPath.CIRCLE,
+     //        fillColor:'red',
+     //      },
+     //      library: {
+     //        name: 'Library',
+     //        icon: iconBase + 'library_maps.png'
+     //      },
+     //      info: {
+     //        name: 'Info',
+     //        icon: iconBase + 'info-i_maps.png'
+     //      }
+     //    };
+     	
+    	var legend = document.getElementById('legend');
+        for (i=0;i<icons.length;i++) {
+          console.log(icons[i]);
+          var name = icons[i]['name'];
+          var div = document.createElement('div');
+          div.innerHTML = '<svg height="20" width="20"><circle cx="10" cy="10" r="40" fill="'+icons[i]['fillColor']+'"/></svg>' + '<span style="font-size:20px;">'+'  '+name+'</span>';
+          legend.appendChild(div);
+        }
+        map.controls[google.maps.ControlPosition.RIGHT_TOP].push(legend);
     	var idcounter=0;
 	    for(i=0;i<locations.length;i++){
 	    	var listitem = document.createElement("li");
@@ -97,10 +130,7 @@
 		    	listitem.style="cursor:pointer;";
 		    	listitem.id = idcounter;
 		    	console.log(listitem.id);
-		    	listitem.addEventListener("click", function(){
-			  	google.maps.event.trigger(gmarkers[listitem.id], 'click');
-			  	bin
-		    	});
+		    	bindListener(gmarkers[listitem.id],listitem);
 		    	idcounter++;
 		    	var itemname = document.createElement("span");
 		    	itemname.innerHTML = locations[i][j][0];
@@ -126,11 +156,10 @@
         
      //    });
       }
-      function bindListener(marker, map, html) {
-	    	marker.addListener('click', function() {
-	        infowindow.setContent(html);
-	        infowindow.open(map, this);
-	    });
+      function bindListener(marker,element) {
+	    	element.addEventListener("click", function(){
+			  	google.maps.event.trigger(marker, 'click');
+		    });
 	  } 
       function bindInfoWindow(marker, map, infowindow, html) {
 	    	marker.addListener('click', function() {

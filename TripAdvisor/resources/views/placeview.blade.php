@@ -9,7 +9,6 @@ foreach($attractions as $attraction)
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <body>
-<div class="container">
 <div class="container col-md-12">
   <div id="myCarousel" class="carousel slide col-md-6" data-ride="carousel">
     <!-- Indicators -->
@@ -93,7 +92,7 @@ foreach($attractions as $attraction)
 		echo '<div>Poor: '.$split->Poor.'<div>';
 		echo '<div>Terrible: '.$split->Terrible.'<div>';
 		echo '</div><br/>';
- ?>
+  ?>
 
 
    </div>

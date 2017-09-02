@@ -11,7 +11,7 @@
                         <div align=center>
                             <input type= "text" name="date" id="datepicker" class="datepick" value="{{csrf_token()}}">
 
-                        <span class="glyphicon glyphicon-calendar"></span>
+                        <label for="datepicker" class="glyphicon glyphicon-calendar"></label>
                         </div><br>
                         @foreach($categories as $category)
 						            <label for="btn_{{$category->name}}" class="catpicker">{{$category->name}}</label> 

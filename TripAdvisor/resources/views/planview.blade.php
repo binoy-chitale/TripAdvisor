@@ -36,7 +36,7 @@
 <?php $dayno=1; ?>
 <div class="container appcontainer" id="timetable">
 	<div class = "col-md-9 timetable">
-	    <div class="row itenerary" style="display:flex;">
+	    <div id="timetable" class="row itenerary" style="display:flex;">
 			@foreach($itenerary as $dayplan)
 				<div id="column" class="daycolumn">	
 					<div class="panelheaderdiv"><span class="dayno">Day {{$dayno}}: </span><span class="daydate">{{$dayplan['day']->format('d-m-Y')}}</span>
@@ -69,8 +69,10 @@
 											$obj->start_time = unserialize($obj->start_time);
 											$obj->end_time = unserialize($obj->end_time);
 											$obj->split_ratings = unserialize($obj->split_ratings);
+											echo('<span class="addr" style="display:none">'.$obj->address->street_address.' '.$obj->address->locality.' '.$obj->address->country.'</span>');
+											
 											$obj = json_encode($obj);	
-										}
+											}
 										?>		
 										@if(strcasecmp($item->name,"lunch")!=0)
 										<span id="myBtn" class="glyphicon glyphicon-info-sign open-Details" data-toggle="modal" data-target="#details" data-obj="{{$obj}}"></span>
@@ -85,6 +87,7 @@
 									@endphp
 									<span class="duration" style="display:none">Stay for {{$duration->h}} hours</span>
 									@if(property_exists($item,"latitude")&&property_exists($item,"longitude"))
+
 									<span class="lat" style="display:none">{{$item->latitude}}</span><span class="lon" style="display:none">{{$item->longitude}}</span>
 									@endif
 								</li>
@@ -98,7 +101,7 @@
 	</div>
 	<div class="col-md-3" id="fixed-div">
 		
-		<ul class="sortable invisible-list"><button class="btn trashbutton" ><span>Remove</span></button></ul>
+		<ul class="sortable invisible-list"><button class="btn trashbutton" ><i class="glyphicon glyphicon-trash"></i></button></ul>
 		<form class="search-form">
             <span class="form-group has-feedback">
                 <label for="search" class="sr-only">Search</label>
@@ -169,8 +172,9 @@
     <span id="dest" style="display:none;">{{$name}}</span>
 </div>
 <div id="Normal">
-    <button onclick="myFunction()" class="btn btn-primary btn-circle btn-lg" data-toggle="tooltip" data-placement="right" title="Print my plan"><i class="glyphicon glyphicon-print"></i></button>
+    <button onclick="" class="btn btn-primary btn-circle btn-lg" data-toggle="tooltip" data-placement="right" title="Print my plan"><i class="glyphicon glyphicon-print"></i></button>
 </div>
+<iframe id="ifmcontentstoprint" style="height: 0px; width: 0px; position: absolute"></iframe>
 @endsection
 
 @section('scripts')
@@ -179,19 +183,60 @@
 <script type="text/javascript" src="{{ asset('js/date.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/drag.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/att_search.js') }}"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="{{ asset('js/modal.js') }}"></script>
-<script type="text/javascript" src="{{ asset('js/restaurants.js') }}"></script>
-<script src="https://maps.googleapis.com/maps/api/js?&libraries=places&callback=initMap" async defer></script>
-<script>
-function myFunction() {
-    window.print();
-}
+<script type="text/javascript">
+	$('#Normal').click(function(){
+		
+		// document.getElementById("fixed-div").style="display:none;";
+		// console.log(document.getElementsByClassName("timetable")[0]);
+		// var timetable = document.getElementsByClassName("timetable")[0];
+		// timetable.className="timetable";
+		// timetable.style="width:100;overflow:visible;";
+		// window.print();
+		var content = document.getElementById("timetable");
+		var pri = document.getElementById("ifmcontentstoprint").contentWindow;
+		pri.document.open();
+		pri.document.write(content.innerHTML);	
+		var images =pri.document.getElementsByTagName("img");
+		var stars =pri.document.getElementsByClassName("stars-container");
+		var sidelist = pri.document.getElementsByClassName('side-sortable');
+		var list = pri.document.getElementsByClassName('ui-state-default day-item ui-sortable-handle');
+		var addr = pri.document.getElementsByClassName('addr');
+		for(var i=0;i<images.length;i++){
+			images[i].style="display:none";
+		}
+		for(var i=0;i<stars.length;i++){
+			stars[i].style="display:none";
+		}
+		for(var i=0;i<sidelist.length;i++){
+			sidelist[i].style="display:none";
+		}
+		for(var i=0;i<list.length;i++){
+			list[i].style="font-size:10px";
+		}
+		for(var i=0;i<addr.length;i++){
+			addr[i].style="display:inline";
+		}
+		pri.document.close();	
+		pri.focus();
+		pri.print()
+	});
+	$(document).ready(function() {
+		  var alllists = document.getElementsByClassName('sortable');
+		  for(i=0;i<alllists.length;i++){
+		    if(!alllists[i].classList.contains("side-sortable")){
+			    var alllistsrray=[];
+			    alllistsrray.push(alllists[i]);
+			    changeTimes(alllistsrray);
+			  }
+			}
+	});
 </script>
+<script type="text/javascript" src="{{ asset('js/modal.js') }}"></script>
 @endsection
 
 @section('styles')
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style type="text/css">
   .sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
   .sortable li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em; }
