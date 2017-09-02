@@ -1945,55 +1945,6 @@
 },{
     "overall rating": "4.54.5", 
     "ratings": {
-        "Excellent": "639", 
-        "Very good": "95", 
-        "Average": "45", 
-        "Poor": "17", 
-        "Terrible": "13"
-    }, 
-    "overall_calculated_rating": 4.644004944375773, 
-    "review_count": "Read all 868 reviews 868 reviews", 
-    "name": "Christmas Spectacular Starring the Radio City Rockettes", 
-    "all_timings": null, 
-    "official_description": "LocationUnited States >New York >New York City >Midtown / Manhattan ", 
-    "highlights": "", 
-    "latlon": {
-        "lat": 40.75997599999999, 
-        "lon": -73.9799772
-    }, 
-    "rank": "#48 of 1,113 things to do in New York City", 
-    "content": "You never forget the memories you make at the Christmas Spectacular Starring the Radio City Rockettes. From the moment you walk into Radio City Music Hall to the very last dazzling dance number, experience the magic that only Rockettes can create. Bring your family for a one-of-a-kind tradition, where wooden soldiers dance, ice skaters glide, snowflakes swirl\u2014and the unmistakable spirit of Christmas in New York City comes alive.", 
-    "phone": [
-        "+1 866-858-0007"
-    ], 
-    "amenities": {}, 
-    "suggested_hours": null, 
-    "stars": "4.5", 
-    "address": {
-        "country": "United States", 
-        "zipcode": "10020-1701", 
-        "street_address": "1260 Avenue of the Americas", 
-        "locality": "New York City, NY 10020-1701"
-    }, 
-    "images": [
-        "https://media-cdn.tripadvisor.com/media/photo-s/0e/e5/cd/d0/street-view.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0f/1b/dd/79/christmas-spectacular.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0f/81/81/05/home-of-the-rockettes.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-o/0f/a5/d4/4c/photo0jpg.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0f/a5/d4/4d/photo1jpg.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-w/10/5d/d8/f5/radio-city-christmas.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-p/10/5d/d9/30/radio-city-christmas.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0c/c0/1d/0b/christmas-spectacular.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0c/c0/1d/1c/christmas-spectacular.jpg"
-    ], 
-    "category": [
-        "Cultural Events", 
-        "Events"
-    ], 
-    "additional_info": null
-},{
-    "overall rating": "4.54.5", 
-    "ratings": {
         "Excellent": "889", 
         "Very good": "554", 
         "Average": "94", 
@@ -5607,53 +5558,6 @@
     ], 
     "additional_info": null
 },{
-    "overall rating": "4.54.5", 
-    "ratings": {
-        "Excellent": "25", 
-        "Very good": "19", 
-        "Average": "1", 
-        "Poor": "0", 
-        "Terrible": "0"
-    }, 
-    "overall_calculated_rating": 4.533333333333333, 
-    "review_count": "82 reviews", 
-    "name": "Rockefeller Center Christmas Tree", 
-    "all_timings": null, 
-    "official_description": "", 
-    "highlights": "", 
-    "latlon": {
-        "lat": 40.7587402, 
-        "lon": -73.9786736
-    }, 
-    "rank": "#141 of 1,113 things to do in New York City", 
-    "content": "82 reviews", 
-    "phone": [], 
-    "amenities": {}, 
-    "suggested_hours": null, 
-    "stars": "4.5", 
-    "address": {
-        "country": "United States", 
-        "zipcode": "10111-0100", 
-        "street_address": "45 Rockefeller Plz", 
-        "locality": "New York City, NY 10111-0100"
-    }, 
-    "images": [
-        "https://media-cdn.tripadvisor.com/media/photo-s/0e/16/7a/6d/photo1jpg.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0e/16/7a/6e/photo2jpg.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0e/16/7a/6f/photo3jpg.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0e/18/0a/6c/rockefeller-center-christmas.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0e/26/d8/f7/20170104-184318-largejpg.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0e/5e/e6/df/rockefeller-center-christmas.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0e/5e/e7/1a/rockefeller-center-christmas.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0e/b4/09/16/familiar.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0a/8b/75/4e/rockefeller-center-christmas.jpg"
-    ], 
-    "category": [
-        "Cultural Events", 
-        "Events"
-    ], 
-    "additional_info": null
-},{
     "overall rating": "3.53.5", 
     "ratings": {
         "Excellent": "184", 
@@ -7526,53 +7430,6 @@
     "category": [
         "Theaters", 
         "Concerts & Shows"
-    ], 
-    "additional_info": null
-},{
-    "overall rating": "4.54.5", 
-    "ratings": {
-        "Excellent": "45", 
-        "Very good": "9", 
-        "Average": "1", 
-        "Poor": "1", 
-        "Terrible": "0"
-    }, 
-    "overall_calculated_rating": 4.75, 
-    "review_count": "74 reviews", 
-    "name": "Macy's Thanksgiving Day Parade", 
-    "all_timings": null, 
-    "official_description": "LocationUnited States >New York >New York City >Midtown ", 
-    "highlights": "", 
-    "latlon": {
-        "lat": 40.7507815, 
-        "lon": -73.98895929999999
-    }, 
-    "rank": "#179 of 1,113 things to do in New York City", 
-    "content": "The Macy\u2019s Thanksgiving Day Parade is about as American as apple pie and has become a Thanksgiving Day tradition for millions since 1924. The parade runs up Central Park West and 6th Ave in New York City and features an impressive display of floats, marching bands, musical acts, and iconic oversized balloons of famed pop culture characters like Snoopy, Kermit, and Bugs Bunny. Other notable moments include performances from original Broadway casts and an impressive lineup of high school marching bands from around the country. All of the sights, sounds, and glamour of New York City in one holiday extravaganza.", 
-    "phone": [], 
-    "amenities": {}, 
-    "suggested_hours": null, 
-    "stars": "4.5", 
-    "address": {
-        "country": "United States", 
-        "zipcode": "", 
-        "street_address": "Herald Square 151 W 34th St", 
-        "locality": "New York City, NY"
-    }, 
-    "images": [
-        "https://media-cdn.tripadvisor.com/media/photo-s/0d/f6/b6/39/photo0jpg.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0d/f6/b6/3a/photo1jpg.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0d/f6/b6/3b/photo2jpg.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0d/f6/b6/3c/photo3jpg.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0e/46/92/13/joshi.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0e/b1/17/b0/inflating-charlie-brown.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0f/c1/2f/4e/a-memorial-78th-and-west.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/10/71/19/0e/caption.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-o/10/71/19/fe/caption.jpg"
-    ], 
-    "category": [
-        "Cultural Events", 
-        "Events"
     ], 
     "additional_info": null
 },{

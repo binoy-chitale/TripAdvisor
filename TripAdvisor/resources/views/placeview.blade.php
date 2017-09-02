@@ -9,6 +9,7 @@ foreach($attractions as $attraction)
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <body>
+<div class="container">
 <div class="container col-md-12">
   <div id="myCarousel" class="carousel slide col-md-6" data-ride="carousel">
     <!-- Indicators -->
@@ -52,13 +53,20 @@ foreach($attractions as $attraction)
     	<div class="attraction-title">{{$attr->name}}</div>
     	<hr class="horizontal-rule" align=center>
     	<br>
+      <div class="rating">Star Ratings:
+
     	<?php
+      $stars=(float)$attr->stars;
+      $stars=$stars*10;
+      echo('<span class="stars-container stars-'.$stars.'" id="stars">★★★★★</span></div>');
+     
+     echo '<div class="attraction-description" style="font-style:italic">'.$attr->rank.'</div> <br>';
+
     	if(!preg_match('/ *reviews$/', $attr->description)){
-    		echo '<div class="attraction-description">'.$attr->description.'</div>';
+    		echo '<div class="attraction-description"><span>About: '.$attr->description.'</span></div>';
     	}
 
-    	echo '<br><div class="attraction-description">'.$attr->rank.'</div>';
-
+    	
     	echo '<br><div class="attraction-address">';
     
     	$address = unserialize($attr->address);
@@ -85,19 +93,14 @@ foreach($attractions as $attraction)
 		echo '<div>Poor: '.$split->Poor.'<div>';
 		echo '<div>Terrible: '.$split->Terrible.'<div>';
 		echo '</div><br/>';
-
-		echo '<div class="ratings">Attraction Rating:<div>'.substr($attr->rating,0,5).'</div></div>';
-
-    $stars=(float)$item->stars;
-    $stars=$item->stars*10;
-    echo('<span class="stars-container stars-'.$stars.'" id="stars">★★★★★</span><br>');
-            
-   ?>
+ ?>
 
 
    </div>
-
+  </div>
 </div>
+@endsection
+@section('scripts')
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 @endsection

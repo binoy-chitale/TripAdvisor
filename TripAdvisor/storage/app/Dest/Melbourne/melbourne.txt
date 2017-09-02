@@ -3311,55 +3311,6 @@
 },{
     "overall rating": "4.54.5", 
     "ratings": {
-        "Excellent": "60", 
-        "Very good": "18", 
-        "Average": "4", 
-        "Poor": "0", 
-        "Terrible": "2"
-    }, 
-    "overall_calculated_rating": 4.595238095238095, 
-    "review_count": "Read all 94 reviews 94 reviews", 
-    "name": "Australian Open", 
-    "all_timings": null, 
-    "official_description": "LocationAustralia >Victoria >Melbourne ", 
-    "highlights": "", 
-    "latlon": {
-        "lat": -37.8216202, 
-        "lon": 144.9785364
-    }, 
-    "rank": "#81 of 428 things to do in Melbourne", 
-    "content": "The Australian Open is a Grand Slam like no other. Over a two-week schedule the city comes alive, with international players gracing Melbourne\u2019s world class arenas for some truly spectacular tennis. With the soaring heat that Melbourne is known for in January, the event is known to push the physical abilities of these athletes to their limits. While the players slog it out, spectators can view the matches from the stands or choose from a variety of seating options, including private spaces. The Australian Open is a unique opportunity to experience an elite sporting event with a distinct Australian flavor, with fans dressed in their countries' colors, sporting warpaint on their faces, and enthusiastically showing their support.", 
-    "phone": [
-        "+613-5989-7666"
-    ], 
-    "amenities": {}, 
-    "suggested_hours": null, 
-    "stars": "4.5", 
-    "address": {
-        "country": "Australia", 
-        "zipcode": "3121", 
-        "street_address": "Olympic Boulevard", 
-        "locality": "Melbourne, Victoria 3121,"
-    }, 
-    "images": [
-        "https://media-cdn.tripadvisor.com/media/photo-s/0e/e5/fc/c4/photo5jpg.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0e/e5/fc/c6/photo6jpg.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0e/e5/fc/c8/photo7jpg.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0e/e5/fc/ca/photo8jpg.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0e/e5/fc/ba/photo0jpg.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0a/25/22/5c/love-this-area-when-it.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0a/25/22/63/view-of-the-practice.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0a/25/22/6a/looking-towards-the-merchandis.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0a/25/22/76/the-stairs-leading-to.jpg"
-    ], 
-    "category": [
-        "Sporting Events", 
-        "Events"
-    ], 
-    "additional_info": null
-},{
-    "overall rating": "4.54.5", 
-    "ratings": {
         "Excellent": "62", 
         "Very good": "35", 
         "Average": "4", 
@@ -5239,50 +5190,6 @@
 },{
     "overall rating": "44", 
     "ratings": {
-        "Excellent": "17", 
-        "Very good": "10", 
-        "Average": "6", 
-        "Poor": "1", 
-        "Terrible": "1"
-    }, 
-    "overall_calculated_rating": 4.171428571428572, 
-    "review_count": "Read all 38 reviews 38 reviews", 
-    "name": "Melbourne International Flower and Garden Show", 
-    "all_timings": null, 
-    "official_description": "LocationAustralia >Victoria >Melbourne ", 
-    "highlights": "", 
-    "latlon": "null", 
-    "rank": "#134 of 428 things to do in Melbourne", 
-    "content": "The biggest annual flower and garden show in the Southern Hemisphere is set in Melbourne every year in March at the Royal Exhibition Building & Carlton Gardens. It is truly a whole family event! Kids can enjoy colouring and craft activities and discover a remarkable Disney fairy garden and take a photos with the \"Human Pelican\". Gardening enthusiasts can get inspired by the floral, outdoor and landscaping competitions; and kids and adults alike can enjoy hundreds of plants, flowers, cactus and gardening exhibitions in a relaxed and beautiful setting. One of my favourite events at the festival is the Gardens by Twilights: the Carlton gardens comes alive for one evening to provide a night of entertainment, food and marvellous sights of the garden illuminated with colourful beams of light.", 
-    "phone": [], 
-    "amenities": {}, 
-    "suggested_hours": null, 
-    "stars": "4.0", 
-    "address": {
-        "country": "Australia", 
-        "zipcode": "3053", 
-        "street_address": "11 Nicholson Street, Carlton", 
-        "locality": "Melbourne, Victoria 3053,"
-    }, 
-    "images": [
-        "https://media-cdn.tripadvisor.com/media/photo-s/0e/e3/41/93/displays-of-melb-flower.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0e/e3/41/a8/displays-of-melb-flower.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0e/e3/41/da/displays-of-melb-flower.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-w/0e/e3/41/ee/displays-of-melb-flower.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0e/e3/41/fd/displays-of-melb-flower.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0e/e3/42/13/displays-of-melb-flower.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0e/f1/6b/e4/exciting-range-of-flowers.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-w/0f/20/78/cc/design-at-a-past-melbourne.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0f/20/79/a7/display-in-main-hall.jpg"
-    ], 
-    "category": [
-        "Exhibitions", 
-        "Events"
-    ], 
-    "additional_info": null
-},{
-    "overall rating": "44", 
-    "ratings": {
         "Excellent": "3", 
         "Very good": "13", 
         "Average": "4", 
@@ -5730,53 +5637,6 @@
     "category": [
         "Art Museums", 
         "Museums"
-    ], 
-    "additional_info": null
-},{
-    "overall rating": "4.54.5", 
-    "ratings": {
-        "Excellent": "15", 
-        "Very good": "2", 
-        "Average": "1", 
-        "Poor": "0", 
-        "Terrible": "0"
-    }, 
-    "overall_calculated_rating": 4.777777777777778, 
-    "review_count": "Read all 22 reviews 22 reviews", 
-    "name": "Melbourne International Comedy Festival", 
-    "all_timings": null, 
-    "official_description": "", 
-    "highlights": "", 
-    "latlon": {
-        "lat": -37.8102959, 
-        "lon": 144.9699494
-    }, 
-    "rank": "#141 of 428 things to do in Melbourne", 
-    "content": "22 reviews", 
-    "phone": [], 
-    "amenities": {}, 
-    "suggested_hours": null, 
-    "stars": "4.5", 
-    "address": {
-        "country": "Australia", 
-        "zipcode": "3000", 
-        "street_address": "240 Exhibition St", 
-        "locality": "Melbourne, Victoria 3000,"
-    }, 
-    "images": [
-        "https://media-cdn.tripadvisor.com/media/photo-s/0a/bf/08/80/the-arts-centre-a-great.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-w/0e/d2/19/2f/photo0jpg.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-w/0e/e8/ef/c0/photo0jpg.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0e/ee/bc/f6/photo0jpg.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0a/b4/5f/76/flinders-station-is-your.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-w/0a/b4/60/a5/town-hall-is-the-hub.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-w/0a/b4/61/2d/the-speigal-tent-is-a.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0a/b4/61/8c/beautiful-melbourne.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0a/b6/42/cb/flinders-if-your-gateway.jpg"
-    ], 
-    "category": [
-        "Cultural Events", 
-        "Events"
     ], 
     "additional_info": null
 },{
@@ -6612,49 +6472,6 @@
     ], 
     "additional_info": null
 },{
-    "overall rating": "4.54.5", 
-    "ratings": {
-        "Excellent": "8", 
-        "Very good": "2", 
-        "Average": "1", 
-        "Poor": "0", 
-        "Terrible": "0"
-    }, 
-    "overall_calculated_rating": 4.636363636363637, 
-    "review_count": "Read all 16 reviews 16 reviews", 
-    "name": "Melbourne Cup Carnival", 
-    "all_timings": null, 
-    "official_description": "LocationAustralia >Victoria >Melbourne ", 
-    "highlights": "", 
-    "latlon": {
-        "lat": -37.7868818, 
-        "lon": 144.9203232
-    }, 
-    "rank": "#179 of 428 things to do in Melbourne", 
-    "content": "Although you will find plenty of horse racing fanatics, the Melbourne Cup seems to be more about fashion than racing. With events like 'Fashion on the Field' drawing lots of attention, preparing for the event is all about what to wear. As well as the fashion however, there are four race days to attend, with ticket options from general admission and reserved seating to full luxury packages. Grab a drink at a bar or sip a beverage while relaxing on the grass in the sun, then try your luck and place a bet. After the race, venture out and experience all that Melbourne has to offer with the electric spring racing vibe igniting the city.", 
-    "phone": [], 
-    "amenities": {}, 
-    "suggested_hours": null, 
-    "stars": "4.5", 
-    "address": {
-        "country": "Australia", 
-        "zipcode": "", 
-        "street_address": "Flemington Racecourse", 
-        "locality": "Melbourne, Victoria,"
-    }, 
-    "images": [
-        "https://media-cdn.tripadvisor.com/media/photo-s/0d/84/c0/5a/photo0jpg.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0d/84/c0/5c/photo1jpg.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0d/84/c0/5d/photo2jpg.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0d/9d/a1/bd/2016-cup-winner.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0d/9d/a1/be/2016-cup-winner.jpg"
-    ], 
-    "category": [
-        "Cultural Events", 
-        "Events"
-    ], 
-    "additional_info": null
-},{
     "overall rating": "44", 
     "ratings": {
         "Excellent": "6", 
@@ -7338,50 +7155,6 @@
 },{
     "overall rating": "44", 
     "ratings": {
-        "Excellent": "5", 
-        "Very good": "2", 
-        "Average": "5", 
-        "Poor": "0", 
-        "Terrible": "1"
-    }, 
-    "overall_calculated_rating": 3.769230769230769, 
-    "review_count": "Read all 16 reviews 16 reviews", 
-    "name": "White Night Melbourne", 
-    "all_timings": null, 
-    "official_description": "", 
-    "highlights": "", 
-    "latlon": "null", 
-    "rank": "#193 of 428 things to do in Melbourne", 
-    "content": "16 reviews", 
-    "phone": [], 
-    "amenities": {}, 
-    "suggested_hours": null, 
-    "stars": "4.0", 
-    "address": {
-        "country": "Australia", 
-        "zipcode": "3065", 
-        "street_address": "U 8 25 Argyle St", 
-        "locality": "Melbourne, Victoria 3065,"
-    }, 
-    "images": [
-        "https://media-cdn.tripadvisor.com/media/photo-s/0e/87/f0/5f/like-a-fairy-tale.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0e/87/f0/83/possum-tree.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0e/87/f0/a6/musicians-performed-everywhere.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0e/87/f0/b9/a-secret-life-of-statues.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0e/87/f0/cf/talented-musicians.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0e/87/f0/e6/you-could-find-what-you.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0e/87/f1/02/lights-over-the-china.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0e/87/f1/15/angel-s-wings-great-idea.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0e/87/f1/27/iconic-place.jpg"
-    ], 
-    "category": [
-        "Cultural Events", 
-        "Events"
-    ], 
-    "additional_info": null
-},{
-    "overall rating": "44", 
-    "ratings": {
         "Excellent": "4", 
         "Very good": "7", 
         "Average": "2", 
@@ -7856,49 +7629,6 @@
     ], 
     "additional_info": null
 },{
-    "overall rating": "3.53.5", 
-    "ratings": {
-        "Excellent": "5", 
-        "Very good": "4", 
-        "Average": "3", 
-        "Poor": "0", 
-        "Terrible": "2"
-    }, 
-    "overall_calculated_rating": 3.7142857142857144, 
-    "review_count": "Read all 18 reviews 18 reviews", 
-    "name": "Moomba Festival", 
-    "all_timings": null, 
-    "official_description": "LocationAustralia >Victoria >Melbourne ", 
-    "highlights": "", 
-    "latlon": "null", 
-    "rank": "#205 of 428 things to do in Melbourne", 
-    "content": "Every Year during the Labour Day weekend in Melbourne, the Yarra river prepares for one of the oldest community festivals : the Moomba Festival. This carnivalesque festival starts with an annual parade of floats, designed by the whole community and accompanied by dancers, performers and school kids. During the 4 day festival there is music, performances, food and the amazing Birdman Rally, where people design homemade flying devices and fly them out into the river to raise money for charity. There is a King and Queen of the parade and the event ends with spectacular fireworks above the Yarra River.", 
-    "phone": [], 
-    "amenities": {}, 
-    "suggested_hours": null, 
-    "stars": "3.5", 
-    "address": {
-        "country": "Australia", 
-        "zipcode": "", 
-        "street_address": "Yarra Street", 
-        "locality": "Melbourne, Victoria,"
-    }, 
-    "images": [
-        "https://media-cdn.tripadvisor.com/media/photo-s/0a/97/a8/64/the-rides-in-the-festival.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0a/97/a8/6c/rides.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0a/97/a8/78/yarra-river-lit-up.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0a/97/a8/80/fireworks.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0a/97/a8/8c/the-indian-float-with.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0a/97/a8/99/moomba-queen-king.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0a/97/a8/aa/the-chinese-dragon.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-w/0a/97/a8/b1/amusement-rides.jpg"
-    ], 
-    "category": [
-        "Cultural Events", 
-        "Events"
-    ], 
-    "additional_info": null
-},{
     "overall rating": "44", 
     "ratings": {
         "Excellent": "4", 
@@ -8084,87 +7814,6 @@
     "category": [
         "Gardens", 
         "Nature & Parks"
-    ], 
-    "additional_info": null
-},{
-    "overall rating": "4.54.5", 
-    "ratings": {
-        "Excellent": "3", 
-        "Very good": "2", 
-        "Average": "0", 
-        "Poor": "0", 
-        "Terrible": "0"
-    }, 
-    "overall_calculated_rating": 4.6, 
-    "review_count": "Read all 8 reviews 8 reviews", 
-    "name": "Melbourne Food and Wine Festival", 
-    "all_timings": null, 
-    "official_description": "", 
-    "highlights": "", 
-    "latlon": {
-        "lat": -37.8463984, 
-        "lon": 144.9918634
-    }, 
-    "rank": "#212 of 428 things to do in Melbourne", 
-    "content": "8 reviews", 
-    "phone": [], 
-    "amenities": {}, 
-    "suggested_hours": null, 
-    "stars": "4.5", 
-    "address": {
-        "country": "Australia", 
-        "zipcode": "3000", 
-        "street_address": "1A Queen St", 
-        "locality": "Melbourne, Victoria 3000,"
-    }, 
-    "images": [
-        "https://media-cdn.tripadvisor.com/media/photo-s/0e/d7/55/72/melbourne-food-and-wine.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0e/d7/55/73/melbourne-food-and-wine.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0e/d9/5f/e1/20170402-154132-largejpg.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-w/0e/d9/5f/e3/20170402-140328-largejpg.jpg"
-    ], 
-    "category": [
-        "Food & Drink Festivals", 
-        "Events"
-    ], 
-    "additional_info": null
-},{
-    "overall rating": "4.54.5", 
-    "ratings": {
-        "Excellent": "6", 
-        "Very good": "0", 
-        "Average": "0", 
-        "Poor": "0", 
-        "Terrible": "0"
-    }, 
-    "overall_calculated_rating": 5.0, 
-    "review_count": "Read all 9 reviews 9 reviews", 
-    "name": "AFL Grand Final", 
-    "all_timings": null, 
-    "official_description": "", 
-    "highlights": "", 
-    "latlon": "null", 
-    "rank": "#213 of 428 things to do in Melbourne", 
-    "content": "9 reviews", 
-    "phone": [], 
-    "amenities": {}, 
-    "suggested_hours": null, 
-    "stars": "4.5", 
-    "address": {
-        "country": "Australia", 
-        "zipcode": "8002", 
-        "street_address": "Yarra Park, Jolimont", 
-        "locality": "Melbourne, Victoria 8002,"
-    }, 
-    "images": [
-        "https://media-cdn.tripadvisor.com/media/photo-w/09/1d/b7/12/photo0jpg.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-w/09/1d/b7/13/photo1jpg.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-w/09/1d/b7/14/photo2jpg.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0a/8b/74/12/afl-grand-final.jpg"
-    ], 
-    "category": [
-        "Sporting Events", 
-        "Events"
     ], 
     "additional_info": null
 },{
@@ -8994,53 +8643,6 @@
     "category": [
         "Architectural Buildings", 
         "Sights & Landmarks"
-    ], 
-    "additional_info": null
-},{
-    "overall rating": "3.53.5", 
-    "ratings": {
-        "Excellent": "0", 
-        "Very good": "2", 
-        "Average": "4", 
-        "Poor": "0", 
-        "Terrible": "0"
-    }, 
-    "overall_calculated_rating": 3.3333333333333335, 
-    "review_count": "Read all 9 reviews 9 reviews", 
-    "name": "Melbourne Chinese New Year", 
-    "all_timings": null, 
-    "official_description": "", 
-    "highlights": "", 
-    "latlon": {
-        "lat": -37.8118271, 
-        "lon": 144.9676346
-    }, 
-    "rank": "#236 of 428 things to do in Melbourne", 
-    "content": "9 reviews", 
-    "phone": [], 
-    "amenities": {}, 
-    "suggested_hours": null, 
-    "stars": "3.5", 
-    "address": {
-        "country": "Australia", 
-        "zipcode": "3000", 
-        "street_address": "Little Bourke St", 
-        "locality": "Melbourne, Victoria 3000,"
-    }, 
-    "images": [
-        "https://media-cdn.tripadvisor.com/media/photo-s/0d/56/97/ab/chinatown.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0d/56/97/c8/chinatown.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0d/56/97/de/chinatown.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0d/56/97/f2/chinatown.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0d/56/98/0a/chinatown.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0d/56/98/29/chinatown.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0d/56/98/56/chinatown.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0d/56/98/68/chinatown.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0e/48/59/3c/chinese-new-year-at-docklands.jpg"
-    ], 
-    "category": [
-        "Cultural Events", 
-        "Events"
     ], 
     "additional_info": null
 },{

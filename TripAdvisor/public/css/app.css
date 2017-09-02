@@ -1,6 +1,18 @@
 .modal-description-div, .modal-rank-div, .modal-address-div, .modal-phone-div{
   text-align:justify;
 }
+.modal-description-div{
+  padding-top:10px;
+}
+
+.modal-rank-div{
+  padding-top: 15px;
+}
+
+.modal-duration{
+  font-weight:600px;
+  font-style:italic;
+}
 
 .modal-title{
   vertical-align: center;
@@ -17,36 +29,14 @@
 }
 .modal-rank{
   font-weight:700;
+  font-style: italic;
 }
-.modal-stars-container {
-  position:relative;
-  color: transparent !important;
-  font-size:0.9em !important;
-  float:right;
-}
-
-.modal-stars-container:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: '★★★★★';
-  color: lightgray;
-}
-
-.modal-stars-container:after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: '★★★★★';
-  color: gold;
-  overflow: hidden;
-}
-
- .glyphicon.glyphicon-info-sign{
+.glyphicon.glyphicon-info-sign{
   font-size: 12px;
   position:relative; 
   top:0px; 
   right:0px;
+  cursor: pointer; cursor: hand;
 }
 
 .col-sm-9 > .glyphicon.glyphicon-info-sign{
@@ -64,10 +54,11 @@ position: absolute;}
 }
 
 .modal-image{
-  height:400px;
-  max-width:500px;
-  width:auto;
+  height:300px;
+  width:100%;
+  background-size: contain;
   text-align:center;
+
 }
 
 .stars-container:before {
@@ -736,6 +727,7 @@ li .img-wrapper{
 .hvrbox:hover .hvrbox-layer_top,
 .hvrbox.active .hvrbox-layer_top {
   opacity: 1;
+  cursor: pointer; cursor: hand;
 }
 .hvrbox .hvrbox-text {
   text-align: justify;

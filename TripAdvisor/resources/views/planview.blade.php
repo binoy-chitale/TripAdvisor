@@ -8,22 +8,25 @@
           <h4 class="modal-title"></h4>
         </div>
         <div class="modal-body col-sm-12">
-        	<div class="modal-image-div">
+        	<div class="modal-image-div col-sm-6">
         		<img class="modal-image">
         	</div>
           
-          <div>
-          	<div class="col-sm-6 modal-rank-div"><span class="modal-rank"></span></div>
-          	<div class="col-sm-6 modal-stars-div"><span class="modal-stars"></span></div>
-      	  </div>
+          <div class="col-sm-6">
+          	<div class="modal-rank-div"><span class="modal-rank"></span></div>
+          	<div class="modal-stars-div"><span style="font-weight:700;">Star Rating: </span><span class="modal-stars"></span></div>
+      		<div class="modal-phone-div "><span class="glyphicon glyphicon-phone" style="font-weight:700"></span><span class=" modal-phone"></span></div>
+          	<div class="modal-address-div "><span class="glyphicon glyphicon-map-marker"><span class="modal-address"></span></span></div>
+          	<div class="modal-review-div"><span class="modal-reviews">
+          		
+          	</span></div>
+          	<div class="modal-duration-div"><span class="modal-duration" style="font-weight:700;"></span></div><br>
+          </div>
+      	  <br><br>
 
-      	  <br>
-
-          <div class="modal-description-div " ><span style="font-weight:700;">About: </span><span class="modal-description"></span></div>
+          <div class="modal-description-div col-sm-12" ><span style="font-weight:700;">About: </span><span class="modal-description"></span></div>
           
-          <div class="modal-phone-div "><span class="glyphicon glyphicon-phone"> <span class=" modal-phone"></span></span></div>
-          <div class="modal-address-div "><span class="glyphicon glyphicon-map-marker"><span class="modal-address"></span></span></div>
-
+          
         </div>
       </div>
     </div>
@@ -31,7 +34,7 @@
 </div>
 
 <?php $dayno=1; ?>
-<div class="container appcontainer">
+<div class="container appcontainer" id="timetable">
 	<div class = "col-md-9 timetable">
 	    <div class="row itenerary" style="display:flex;">
 			@foreach($itenerary as $dayplan)
@@ -57,9 +60,21 @@
 										if(strcasecmp($item->name, "lunch")!=0){
 											$stars=(float)$item->stars;
 											$stars=$stars*10;
-										echo('<span class="stars-container stars'.$stars.'">★★★★★</span>');
+											echo('<span class="stars-container stars-'.$stars.'">★★★★★</span>');
+											
+											$obj = clone $item;
+											$obj->images = unserialize($obj->images)[0];
+											$obj->phone = unserialize($obj->phone);
+											$obj->address = unserialize($obj->address);
+											$obj->start_time = unserialize($obj->start_time);
+											$obj->end_time = unserialize($obj->end_time);
+											$obj->split_ratings = unserialize($obj->split_ratings);
+											$obj = json_encode($obj);	
 										}
-										?>
+										?>		
+										@if(strcasecmp($item->name,"lunch")!=0)
+										<span id="myBtn" class="glyphicon glyphicon-info-sign open-Details" data-toggle="modal" data-target="#details" data-obj="{{$obj}}"></span>
+										@endif
 										<br>
 										<span class="startend" id="startend"><span class="starttime">{{$item->startofvisit}}</span>-<span class="endtime">{{$item->endofvisit}}</span></span>
 									</div>
@@ -71,18 +86,6 @@
 									<span class="duration" style="display:none">Stay for {{$duration->h}} hours</span>
 									@if(property_exists($item,"latitude")&&property_exists($item,"longitude"))
 									<span class="lat" style="display:none">{{$item->latitude}}</span><span class="lon" style="display:none">{{$item->longitude}}</span>
-									<?php 
-										$obj = clone $item;
-										$obj->images = unserialize($obj->images)[0];
-										$obj->phone = unserialize($obj->phone);
-										$obj->address = unserialize($obj->address);
-										$obj->start_time = unserialize($obj->start_time);
-										$obj->end_time = unserialize($obj->end_time);
-										$obj->split_ratings = unserialize($obj->split_ratings);
-										$obj = json_encode($obj);
-
-									?>
-									<span id="myBtn" class="glyphicon glyphicon-info-sign open-Details" data-toggle="modal" data-target="#details" data-obj="{{$obj}}"></span>
 									@endif
 								</li>
 							@endforeach
@@ -162,11 +165,11 @@
 	</div>
 </div>
 <div id="plot">
-    <button type="submit" class="btn btn-primary btn-circle btn-lg"><i class="glyphicon glyphicon-map-marker"></i></button>
+    <button type="submit" class="btn btn-primary btn-circle btn-lg"  data-toggle="tooltip" data-placement="right" title="Plot my plan"><i class="glyphicon glyphicon-map-marker"></i></button>
     <span id="dest" style="display:none;">{{$name}}</span>
 </div>
 <div id="Normal">
-    <button onclick="myFunction()" class="btn btn-primary btn-circle btn-lg"><i class="glyphicon glyphicon-print"></i></button>
+    <button onclick="myFunction()" class="btn btn-primary btn-circle btn-lg" data-toggle="tooltip" data-placement="right" title="Print my plan"><i class="glyphicon glyphicon-print"></i></button>
 </div>
 @endsection
 
@@ -178,6 +181,8 @@
 <script type="text/javascript" src="{{ asset('js/att_search.js') }}"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="{{ asset('js/modal.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/restaurants.js') }}"></script>
+<script src="https://maps.googleapis.com/maps/api/js?&libraries=places&callback=initMap" async defer></script>
 <script>
 function myFunction() {
     window.print();

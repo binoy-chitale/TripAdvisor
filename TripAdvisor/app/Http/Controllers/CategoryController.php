@@ -138,7 +138,11 @@ class CategoryController extends Controller{
     }
     public function makeRatingsList(){
         foreach($this->attractions as $item) {
-                $this->rating[ $item->{'id'}] = $item->{'rating'};
+                $factor = $item->{'rank'};
+                $factor = str_replace(",", "", $factor);
+                preg_match_all('!\d+!', $factor, $factor);
+                $calculatedfactor = ((int)$factor[0][1]-(int)$factor[0][0])/(int)$factor[0][1];
+                $this->rating[ $item->{'id'}] = $item->{'rating'}+$calculatedfactor*0.7+$item->stars;
                 array_push($this->attractionidlist, $item->{'id'});
                 $this->distarray[$item->{'id'}] = array( ['latitude' => $item->{'latitude'}, 'longitude' => $item->{'longitude'}] );
             }
@@ -146,7 +150,7 @@ class CategoryController extends Controller{
     public function updateRatingsWithCategories(){
         $list = Category::select('attraction_id', DB::raw('count(*) as count'))->whereIn('attraction_id',$this->attractionidlist)->whereIn('name' ,$this->catvalues)->groupBy('attraction_id')->get();    
         foreach ($list as $list) {
-            $this->rating[$list->attraction_id] = $this->rating[$list->attraction_id] + $list->count*0.1;
+            $this->rating[$list->attraction_id] = $this->rating[$list->attraction_id] + $list->count*0.15;
             $this->rating[$list->attraction_id] = (string)$this->rating[$list->attraction_id];     
         }
     }

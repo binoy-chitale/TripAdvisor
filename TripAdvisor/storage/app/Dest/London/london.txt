@@ -1,48 +1,4 @@
 {"attractions":[{
-    "overall rating": "3.53.5", 
-    "ratings": {
-        "Excellent": "22", 
-        "Very good": "16", 
-        "Average": "4", 
-        "Poor": "6", 
-        "Terrible": "12"
-    }, 
-    "overall_calculated_rating": 3.5, 
-    "review_count": "Read all 71 reviews 71 reviews", 
-    "name": "Notting Hill Carnival", 
-    "all_timings": null, 
-    "official_description": "LocationUnited Kingdom >England >London >Notting Hill ", 
-    "highlights": "", 
-    "latlon": "null", 
-    "rank": "#660 of 1,662 things to do in London", 
-    "content": "The Notting Hill Carnival is centred around a huge parade that makes its way through the Notting Hill area of London every August Bank Holiday weekend. The carnival is a big celebration of Caribbean culture, where people dress up in traditional carnival costumes and dance to the beats of the drums and the speakers that line the route. It\u2019s a mostly free event, where you can follow the crowd and enjoy the traditional Caribbean fare from the pop-up street sellers on the side of the road, as well as a few rum cocktails!", 
-    "phone": [], 
-    "amenities": {}, 
-    "suggested_hours": null, 
-    "stars": "3.5", 
-    "address": {
-        "country": "United Kingdom", 
-        "zipcode": "", 
-        "street_address": "The Street of W10, West London", 
-        "locality": "London,"
-    }, 
-    "images": [
-        "https://media-cdn.tripadvisor.com/media/photo-w/10/79/20/99/notting-hill-carnival.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-w/10/79/20/b2/notting-hill-carnival.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-w/10/79/20/d9/notting-hill-carnival.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/10/79/21/09/notting-hill-carnival.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/10/79/21/11/notting-hill-carnival.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-w/10/79/21/69/notting-hill-carnival.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-w/10/79/21/a8/notting-hill-carnival.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-w/10/79/21/d9/notting-hill-carnival.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/09/b9/e2/db/caption.jpg"
-    ], 
-    "category": [
-        "Cultural Events", 
-        "Events"
-    ], 
-    "additional_info": null
-},{
     "overall rating": "4.54.5", 
     "ratings": {
         "Excellent": "23602", 
@@ -9892,50 +9848,6 @@
     "category": [
         "Government Buildings", 
         "Sights & Landmarks"
-    ], 
-    "additional_info": null
-},{
-    "overall rating": "4.54.5", 
-    "ratings": {
-        "Excellent": "116", 
-        "Very good": "63", 
-        "Average": "32", 
-        "Poor": "7", 
-        "Terrible": "6"
-    }, 
-    "overall_calculated_rating": 4.232142857142857, 
-    "review_count": "Read all 247 reviews 247 reviews", 
-    "name": "RHS Chelsea Flower Show", 
-    "all_timings": null, 
-    "official_description": "", 
-    "highlights": "", 
-    "latlon": "null", 
-    "rank": "#216 of 1,662 things to do in London", 
-    "content": "247 reviews", 
-    "phone": [], 
-    "amenities": {}, 
-    "suggested_hours": null, 
-    "stars": "4.5", 
-    "address": {
-        "country": "United Kingdom", 
-        "zipcode": "SW3 4SR", 
-        "street_address": "Royal Hospital Road", 
-        "locality": "London SW3 4SR,"
-    }, 
-    "images": [
-        "https://media-cdn.tripadvisor.com/media/photo-w/0f/93/ce/d9/chelsea-flower-show.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0f/93/cf/05/chelsea-flower-show.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0f/b6/b2/bb/all-shopped-out-at-chelsea.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0f/b6/b2/e6/guyana-stand.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/0f/da/46/0f/photo0jpg.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-w/0f/da/46/11/photo1jpg.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/08/4f/fe/e0/royal-hospital-chelsea.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-w/08/4f/fe/f4/royal-hospital-chelsea.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-w/08/4f/ff/18/royal-hospital-chelsea.jpg"
-    ], 
-    "category": [
-        "Cultural Events", 
-        "Events"
     ], 
     "additional_info": null
 },{
