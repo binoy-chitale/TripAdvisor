@@ -124,7 +124,7 @@ class CategoryController extends Controller{
                 else{
                     $daysplan = [];
                     $daysplan['plan'] = array();
-                    $daysplan['day']="";
+                    $daysplan['day']="";    
                     $daysplan['day']=$day;
                     array_push($this->itenerary,$daysplan);
                 }

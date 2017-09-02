@@ -36,7 +36,7 @@
 	    directionsDisplay = new google.maps.DirectionsRenderer;
 	    directionsService = new google.maps.DirectionsService;
 	    map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 11,
+          zoom: 12,
           center: {lat:parseFloat(locations[0][0][1]), lng:parseFloat(locations[0][0][2])}
         });
         directionsDisplay.setMap(map);

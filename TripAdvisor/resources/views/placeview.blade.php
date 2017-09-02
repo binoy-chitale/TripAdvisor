@@ -9,6 +9,7 @@ foreach($attractions as $attraction)
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <body>
+
 <div class="container col-md-12">
   <div id="myCarousel" class="carousel slide col-md-6" data-ride="carousel">
     <!-- Indicators -->

@@ -8,7 +8,7 @@ $( function() {
     update : function(event,ui){
       var cancelled=0;
       if(ui.sender!=null){
-        var lastendtime = ui.item.parent()[0].lastChild.getElementsByClassName("endtime")[0].innerHTML;
+        var lastendtime = ui.item.parent()[0].lastElementChild.getElementsByClassName("endtime")[0].innerHTML;
         if(lastendtime < "10:00" && lastendtime >= "01:00" && !$(this).hasClass("side-sortable")){
              ui.sender.sortable('cancel');
             changeTimes(ui.sender);
@@ -106,6 +106,7 @@ function updateTimeTravel(currentTime,starttime,endtime,itemname,travelduration)
   else{
     var temp = new Date.parseExact(currentTime,"HH:mm");
     temp.addMinutes(travelduration);
+    addTravelDiv(itemname,travelduration);
     currentTime = temp;
   }
   var oldstarttime = new Date.parseExact(starttime.innerHTML,"HH:mm");
@@ -185,8 +186,39 @@ function calculateTime(lat1, lon1, lat2, lon2) {
   dist = dist * 180/Math.PI;
   dist = dist * 60 * 1.1515;
   dist = dist * 1.609344; 
-  console.log(dist);
   var time = dist*60/4.28;
-  console.log(time);
   return Math.round(time);
+}
+function addTravelDiv(itemname,travelduration){
+  var parentDiv = (itemname.parentNode).parentNode;
+  var list = parentDiv.parentNode;
+  var previous = parentDiv.previousElementSibling;
+  if(previous.classList.contains("minutes")){
+    previous.remove();
+  }
+  var previous = parentDiv.previousElementSibling;
+  if(!previous.classList.contains("minutes") && previous.getElementsByClassName("itemname")[0].innerHTML.toUpperCase() != "LUNCH" && parentDiv.getElementsByClassName("itemname")[0].innerHTML.toUpperCase() != "LUNCH"){
+    var traveltime = document.createElement("li");
+    traveltime.className = "ui-state-default day-item minutes";
+    // var travelico = document.createElement("i");
+    // travelico.className = "glyphicon glyphicon-road";
+    // traveltime.appendChild(travelico);
+    var text =document.createElement("a");
+    text.innerHTML = "   Drive for "+travelduration+" minutes";
+    traveltime.appendChild(text);
+    list.insertBefore(traveltime, parentDiv);
+  }
+  else{
+    if(!previous.classList.contains("minutes") && previous.getElementsByClassName("itemname")[0].innerHTML.toUpperCase() == "LUNCH"){
+      var traveltime = document.createElement("li");
+      traveltime.className = "ui-state-default day-item minutes";
+      // var travelico = document.createElement("i");
+      // travelico.className = "glyphicon glyphicon-road";
+      // traveltime.appendChild(travelico);
+      var text =document.createElement("a");
+      text.innerHTML = "   Drive for "+travelduration+" minutes";
+      traveltime.appendChild(text);
+      list.insertBefore(traveltime, parentDiv);
+    }
+  }
 }

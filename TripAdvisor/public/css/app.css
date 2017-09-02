@@ -1,8 +1,73 @@
-.stars-container, #stars {
-  position: relative;
-  color: transparent;
-  font-size:0.9em;
-  margin-left:-0em;
+.modal-description-div, .modal-rank-div, .modal-address-div, .modal-phone-div{
+  text-align:justify;
+}
+
+.modal-title{
+  vertical-align: center;
+  text-align:center;
+}
+.modal-address, .modal-phone{
+  font-family: 'Raleway', sans-serif !important; 
+}
+
+.modal-body{
+  background: white;
+  padding-left:10px;
+  padding-right:10px;
+}
+.modal-rank{
+  font-weight:700;
+}
+.modal-stars-container {
+  position:relative;
+  color: transparent !important;
+  font-size:0.9em !important;
+  float:right;
+}
+
+.modal-stars-container:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '★★★★★';
+  color: lightgray;
+}
+
+.modal-stars-container:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '★★★★★';
+  color: gold;
+  overflow: hidden;
+}
+
+ .glyphicon.glyphicon-info-sign{
+  font-size: 12px;
+  position:relative; 
+  top:0px; 
+  right:0px;
+}
+
+.col-sm-9 > .glyphicon.glyphicon-info-sign{
+position: absolute;}
+
+
+.stars-container {
+  position: relative !important;
+  color: transparent !important;
+  font-size:0.9em !important;
+  margin-left:-0em !important;
+}
+.modal-image-div{
+  text-align:center;
+}
+
+.modal-image{
+  height:400px;
+  max-width:500px;
+  width:auto;
+  text-align:center;
 }
 
 .stars-container:before {
@@ -269,7 +334,14 @@ label.label_selected {
   margin-right:5px;
   align:center;
 }
-
+.minutes{
+  height: 1vh !important;
+  min-height:30px !important;
+}
+.minutes {
+  text-align: center;
+  color: #777;
+}
 /*.sortable .starttime {
   position: relative;
   margin: auto;
