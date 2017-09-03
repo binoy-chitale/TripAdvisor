@@ -30,7 +30,7 @@
       var infowindows = [];
       function initMap() {
         var colors = ["http://maps.google.com/mapfiles/ms/icons/red-dot.png","http://maps.google.com/mapfiles/ms/icons/blue-dot.png","http://maps.google.com/mapfiles/ms/icons/green-dot.png","http://maps.google.com/mapfiles/ms/icons/orange-dot.png","http://maps.google.com/mapfiles/ms/icons/yellow-dot.png","http://maps.google.com/mapfiles/ms/icons/purple-dot.png","http://maps.google.com/mapfiles/ms/icons/pink-dot.png","http://maps.google.com/mapfiles/ms/icons/ltblue-dot.png"];	 
-	    var strokeColors = ["red","blue","green","orange","yellow","purple","pink","#00ffff","black","grey","orange","purple","#00ff80","#663300","#9900ff","#ffffff"];
+	    var strokeColors = ["red","blue","green","orange","yellow","purple","pink","#00ffff","black","grey","#00ff80","#663300","#9900ff","#ffffff","#66ff33","#ff00ff","#990033","#333300","#000099","#339966","#0099ff"];
 	    var locations = JSON.parse(localStorage['locations']);
 	    var list = document.getElementsByClassName("side-sortable")[0];
 	    directionsDisplay = new google.maps.DirectionsRenderer;
@@ -42,6 +42,7 @@
         directionsDisplay.setMap(map);
 	    lastIndex=0;
 	    for (i = 0; i < locations.length; i++){
+		    
 		    for (j = 0; j < locations[i].length; j++) {
 					markers.push([locations[i][j][0],parseFloat(locations[i][j][1]),parseFloat(locations[i][j][2]),colors[i%colors.length]]);
 			} 
@@ -106,10 +107,9 @@
      	
     	var legend = document.getElementById('legend');
         for (i=0;i<icons.length;i++) {
-          console.log(icons[i]);
           var name = icons[i]['name'];
           var div = document.createElement('div');
-          div.innerHTML = '<svg height="20" width="20"><circle cx="10" cy="10" r="40" fill="'+icons[i]['fillColor']+'"/></svg>' + '<span style="font-size:20px;">'+'  '+name+'</span>';
+          div.innerHTML = '<svg height="20" width="20"><circle cx="10" cy="10" r="40" fill="'+icons[i]['fillColor']+'"/></svg>' + '<span style="font-size:10px;">'+'  '+name+'</span>';
           legend.appendChild(div);
         }
         map.controls[google.maps.ControlPosition.RIGHT_TOP].push(legend);
@@ -129,7 +129,6 @@
 		    	listitem.className="sidebar-list ui-sortable-handle";
 		    	listitem.style="cursor:pointer;";
 		    	listitem.id = idcounter;
-		    	console.log(listitem.id);
 		    	bindListener(gmarkers[listitem.id],listitem);
 		    	idcounter++;
 		    	var itemname = document.createElement("span");
@@ -187,6 +186,7 @@
 		  		stopover: true
 		  	});
 		  }
+		  console.log();
 		  var request = {
 	      origin: new google.maps.LatLng(waypoints[0][1], waypoints[0][2]),
 	      destination: new google.maps.LatLng(waypoints[waypoints.length-1][1], waypoints[waypoints.length-1][2]),
@@ -200,8 +200,25 @@
 	      if (status == 'OK') {
 		      renderer.setDirections(response);
 		  }
+		  else{
+		  	 sleep(1000);
+		  	 setTimeout(function() {
+                directionsService.route(request, function(response, status) {
+			      if (status == 'OK') {
+				      renderer.setDirections(response);
+				  }
+				});
+            },0);
+
+		  }
 		  });
 	  }
+	  function sleep(miliseconds) {
+		   var currentTime = new Date().getTime();
+
+		   while (currentTime + miliseconds >= new Date().getTime()) {
+		   }
+		}
 </script>
 <script async defer
 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDg5aW83Iq_iMB8ZRu-qhnox6-SQ9JM2-Q&callback=initMap">
