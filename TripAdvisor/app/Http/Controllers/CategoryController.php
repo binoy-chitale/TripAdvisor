@@ -37,7 +37,7 @@ class CategoryController extends Controller{
         $list = [];
         $flag=0;
         $n = 0;
-        $radius= 2;
+        $radius= 1;
         foreach ($dist[$currentStop] as $key => $value) {
             $lat1 = (float)$value['latitude'];
             $lon1 = (float)$value['longitude'];
@@ -114,7 +114,7 @@ class CategoryController extends Controller{
             $this->updateRatingsWithCategories();            
             arsort($this->rating);
             $this->makeSortedDistArray();
-            $limit=10;
+            $limit=20;
             foreach ($period as $day) {
                 if($limit>0){ 
                     $daysplan = $this->getDayPlan($day);
