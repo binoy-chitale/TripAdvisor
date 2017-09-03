@@ -147,7 +147,37 @@ $("#plot").click(function(){
   var dest = document.getElementById("dest").innerHTML;
   location.href = "/plot/"+dest;
 });
-  
+$("#save").click(function(){
+  var content = document.getElementsByTagName("html")[0];
+  // var pri = document.getElementById("ifmcontentstoprint").contentWindow;
+  // pri.document.open();
+  // pri.document.write(content.innerHTML); 
+  var newwindow = content.innerHTML;
+
+  var name = window.prompt("Give your itenerary a name","My Itenerary");
+  var city = document.getElementById("dest").innerHTML;
+  localStorage[name] = newwindow;
+  console.log(localStorage[name]);
+   $.ajaxSetup({
+      headers: {
+        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+      }
+    });
+   $.ajax({
+        method: 'POST',
+        url: '/saved',
+        data: {
+            "name":name,
+            "city":city,
+            "save-itenerary":newwindow
+         },
+         success:function(){
+            console.log("success");
+        },error:function(){ 
+            alert("error!!!!");
+        }
+    });
+});
 function changeTimes(sender){
   var listitems = sender;
   var starttimes = listitems[0].getElementsByClassName("starttime");

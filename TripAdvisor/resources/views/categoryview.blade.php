@@ -18,9 +18,10 @@
                                     <input class="cbox" id="btn_{{$category->name}}"type="checkbox" value="{{$category->name}}" name= "catvalues[]"/>
                     	@endforeach
 						 <br><button type="submit" value="submit" class="btn-plan btn" id="plan" style="font-size:14px; margin-top: 20px; border: 2px solid; border-radius: 4px; border-color:#454545; font-weight:600;">Plan!</button>         
-                    </div>
                     {!!Form::hidden('attractions',$attractions)!!}
                     {!!Form::close()!!}
+                    </div>
+                    <br><button onclick='window.location ="/saved/trips/{{$name}}"'class="btn-plan btn" id="loadexisting" style="font-size:14px; margin-top: 20px; border: 2px solid; border-radius: 4px; border-color:#454545; font-weight:600;">Load saved itenerary</button>
                 </div>
             </div>
         </div>

@@ -34,7 +34,7 @@
 </div>
 
 <?php $dayno=1; ?>
-<div class="container appcontainer" id="timetable">
+<div class="container appcontainer">
 	<div class = "col-md-9 timetable">
 	    <div id="timetable" class="row itenerary" style="display:flex;">
 			@foreach($itenerary as $dayplan)
@@ -42,7 +42,7 @@
 					<div class="panelheaderdiv"><span class="dayno">Day {{$dayno}}: </span><span class="daydate">{{$dayplan['day']->format('d-m-Y')}}</span>
 					</div>
 					<div class="panelbodydiv">
-							<ul class="sortable">
+							<ul class="sortable" style="height:100%">
 							@foreach($dayplan['plan'] as $item)
 								<li class="ui-state-default day-item">
 								@if(property_exists($item,"images"))
@@ -174,6 +174,14 @@
 <div id="Normal">
     <button onclick="" class="btn btn-primary btn-circle btn-lg" data-toggle="tooltip" data-placement="right" title="Print my plan"><i class="glyphicon glyphicon-print"></i></button>
 </div>
+<div id="save">
+    
+<!-- 	<input style="display:none" id = "save-itenerary" name = "savedItenerary"></input>
+	<input style="display:none" id = "save-itenerary-name" name = "iteneraryName"></input>  -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <button type="submit" class="btn btn-primary btn-circle btn-lg" data-toggle="tooltip" data-placement="right" title="Print my plan"><i class="glyphicon glyphicon-save"></i></button>
+    
+</div>
 <iframe id="ifmcontentstoprint" style="height: 0px; width: 0px; position: absolute"></iframe>
 @endsection
 
@@ -185,20 +193,12 @@
 <script type="text/javascript" src="{{ asset('js/att_search.js') }}"></script>
 <script type="text/javascript">
 	$('#Normal').click(function(){
-		
-		// document.getElementById("fixed-div").style="display:none;";
-		// console.log(document.getElementsByClassName("timetable")[0]);
-		// var timetable = document.getElementsByClassName("timetable")[0];
-		// timetable.className="timetable";
-		// timetable.style="width:100;overflow:visible;";
-		// window.print();
 		var content = document.getElementById("timetable");
 		var pri = document.getElementById("ifmcontentstoprint").contentWindow;
 		pri.document.open();
-		pri.document.write(content.innerHTML);	
+		pri.document.write(content.innerHTML);
 		var images =pri.document.getElementsByTagName("img");
 		var stars =pri.document.getElementsByClassName("stars-container");
-		var sidelist = pri.document.getElementsByClassName('side-sortable');
 		var list = pri.document.getElementsByClassName('ui-state-default day-item ui-sortable-handle');
 		var addr = pri.document.getElementsByClassName('addr');
 		for(var i=0;i<images.length;i++){
@@ -206,9 +206,6 @@
 		}
 		for(var i=0;i<stars.length;i++){
 			stars[i].style="display:none";
-		}
-		for(var i=0;i<sidelist.length;i++){
-			sidelist[i].style="display:none";
 		}
 		for(var i=0;i<list.length;i++){
 			list[i].style="font-size:10px";

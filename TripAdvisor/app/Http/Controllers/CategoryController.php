@@ -114,7 +114,7 @@ class CategoryController extends Controller{
             $this->updateRatingsWithCategories();            
             arsort($this->rating);
             $this->makeSortedDistArray();
-            $limit=25;
+            $limit=10;
             foreach ($period as $day) {
                 if($limit>0){ 
                     $daysplan = $this->getDayPlan($day);

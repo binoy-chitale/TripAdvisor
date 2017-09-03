@@ -487,6 +487,13 @@ position:fixed;
   bottom: 1em;
   left: 1em;
 }
+#save{
+position:fixed;
+  float:left; 
+  margin-bottom: 16vh;
+  bottom: 1em;
+  left: 1em;
+}
 #Normal button{ 
   border-radius: 100%;
   height: 7vh;
@@ -501,6 +508,14 @@ position:fixed;
 #plot button{
   background-color:#1b1e24;
   border-color: #1b1e24;
+  height: 7vh;
+  width: 7vh;
+  border-radius: 100%;
+  padding: 0;
+}
+#save button{ 
+  background-color:red;
+  border-color: red;
   height: 7vh;
   width: 7vh;
   border-radius: 100%;
