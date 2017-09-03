@@ -10,8 +10,7 @@ use TripAdvisor\Itenerary as Itenerary;
 class SavedController extends Controller
 {
     public function saved(){
-    	
-    return view('savedItenerary');
+        return view('savedItenerary');
     }
     public function viewtrips($name){
     	return view('viewtrip',['name'=>$name]);
@@ -36,5 +35,15 @@ class SavedController extends Controller
 		    ['user_id', '=', Auth::id()],
 		])->get();
 	   return view('savedItenerary',['trips'=>$savedTrips]);
+    }
+
+    public function delete($id){
+        $city = DB::table('itenerary')->where('id', $id)->pluck('city');
+        DB::table('itenerary')->where('id', $id)->delete();
+        $savedTrips = Itenerary::where([
+            ['city', '=', $city],
+            ['user_id', '=', Auth::id()],
+        ])->get();
+        return view('savedItenerary', ['trips'=>$savedTrips]);
     }
 }

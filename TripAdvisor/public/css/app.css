@@ -1,3 +1,33 @@
+.triplist{
+  color: #454545; 
+  width: 100%;
+  background:transparent;
+  font-weight: 700;
+  border:2px solid;
+  border-radius: 4px;
+  margin-bottom: 5px;
+
+}
+
+.iter{
+  margin-top:2px;
+  margin-bottom: 2px;
+  -webkit-transition: background .2s; /* Safari */
+  transition: background .2s;
+  color: #454545; 
+  width: 100%;
+  background:transparent;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-weight: 700;
+  border-radius: 4px;
+  border:none;
+}
+.iter:hover {
+  background: #454545;
+  color:white;
+}
+
 .day-item.minutes{
   background: transparent;
   font-size: 12px;
@@ -315,14 +345,14 @@ label.label_selected {
   background: rgba(255, 51, 0,1);
   color: white;
 }
-.btn-plan, #plan{
+.btn-plan, #plan, #loadexisting{
   -webkit-transition: background .2s; /* Safari */
   transition: background .2s;
   color: #454545; 
   width: 100%;
   background:transparent;
 }
-.btn-plan:hover ,#plan:hover{
+.btn-plan:hover ,#plan:hover, #loadexisting:hover{
   background: #454545;
   color:white;
 }

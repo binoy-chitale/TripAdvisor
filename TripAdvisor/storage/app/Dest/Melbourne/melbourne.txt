@@ -271,55 +271,6 @@
     ], 
     "additional_info": null
 },{
-    "overall rating": "55", 
-    "ratings": {
-        "Excellent": "498", 
-        "Very good": "86", 
-        "Average": "11", 
-        "Poor": "2", 
-        "Terrible": "1"
-    }, 
-    "overall_calculated_rating": 4.802675585284281, 
-    "review_count": "763 reviews", 
-    "name": "Port Campbell National Park", 
-    "all_timings": null, 
-    "official_description": "LocationAustralia >Victoria >Melbourne ", 
-    "highlights": "", 
-    "latlon": {
-        "lat": -38.6445019, 
-        "lon": 143.0607731
-    }, 
-    "rank": "#9 of 428 things to do in Melbourne", 
-    "content": "Port Campbell National Park is world famous for its extraordinary collection of wave-sculpted rock formations and the Twelve Apostles. Loch Ard Gorge, site of the 19th century shipwreck 'Loch Ard', as well as the Island Archway and London Bridge are other highlights. The Island Archway collapsed in 2009, highlighting the fragile and ever-changing nature of Victoria's coastline. Start your visit by heading to the Twelve Apostles Kiosk and Carpark before taking the walk to view the amazing Twelve Apostles coastline. The site offers kiosk, information, shelter and toilets. Walk the short distance (500m) through a tunnel under the Great Ocean Road to various lookouts offering expansive, breathtaking views. From the Twelve Apostles carpark there is also an easy 2.2km return walk to Gibson Steps Lookout. The lookout is above the beach with excellent views East and West. Port Campbell National Park lies between Princetown and Peterborough, 285 km west of Melbourne via the Great Ocean Road (4-5 hours drive), and 240 km from Melbourne via Colac.", 
-    "phone": [
-        "+61 13 19 63"
-    ], 
-    "amenities": {}, 
-    "suggested_hours": null, 
-    "stars": "5.0", 
-    "address": {
-        "country": "Australia", 
-        "zipcode": "3269", 
-        "street_address": "Great Ocean Road", 
-        "locality": "Melbourne, Victoria 3269,"
-    }, 
-    "images": [
-        "https://media-cdn.tripadvisor.com/media/photo-w/10/00/a2/6b/description-loch-ard.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-w/10/03/aa/db/gibson-s-steps-is-challenging.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-w/10/03/ab/11/lock-ard-gorge-has-a.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-w/10/03/ab/34/visitor-center-at-the.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-w/10/03/ab/56/twelve-apostle-limestone.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-w/10/03/ab/77/cliff-at-the-gibson-s.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-w/01/0b/8a/4d/australia-meridionale.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-w/10/18/79/a1/20170730-173322-largejpg.jpg", 
-        "https://media-cdn.tripadvisor.com/media/photo-s/10/18/79/a2/20170730-173227-largejpg.jpg"
-    ], 
-    "category": [
-        "National Parks", 
-        "Nature & Parks"
-    ], 
-    "additional_info": null
-},{
     "overall rating": "4.54.5", 
     "ratings": {
         "Excellent": "2264", 

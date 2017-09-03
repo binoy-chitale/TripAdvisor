@@ -15,12 +15,25 @@
 	
 </script>
 <div class = "container">
+	<div class="panel-header"><h4>Saved Trips</h4></div>
 	<div class = "panel-body">
 		@if(!$trips->isEmpty())
 		@foreach($trips as $trip)
-		<br><button onclick = "renderPlan('{{$trip->name}}')"class="btn-plan btn" id="loadexisting" style="font-size:14px; margin-top: 20px; border: 2px solid; border-radius: 4px; border-color:#454545; font-weight:600;">{{$trip->name}}</button>
-		<div style = "display:none" id="{{$trip->name}}"></div>
+		<div class="triplist col-sm-12">
+			<div class="col-sm-6">
+				<div class="tripname" >{{$trip->name}}</div>
+				<div style = "display:none" id="{{$trip->name}}"></div>
+			</div>
+			<div class="col-sm-3">
+				<button class=" iter" onclick ="renderPlan('{{$trip->name}}')">View</button>
+			</div>
+			<div class="col-sm-3">
+				<button type="submit" onclick="window.location.href = '/plan/delete/{{$trip->id}}';" class="iter">Delete</button>
+			</div>
+		</div>
 		@endforeach
+		@else
+		<h6>No trips to show</h6>
 		@endif
 	</div>
 </div>

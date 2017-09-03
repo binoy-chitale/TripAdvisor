@@ -26,6 +26,7 @@ Route::get('/view/{name}/{placename}', 'PlaceViewController@view');
 Route::get('/plot/{name}', 'PlotController@plot');
 Route::get('/saved/itenerary', 'SavedController@saved');
 Route::get('/viewtrip/{name}', 'SavedController@viewtrips');
+Route::get('/plan/delete/{id}','SavedController@delete');
 Route::get('/plan',function(){
 	return redirect('/home');
 });

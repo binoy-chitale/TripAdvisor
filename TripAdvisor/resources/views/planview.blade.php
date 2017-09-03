@@ -14,7 +14,7 @@
           
           <div class="col-sm-6">
           	<div class="modal-rank-div"><span class="modal-rank"></span></div>
-          	<div class="modal-stars-div"><span style="font-weight:700;">Star Rating: </span><span class="modal-stars"></span></div>
+          	<div class="modal-stars-div"><span style="font-weight:700;">Rating: </span><span class="modal-stars"></span></div>
       		<div class="modal-phone-div "><span class="glyphicon glyphicon-phone" style="font-weight:700"></span><span class=" modal-phone"></span></div>
           	<div class="modal-address-div "><span class="glyphicon glyphicon-map-marker"><span class="modal-address"></span></span></div>
           	<div class="modal-review-div"><span class="modal-reviews">
@@ -179,7 +179,7 @@
 <!-- 	<input style="display:none" id = "save-itenerary" name = "savedItenerary"></input>
 	<input style="display:none" id = "save-itenerary-name" name = "iteneraryName"></input>  -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <button type="submit" class="btn btn-primary btn-circle btn-lg" data-toggle="tooltip" data-placement="right" title="Print my plan"><i class="glyphicon glyphicon-save"></i></button>
+    <button type="submit" class="btn btn-primary btn-circle btn-lg" data-toggle="tooltip" data-placement="right" title="Save my plan"><i class="glyphicon glyphicon-save"></i></button>
     
 </div>
 <iframe id="ifmcontentstoprint" style="height: 0px; width: 0px; position: absolute"></iframe>
