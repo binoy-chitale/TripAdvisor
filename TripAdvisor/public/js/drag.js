@@ -154,7 +154,7 @@ $("#save").click(function(){
   // pri.document.write(content.innerHTML); 
   var newwindow = content.innerHTML;
 
-  var name = window.prompt("Give your itenerary a name","My Itenerary");
+  var name = window.prompt("Give your itinerary a name","My Itinerary");
   var city = document.getElementById("dest").innerHTML;
   localStorage[name] = newwindow;
   console.log(localStorage[name]);
@@ -174,7 +174,7 @@ $("#save").click(function(){
          success:function(){
             console.log("success");
         },error:function(){ 
-            alert("error!!!!");
+            alert("Error!");
         }
     });
 });

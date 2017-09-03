@@ -82,6 +82,7 @@ class CategoryController extends Controller{
         reset($list);
         return key($list);    
     }
+
     public function viewCategories($name){
         $destination = Dest::where('name',$name)->first();
         $attractions = Attraction::where('dest_id',$destination->id)->get();
@@ -114,7 +115,7 @@ class CategoryController extends Controller{
             $this->updateRatingsWithCategories();            
             arsort($this->rating);
             $this->makeSortedDistArray();
-            $limit=20;
+            $limit=50;
             foreach ($period as $day) {
                 if($limit>0){ 
                     $daysplan = $this->getDayPlan($day);
@@ -136,23 +137,26 @@ class CategoryController extends Controller{
             return redirect('/plan/'.$name);
         }
     }
+
     public function makeRatingsList(){
         foreach($this->attractions as $item) {
-                $factor = $item->{'rank'};
-                $factor = str_replace(",", "", $factor);
-                preg_match_all('!\d+!', $factor, $factor);
-                $calculatedfactor = ((int)$factor[0][1]-(int)$factor[0][0])/(int)$factor[0][1];
-                $this->rating[ $item->{'id'}] = $item->{'rating'}+$calculatedfactor*0.7+$item->stars;
-                array_push($this->attractionidlist, $item->{'id'});
-                $this->distarray[$item->{'id'}] = array( ['latitude' => $item->{'latitude'}, 'longitude' => $item->{'longitude'}] );
-            }
+            $factor = $item->{'rank'};
+            $factor = str_replace(",", "", $factor);
+            preg_match_all('!\d+!', $factor, $factor);
+            $calculatedfactor = ((int)$factor[0][1]-(int)$factor[0][0])/(int)$factor[0][1];
+            $this->rating[ $item->{'id'}] = $item->{'rating'}+$calculatedfactor*0.7+$item->stars;
+            array_push($this->attractionidlist, $item->{'id'});
+            $this->distarray[$item->{'id'}] = array( ['latitude' => $item->{'latitude'}, 'longitude' => $item->{'longitude'}] );
+        }
     }
+
     public function updateRatingsWithCategories(){
         $list = Category::select('attraction_id', DB::raw('count(*) as count'))->whereIn('attraction_id',$this->attractionidlist)->whereIn('name' ,$this->catvalues)->groupBy('attraction_id')->get();    
         foreach ($list as $list) {
             $this->rating[$list->attraction_id] = $this->rating[$list->attraction_id] + $list->count*0.15;
-            $this->rating[$list->attraction_id] = (string)$this->rating[$list->attraction_id];     
+            $this->rating[$list->attraction_id] = $this->rating[$list->attraction_id];     
         }
+
     }
     public function getDayPlan($day) {
         $day->setTime(10,0);
@@ -182,7 +186,7 @@ class CategoryController extends Controller{
                     }
                 }
                 $day->add(new DateInterval("PT{$hours}H"));
-                if($lunchFlag==0&&$this->checkIfLunchTime($day)) {
+                if($lunchFlag==0 && $this->checkIfLunchTime($day)) {
                     $temp=clone $day;
                     $day->add(new DateInterval("PT{$this->getLunchTime()}H"));
                     $lunch = new \stdClass();
@@ -199,45 +203,53 @@ class CategoryController extends Controller{
         $this->marked=[];
         while($day<$eod) {
             $currentStop=$this->findNextStop($this->sorteddistarray,$currentStop);
-            if($lunchFlag==0&&$this->checkIfLunchTime($day)) {
-                    $temp=clone $day;
-                    $day->add(new DateInterval("PT{$this->getLunchTime()}H"));
-                    $lunch = new \stdClass();
-                    $lunch->name = "Lunch";
-                    $lunch->startofvisit=$temp->format("H:i");
-                    $lunch->endofvisit=$day->format("H:i");
-                    array_push($itenerary['plan'],$lunch);
-                    $lunchFlag=1;
-                }
-            if($att=$this->isOpen($currentStop,clone $day)) {
-                array_push($this->visit,$currentStop);
-                $day->add(new DateInterval("PT{$this->getTravelTime()}S"));
-                $hours =$att->duration;
-                if($hours==""){
-                    $hours=2;
-                }
-                foreach ($this->attractions as $attraction) {
-                    if($attraction->id == $currentStop){
-                        $attraction->startofvisit=$day->format("H:i");
-                        $temp = clone $day;
-                        $temp->add(new DateInterval("PT{$hours}H"));
-                        $attraction->endofvisit=$temp->format("H:i");
-                        array_push($itenerary['plan'],$attraction);
-                    }
-                }
-                
-                $day->add(new DateInterval("PT{$hours}H"));
+            if(is_null($currentStop)){
+                $itenerary['day']=$day;
+                return $itenerary;
             }
-            array_push($this->marked, $currentStop);
+            else{
+                if($lunchFlag==0&&$this->checkIfLunchTime($day)) {
+                        $temp=clone $day;
+                        $day->add(new DateInterval("PT{$this->getLunchTime()}H"));
+                        $lunch = new \stdClass();
+                        $lunch->name = "Lunch";
+                        $lunch->startofvisit=$temp->format("H:i");
+                        $lunch->endofvisit=$day->format("H:i");
+                        array_push($itenerary['plan'],$lunch);
+                        $lunchFlag=1;
+                    }
+                if($att=$this->isOpen($currentStop,clone $day)) {
+                    array_push($this->visit,$currentStop);
+                    $day->add(new DateInterval("PT{$this->getTravelTime()}S"));
+                    $hours =$att->duration;
+                    if($hours==""){
+                        $hours=2;
+                    }
+                    foreach ($this->attractions as $attraction) {
+                        if($attraction->id == $currentStop){
+                            $attraction->startofvisit=$day->format("H:i");
+                            $temp = clone $day;
+                            $temp->add(new DateInterval("PT{$hours}H"));
+                            $attraction->endofvisit=$temp->format("H:i");
+                            array_push($itenerary['plan'],$attraction);
+                        }
+                    }
+                    
+                    $day->add(new DateInterval("PT{$hours}H"));
+                }
+                array_push($this->marked, $currentStop);
+            }
         }
         $itenerary['day']=$day;
         return $itenerary;
     }
+
     public function makeSortedDistArray(){
         foreach ($this->rating as $key => $value) {
             $this->sorteddistarray[$key] = $this->distarray[$key];
         }
     }
+
     public function getTravelTime(){
         $stop1 = (array_values($this->visit)[count($this->visit)-2]);
         $stop2 = (array_values($this->visit)[count($this->visit)-1]);
@@ -258,6 +270,7 @@ class CategoryController extends Controller{
         $time=$distance*3600/4.28;
         return round($time);
     }
+
     public function isOpen($id,$day) {
         $days = array("Mon"=>0,"Tue"=>1,"Wed"=>2,"Thu"=>3,"Fri"=>4,"Sat"=>5,"Sun"=>6);
         foreach ($this->attractions as $attraction) {
@@ -303,12 +316,14 @@ class CategoryController extends Controller{
             }
         }
     }
+
     public function checkIfLunchTime($day){
         if($day->format("H:i")>="12:00") {
             return true;
         }
         return false;
     }
+
     public function getLunchTime(){
         return 2;
     }
