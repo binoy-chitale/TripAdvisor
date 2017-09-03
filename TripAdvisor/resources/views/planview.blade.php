@@ -14,7 +14,7 @@
           
           <div class="col-sm-6">
           	<div class="modal-rank-div"><span class="modal-rank"></span></div>
-          	<div class="modal-stars-div"><span style="font-weight:700;">Rating: </span><span class="modal-stars"></span></div>
+          	<div class="modal-stars-div"><span style="font-weight:700;">Star Rating: </span><span class="modal-stars"></span></div>
       		<div class="modal-phone-div "><span class="glyphicon glyphicon-phone" style="font-weight:700"></span><span class=" modal-phone"></span></div>
           	<div class="modal-address-div "><span class="glyphicon glyphicon-map-marker"><span class="modal-address"></span></span></div>
           	<div class="modal-review-div"><span class="modal-reviews">

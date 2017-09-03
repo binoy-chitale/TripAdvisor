@@ -172,7 +172,7 @@ $("#save").click(function(){
             "save-itenerary":newwindow
          },
          success:function(){
-            console.log("success");
+            console.log("Success!");
         },error:function(){ 
             alert("Error!");
         }
